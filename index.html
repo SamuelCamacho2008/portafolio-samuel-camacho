@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portafolio personal de Samuel Camacho: presentación, proyectos, literatura y contacto."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>Samuel Camacho — Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">sc<span>.</span></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Abrir menú"
+        >
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="menu">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="libro.html" class="nav-book-link">Mi Libro 📖</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero container" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO PERSONAL</p>
+          <h1 id="hero-title">Hola, soy <span class="accent">Samuel Camacho.</span></h1>
+          <p class="hero-role">[Tu profesión o área de especialidad]</p>
+          <p class="hero-description">
+            [Escribe aquí una presentación breve: qué haces, qué te interesa y
+            qué tipo de oportunidades buscas.]
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="libro.html">Leer mi libro 📖 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-center"><span>SC</span></div>
+          <span class="art-label label-top">CREATIVIDAD</span>
+          <span class="art-label label-bottom">EN CONSTRUCCIÓN</span>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✳</span>
+        </div>
+        <a class="scroll-cue" href="#sobre-mi"><span></span> DESLIZA PARA EXPLORAR</a>
+      </section>
+
+      <section class="section about-section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">01 / UN POCO SOBRE MÍ</p>
+            <h2 id="about-title">Ideas claras.<br /><span class="muted">Trabajo con intención.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              [Cuéntanos quién eres y cómo llegaste a tu área. Puedes hablar de
+              tu enfoque, tus intereses y la manera en que te gusta trabajar.]
+            </p>
+            <p>
+              [Añade un detalle personal o profesional que ayude a las personas
+              a conocerte. Mantén este texto concreto y fiel a tu experiencia.]
+            </p>
+            <a class="text-link" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-topline">
+            <div class="section-heading">
+              <p class="eyebrow">02 / SELECCIÓN DE TRABAJO</p>
+              <h2 id="projects-title">Proyectos <span class="muted">destacados.</span></h2>
+            </div>
+            <p class="section-note">Una selección de trabajos, experimentos y obras personales.</p>
+          </div>
+          <div class="project-grid">
+            <!-- PROYECTO DESTACADO 01: EL LIBRO DE SAMUEL CAMACHO -->
+            <article class="project-card project-card-featured">
+              <a href="libro.html" style="display: block; text-decoration: none; color: inherit;">
+                <div class="project-visual visual-book" aria-hidden="true">
+                  <span class="visual-mark">OBRA LITERARIA</span>
+                  <div class="visual-shape"></div>
+                </div>
+              </a>
+              <div class="project-meta"><span>LITERATURA &amp; REFLEXIÓN</span><span>2024 – 2026</span></div>
+              <h3>
+                <a href="libro.html" style="color: inherit; text-decoration: none;">
+                  El sentimiento profundo de un oscuro amor <span aria-hidden="true">↗</span>
+                </a>
+              </h3>
+              <p>
+                Libro interactivo de reflexiones, citas y prosa sobre el desamor y la entrega del corazón. Una experiencia editorial digital interactiva página por página con navegación fluida y citas compartibles.
+              </p>
+              <p class="project-tags">Escritura creativa <span>·</span> Antología <span>·</span> Samuel Camacho</p>
+              <div style="margin-top: 14px;">
+                <a href="libro.html" class="button button-primary" style="min-height: 40px; font-size: 12px; padding: 0 16px;">
+                  Abrir libro interactivo <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROYECTO 02 -->
+            <article class="project-card">
+              <div class="project-visual visual-lilac" aria-hidden="true">
+                <span class="visual-mark">02</span><span class="visual-shape"></span>
+              </div>
+              <div class="project-meta"><span>PROYECTO 02</span><span>[Año]</span></div>
+              <h3>[Nombre del proyecto]</h3>
+              <p>[Resume aquí el objetivo del proyecto y qué hiciste.]</p>
+              <p class="project-tags">[Categoría] <span>·</span> [Herramientas]</p>
+            </article>
+
+            <!-- PROYECTO 03 -->
+            <article class="project-card">
+              <div class="project-visual visual-blue" aria-hidden="true">
+                <span class="visual-mark">03</span><span class="visual-shape"></span>
+              </div>
+              <div class="project-meta"><span>PROYECTO 03</span><span>[Año]</span></div>
+              <h3>[Nombre del proyecto]</h3>
+              <p>[Destaca el impacto, aprendizaje o resultado más importante.]</p>
+              <p class="project-tags">[Categoría] <span>·</span> [Herramientas]</p>
+            </article>
+          </div>
+          <p class="edit-note">Reemplaza las tarjetas de ejemplo por tus proyectos reales o elimina las que no necesites.</p>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="habilidades" aria-labelledby="skills-title">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">03 / LO QUE APORTO</p>
+            <h2 id="skills-title">Habilidades <span class="muted">y enfoque.</span></h2>
+          </div>
+          <div class="skills-content">
+            <p>[Selecciona las habilidades que realmente manejas y organiza esta lista según tu perfil.]</p>
+            <div class="skill-list" aria-label="Habilidades editables">
+              <span>[Habilidad 01]</span><span>[Habilidad 02]</span>
+              <span>[Habilidad 03]</span><span>[Habilidad 04]</span>
+              <span>[Herramienta 01]</span><span>[Herramienta 02]</span>
+            </div>
+            <div class="approach">
+              <span class="approach-number">+</span>
+              <p><strong>Mi enfoque</strong><br />[Una frase sobre cómo abordas los retos y colaboras con otras personas.]</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <p class="eyebrow">04 / SIGUIENTE PASO</p>
+          <h2 id="contact-title">¿Creamos algo<br /><span>que importe?</span></h2>
+          <p>[Cuéntame brevemente qué tipo de conversación u oportunidad te interesa.]</p>
+          <a class="button button-light" href="mailto:tu-correo@ejemplo.com">
+            tu-correo@ejemplo.com <span aria-hidden="true">↗</span>
+          </a>
+          <p class="contact-edit-note">Cambia este correo de ejemplo por el tuyo antes de publicar.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#inicio" aria-label="Volver al inicio">sc<span>.</span></a>
+        <p>Diseñado para contar tu historia. Samuel Camacho <span id="current-year"></span></p>
+        <a class="back-to-top" href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
