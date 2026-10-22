@@ -30,7 +30,7 @@
         <ul class="nav-links" id="menu">
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="libro.html" class="nav-book-link">Mi Libro 📖</a></li>
+          <li><a href="proyectos/libro.html" class="nav-book-link">Mi Libro 📖</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a></li>
         </ul>
@@ -42,14 +42,13 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO PERSONAL</p>
           <h1 id="hero-title">Hola, soy <span class="accent">Samuel Camacho.</span></h1>
-          <p class="hero-role">[Tu profesión o área de especialidad]</p>
+          <p class="hero-role">Desarrollador Full-Stack &amp; Especialista en Accesibilidad Web</p>
           <p class="hero-description">
-            [Escribe aquí una presentación breve: qué haces, qué te interesa y
-            qué tipo de oportunidades buscas.]
+            Creo experiencias digitales accesibles, aplicaciones impulsadas por IA y proyectos interactivos. Apasionado por la ingeniería de software moderna, los estándares web WCAG y la literatura.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="libro.html">Leer mi libro 📖 <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="proyectos/libro.html">Leer mi libro 📖 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
@@ -72,12 +71,10 @@
           </div>
           <div class="about-copy">
             <p>
-              [Cuéntanos quién eres y cómo llegaste a tu área. Puedes hablar de
-              tu enfoque, tus intereses y la manera en que te gusta trabajar.]
+              Soy Samuel Camacho, desarrollador apasionado por crear tecnología inclusiva, software bien diseñado y experiencias digitales con propósito. Mi trabajo abarca desde la auditoría de accesibilidad web (WCAG 2.1/2.2) y el desarrollo de agentes con inteligencia artificial, hasta la creación literaria.
             </p>
             <p>
-              [Añade un detalle personal o profesional que ayude a las personas
-              a conocerte. Mantén este texto concreto y fiel a tu experiencia.]
+              Creo en una web accesible para todos: cada interfaz debe ser perceptible, operable, comprensible y robusta para cualquier usuario, independientemente de sus capacidades o tecnologías de asistencia.
             </p>
             <a class="text-link" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a>
           </div>
@@ -94,9 +91,37 @@
             <p class="section-note">Una selección de trabajos, experimentos y obras personales.</p>
           </div>
           <div class="project-grid">
-            <!-- PROYECTO DESTACADO 01: EL LIBRO DE SAMUEL CAMACHO -->
+            <!-- PROYECTO DESTACADO 01: A11Y AGENT -->
             <article class="project-card project-card-featured">
-              <a href="libro.html" style="display: block; text-decoration: none; color: inherit;">
+              <a href="proyectos/a11y-agent.html" style="display: block; text-decoration: none; color: inherit;">
+                <div class="project-visual visual-a11y" aria-hidden="true">
+                  <span class="visual-mark">IA &amp; ACCESIBILIDAD</span>
+                  <div class="visual-shape"></div>
+                </div>
+              </a>
+              <div class="project-meta"><span>INGENIERÍA &amp; LLMS</span><span>2026</span></div>
+              <h3>
+                <a href="proyectos/a11y-agent.html" style="color: inherit; text-decoration: none;">
+                  A11y Agent — Auditor WCAG 2.1 / 2.2 con IA <span aria-hidden="true">↗</span>
+                </a>
+              </h3>
+              <p>
+                Agente autónomo de auditoría y remediación de accesibilidad web inspirado en el modelo TAW. Renderizado dinámico con Playwright, motor axe-core, juicio semántico con LLM para alts, enlaces y formularios, puntuación 0-100 y remediación con código antes/después.
+              </p>
+              <p class="project-tags">Python <span>·</span> FastAPI <span>·</span> Playwright <span>·</span> axe-core <span>·</span> WCAG 2.2 <span>·</span> LLM</p>
+              <div style="margin-top: 14px; display: flex; gap: 12px; align-items: center;">
+                <a href="proyectos/a11y-agent.html" class="button button-primary" style="min-height: 40px; font-size: 12px; padding: 0 16px;">
+                  Ver proyecto <span aria-hidden="true">→</span>
+                </a>
+                <a href="https://github.com/SamuelCamacho2008/a11y-agent" target="_blank" rel="noopener" class="text-link" style="font-size: 12px;">
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROYECTO DESTACADO 02: EL LIBRO DE SAMUEL CAMACHO -->
+            <article class="project-card">
+              <a href="proyectos/libro.html" style="display: block; text-decoration: none; color: inherit;">
                 <div class="project-visual visual-book" aria-hidden="true">
                   <span class="visual-mark">OBRA LITERARIA</span>
                   <div class="visual-shape"></div>
@@ -104,7 +129,7 @@
               </a>
               <div class="project-meta"><span>LITERATURA &amp; REFLEXIÓN</span><span>2024 – 2026</span></div>
               <h3>
-                <a href="libro.html" style="color: inherit; text-decoration: none;">
+                <a href="proyectos/libro.html" style="color: inherit; text-decoration: none;">
                   El sentimiento profundo de un oscuro amor <span aria-hidden="true">↗</span>
                 </a>
               </h3>
@@ -113,32 +138,10 @@
               </p>
               <p class="project-tags">Escritura creativa <span>·</span> Antología <span>·</span> Samuel Camacho</p>
               <div style="margin-top: 14px;">
-                <a href="libro.html" class="button button-primary" style="min-height: 40px; font-size: 12px; padding: 0 16px;">
+                <a href="proyectos/libro.html" class="button button-primary" style="min-height: 40px; font-size: 12px; padding: 0 16px;">
                   Abrir libro interactivo <span aria-hidden="true">→</span>
                 </a>
               </div>
-            </article>
-
-            <!-- PROYECTO 02 -->
-            <article class="project-card">
-              <div class="project-visual visual-lilac" aria-hidden="true">
-                <span class="visual-mark">02</span><span class="visual-shape"></span>
-              </div>
-              <div class="project-meta"><span>PROYECTO 02</span><span>[Año]</span></div>
-              <h3>[Nombre del proyecto]</h3>
-              <p>[Resume aquí el objetivo del proyecto y qué hiciste.]</p>
-              <p class="project-tags">[Categoría] <span>·</span> [Herramientas]</p>
-            </article>
-
-            <!-- PROYECTO 03 -->
-            <article class="project-card">
-              <div class="project-visual visual-blue" aria-hidden="true">
-                <span class="visual-mark">03</span><span class="visual-shape"></span>
-              </div>
-              <div class="project-meta"><span>PROYECTO 03</span><span>[Año]</span></div>
-              <h3>[Nombre del proyecto]</h3>
-              <p>[Destaca el impacto, aprendizaje o resultado más importante.]</p>
-              <p class="project-tags">[Categoría] <span>·</span> [Herramientas]</p>
             </article>
           </div>
           <p class="edit-note">Reemplaza las tarjetas de ejemplo por tus proyectos reales o elimina las que no necesites.</p>
@@ -152,15 +155,21 @@
             <h2 id="skills-title">Habilidades <span class="muted">y enfoque.</span></h2>
           </div>
           <div class="skills-content">
-            <p>[Selecciona las habilidades que realmente manejas y organiza esta lista según tu perfil.]</p>
-            <div class="skill-list" aria-label="Habilidades editables">
-              <span>[Habilidad 01]</span><span>[Habilidad 02]</span>
-              <span>[Habilidad 03]</span><span>[Habilidad 04]</span>
-              <span>[Herramienta 01]</span><span>[Herramienta 02]</span>
+            <p>Especialización en accesibilidad digital (WCAG 2.1/2.2), desarrollo full-stack con Python y diseño de experiencias inclusivas.</p>
+            <div class="skill-list" aria-label="Habilidades técnicas">
+              <span>Accesibilidad Web (WCAG 2.1 / 2.2)</span>
+              <span>Python &amp; FastAPI</span>
+              <span>Playwright &amp; Headless Chromium</span>
+              <span>axe-core &amp; Auditoría Web</span>
+              <span>Inteligencia Artificial &amp; LLMs</span>
+              <span>HTML5 Semántico &amp; WAI-ARIA</span>
+              <span>JavaScript Moderno</span>
+              <span>CSS3 &amp; Diseño Responsivo</span>
+              <span>Git &amp; GitHub Actions</span>
             </div>
             <div class="approach">
               <span class="approach-number">+</span>
-              <p><strong>Mi enfoque</strong><br />[Una frase sobre cómo abordas los retos y colaboras con otras personas.]</p>
+              <p><strong>Mi enfoque</strong><br />Construyo software de alto impacto combinando rigor técnico en normativas de accesibilidad, automatización con navegadores e inteligencia artificial aplicada para resolver barreras del mundo real.</p>
             </div>
           </div>
         </div>
@@ -170,11 +179,10 @@
         <div class="container contact-inner">
           <p class="eyebrow">04 / SIGUIENTE PASO</p>
           <h2 id="contact-title">¿Creamos algo<br /><span>que importe?</span></h2>
-          <p>[Cuéntame brevemente qué tipo de conversación u oportunidad te interesa.]</p>
-          <a class="button button-light" href="mailto:tu-correo@ejemplo.com">
-            tu-correo@ejemplo.com <span aria-hidden="true">↗</span>
+          <p>¿Tienes un proyecto en mente, una oportunidad de colaboración o una consulta sobre accesibilidad digital? Hablemos.</p>
+          <a class="button button-light" href="mailto:samuelcamachoaguirre4@gmail.com">
+            samuelcamachoaguirre4@gmail.com <span aria-hidden="true">↗</span>
           </a>
-          <p class="contact-edit-note">Cambia este correo de ejemplo por el tuyo antes de publicar.</p>
         </div>
       </section>
     </main>

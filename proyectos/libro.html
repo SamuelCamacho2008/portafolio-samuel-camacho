@@ -1,0 +1,1378 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El sentimiento profundo de un oscuro amor — Samuel Camacho</title>
+    <meta
+      name="description"
+      content="Libro de reflexiones, desamor y pensamientos íntimos escrito por Samuel Camacho."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ============================================================
+         VARIABLES Y TEMA DE DISEÑO (Alineadas a tu portafolio)
+         ============================================================ */
+      :root {
+        --paper-bg: #f7f6f2;
+        --page-bg: #fcfbf8;
+        --page-edge: #eeebe3;
+        --ink: #1d201d;
+        --ink-soft: #2e332f;
+        --muted: #777a73;
+        --line: #e3e2db;
+        --orange: #f26f50;
+        --lime: #c7f36a;
+        --gold: #d4af37;
+        --cover-bg: #181d1a;
+        --cover-border: #2a352f;
+        --spine: #0f1311;
+        --ribbon: #d9534f;
+        
+        --font-serif: "Cormorant Garamond", Georgia, serif;
+        --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: "DM Mono", monospace;
+        --font-display: "Manrope", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        background: var(--paper-bg);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 16px 36px;
+        overflow-x: hidden;
+      }
+
+      /* Barra de navegación superior hacia el portafolio */
+      .book-topbar {
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 12px 22px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      }
+
+      .back-to-portfolio {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink);
+        text-decoration: none;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+      .back-to-portfolio:hover {
+        color: var(--orange);
+        transform: translateX(-3px);
+      }
+
+      .book-meta-badge {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.09em;
+        color: var(--muted);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .status-indicator {
+        width: 8px;
+        height: 8px;
+        background-color: #86b948;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 0 3px rgba(134, 185, 72, 0.25);
+      }
+
+      /* Barra delgada de progreso de lectura */
+      .reading-progress-track {
+        width: 100%;
+        max-width: 940px;
+        height: 3px;
+        background: var(--line);
+        border-radius: 2px;
+        margin-bottom: 22px;
+        overflow: hidden;
+      }
+      .reading-progress-bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, var(--orange), #ff8f70);
+        transition: width 0.35s ease;
+      }
+
+      /* ============================================================
+         COMPONENTE CENTRAL DEL LIBRO (Totalmente portable)
+         ============================================================ */
+      #libro-componente {
+        width: 100%;
+        max-width: 920px;
+        perspective: 2200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+      }
+
+      .book-wrapper {
+        position: relative;
+        width: min(840px, 95vw);
+        height: clamp(540px, 72vh, 650px);
+        background: var(--cover-bg);
+        border-radius: 12px 24px 24px 12px;
+        box-shadow: 
+          0 30px 60px -15px rgba(15, 19, 17, 0.4),
+          0 12px 24px -6px rgba(15, 19, 17, 0.25),
+          inset 8px 0 18px rgba(0, 0, 0, 0.65);
+        padding: 18px 18px 18px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Lomo del libro con efecto de relieve */
+      .book-wrapper::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 28px;
+        background: linear-gradient(90deg, #0b0e0c 0%, #1e2621 55%, #121714 100%);
+        border-radius: 12px 0 0 12px;
+        box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.65);
+      }
+
+      /* Cinta de lectura (marcapáginas) */
+      .book-ribbon {
+        position: absolute;
+        top: -6px;
+        left: 56px;
+        width: 20px;
+        height: 86px;
+        background: var(--ribbon);
+        box-shadow: 2px 6px 12px rgba(0,0,0,0.35);
+        z-index: 30;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+        transition: transform 0.3s ease;
+      }
+      .book-wrapper:hover .book-ribbon {
+        transform: translateY(5px);
+      }
+
+      /* Ventana de visualización de páginas */
+      .pages-viewport {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: var(--page-bg);
+        border-radius: 4px 14px 14px 4px;
+        overflow: hidden;
+        box-shadow: 
+          inset 4px 0 12px rgba(0, 0, 0, 0.12),
+          inset -4px 0 10px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Efecto de pliegue central */
+      .pages-viewport::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 44px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.04) 45%, transparent 100%);
+        z-index: 10;
+        pointer-events: none;
+      }
+
+      /* ============================================================
+         ESTRUCTURA DE CADA PÁGINA INDIVIDUAL
+         ============================================================ */
+      .book-page {
+        position: absolute;
+        inset: 0;
+        padding: clamp(28px, 5.5vw, 48px) clamp(28px, 6vw, 68px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(36px) scale(0.985);
+        transition: opacity 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+                    visibility 0.42s;
+        background-color: var(--page-bg);
+        background-image: 
+          radial-gradient(circle at 50% 40%, rgba(255,255,255,0.85) 0%, transparent 100%),
+          repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(0, 0, 0, 0.018) 31px, rgba(0, 0, 0, 0.018) 32px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+      }
+
+      .book-page::-webkit-scrollbar {
+        width: 5px;
+      }
+      .book-page::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+      }
+
+      .book-page.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0) scale(1);
+        z-index: 5;
+      }
+
+      /* Cabecera interna de página */
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 12px;
+        user-select: none;
+      }
+
+      .page-category {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .page-number-top {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      /* Contenedor central de la frase */
+      .quote-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 16px 0;
+        position: relative;
+        flex-grow: 1;
+      }
+
+      .quote-symbol {
+        font-family: var(--font-serif);
+        font-size: 60px;
+        line-height: 1;
+        color: var(--orange);
+        opacity: 0.45;
+        margin-bottom: -16px;
+        user-select: none;
+      }
+
+      .quote-text {
+        font-family: var(--font-serif);
+        font-size: clamp(21px, 3.2vw, 29px);
+        font-style: italic;
+        line-height: 1.48;
+        color: var(--ink);
+        max-width: 620px;
+        letter-spacing: -0.01em;
+      }
+
+      .quote-author {
+        margin-top: 24px;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .quote-author::before {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 1.5px;
+        background-color: var(--orange);
+      }
+
+      /* Estilo especial para páginas de ensayo / reflexión extensa */
+      .prose-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 14px 4px;
+        position: relative;
+        flex-grow: 1;
+        max-width: 640px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .prose-badge {
+        font-family: var(--font-mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--orange);
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .prose-heading {
+        font-family: var(--font-serif);
+        font-size: clamp(21px, 2.9vw, 26px);
+        font-weight: 700;
+        font-style: italic;
+        color: var(--ink);
+        line-height: 1.35;
+        margin-bottom: 14px;
+        border-left: 3px solid var(--orange);
+        padding-left: 14px;
+      }
+
+      .prose-body {
+        font-family: var(--font-serif);
+        font-size: clamp(16.5px, 2.1vw, 19.5px);
+        line-height: 1.68;
+        color: #272c29;
+        text-align: justify;
+        text-justify: inter-word;
+        letter-spacing: 0.005em;
+      }
+
+      .prose-author-tag {
+        align-self: flex-end;
+        margin-top: 18px;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .prose-author-tag::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 1.5px;
+        background-color: var(--orange);
+      }
+
+      /* Pie de cada página */
+      .page-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--line);
+        padding-top: 12px;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--muted);
+        user-select: none;
+      }
+
+      .copy-quote-btn {
+        background: transparent;
+        border: none;
+        color: var(--muted);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: color 0.2s ease;
+      }
+      .copy-quote-btn:hover {
+        color: var(--orange);
+      }
+
+      /* ============================================================
+         PORTADA DEL LIBRO
+         ============================================================ */
+      .page-cover {
+        background: linear-gradient(145deg, #181d1a 0%, #111513 100%);
+        color: #f7f6f2;
+        border: 2px solid var(--cover-border);
+        box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: clamp(24px, 4.5vw, 44px);
+      }
+
+      .cover-frame {
+        border: 1px solid rgba(199, 243, 106, 0.35);
+        padding: clamp(28px, 5vw, 48px) clamp(20px, 4vw, 36px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        position: relative;
+        background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 80%);
+      }
+
+      .cover-frame::before {
+        content: "✦";
+        position: absolute;
+        top: 14px;
+        color: var(--lime);
+        font-size: 13px;
+        opacity: 0.85;
+      }
+      .cover-frame::after {
+        content: "✦";
+        position: absolute;
+        bottom: 14px;
+        color: var(--lime);
+        font-size: 13px;
+        opacity: 0.85;
+      }
+
+      .cover-label {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        color: var(--lime);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      .cover-title {
+        font-family: var(--font-display);
+        font-size: clamp(30px, 5.2vw, 48px);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        color: #ffffff;
+        margin-bottom: 16px;
+        max-width: 580px;
+        text-transform: uppercase;
+      }
+      .cover-title span {
+        color: var(--orange);
+      }
+
+      .cover-subtitle {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: clamp(17px, 2.6vw, 22px);
+        color: #c9ceca;
+        max-width: 480px;
+        margin-bottom: 26px;
+        line-height: 1.4;
+      }
+
+      .cover-divider {
+        width: 44px;
+        height: 1px;
+        background: var(--line);
+        opacity: 0.4;
+        margin-bottom: 20px;
+      }
+
+      .cover-signature {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .cover-start-hint {
+        margin-top: 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: var(--lime);
+        font-family: var(--font-sans);
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        background: rgba(199, 243, 106, 0.1);
+        padding: 8px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(199, 243, 106, 0.25);
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+      .cover-start-hint:hover {
+        background: rgba(199, 243, 106, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* ============================================================
+         CONTRAPORTADA (Página Final del Libro)
+         ============================================================ */
+      .page-back-cover {
+        background: linear-gradient(145deg, #151917 0%, #0e1110 100%);
+        color: #ffffff;
+        border: 2px solid var(--cover-border);
+        justify-content: center;
+        text-align: center;
+      }
+
+      .back-cover-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 30px 20px;
+      }
+
+      .restart-book-btn {
+        margin-top: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 22px;
+        background: var(--lime);
+        color: #111412;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 700;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+      .restart-book-btn:hover {
+        transform: translateY(-2px);
+        background: #d8faa0;
+      }
+
+      /* ============================================================
+         CONTROLES INFERIORES DE NAVEGACIÓN
+         ============================================================ */
+      .book-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 24px;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .book-nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 44px;
+        padding: 0 20px;
+        background: var(--ink);
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+      }
+
+      .book-nav-btn:hover:not(:disabled) {
+        background: #343a36;
+        transform: translateY(-2px);
+      }
+
+      .book-nav-btn:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      .book-counter {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink);
+        background: #ffffff;
+        border: 1px solid var(--line);
+        padding: 9px 18px;
+        border-radius: 4px;
+        min-width: 135px;
+        text-align: center;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      }
+
+      .jump-select {
+        height: 44px;
+        padding: 0 12px;
+        background: #ffffff;
+        color: var(--ink);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .keyboard-hint {
+        margin-top: 14px;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .keyboard-hint kbd {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        padding: 2px 7px;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+      }
+
+      /* Notificación flotante de copiado */
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        background: var(--ink);
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-family: var(--font-mono);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+        z-index: 100;
+      }
+      .toast.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsividad */
+      @media (max-width: 640px) {
+        .book-wrapper {
+          padding: 10px 10px 10px 20px;
+          height: clamp(520px, 78vh, 600px);
+        }
+        .quote-text {
+          font-size: 18.5px;
+          line-height: 1.45;
+        }
+        .prose-heading {
+          font-size: 19px;
+        }
+        .prose-body {
+          font-size: 15.5px;
+          line-height: 1.6;
+        }
+        .cover-frame {
+          padding: 22px 14px;
+        }
+        .book-controls {
+          gap: 8px;
+        }
+        .book-nav-btn {
+          padding: 0 14px;
+          font-size: 12px;
+        }
+        .book-counter {
+          min-width: 110px;
+          padding: 9px 12px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra superior con enlace a tu portafolio -->
+    <header class="book-topbar">
+      <a href="../index.html" class="back-to-portfolio" title="Volver a la página principal de tu portafolio">
+        <span aria-hidden="true">←</span> Volver al Portafolio
+      </a>
+      <div class="book-meta-badge">
+        <span class="status-indicator"></span>
+        <span>Samuel Camacho — Obra Viva</span>
+      </div>
+    </header>
+
+    <!-- Indicador de barra de lectura -->
+    <div class="reading-progress-track">
+      <div class="reading-progress-bar" id="reading-bar"></div>
+    </div>
+
+    <!-- ============================================================
+         COMPONENTE PRINCIPAL DEL LIBRO (Listo para anclar a tu portafolio)
+         ============================================================ -->
+    <main id="libro-componente">
+      <div class="book-wrapper">
+        <div class="book-ribbon" title="Marcador de página"></div>
+        
+        <div class="pages-viewport" id="pages-container">
+          
+          <!-- ============================================================
+               PÁGINA 0: PORTADA DEL LIBRO
+               ============================================================ -->
+          <article class="book-page page-cover active" data-page-index="0" data-page-title="Portada">
+            <div class="cover-frame">
+              <span class="cover-label">Antología de Pensamientos & Citas</span>
+              <h1 class="cover-title">EL SENTIMIENTO PROFUNDO DE UN <span>OSCURO AMOR</span></h1>
+              <p class="cover-subtitle">
+                La nostalgia, el desamor y los laberintos de quien entrega el corazón.
+              </p>
+              <div class="cover-divider"></div>
+              <p class="cover-signature">POR SAMUEL CAMACHO</p>
+              <button class="cover-start-hint" id="start-reading-btn">
+                Comenzar lectura <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 1
+               ============================================================ -->
+          <article class="book-page" data-page-index="1" data-page-title="El Laberinto">
+            <div class="page-header">
+              <span class="page-category">01 / Nostalgia</span>
+              <span class="page-number-top">N° 01</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                No sé por qué hoy, no sé por qué me siento perdido en un laberinto donde la nostalgia, la tristeza y el desamor me persiguen sin descanso y yo solo ignoro la salida.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('No sé por qué hoy, no sé por qué me siento perdido en un laberinto donde la nostalgia, la tristeza y el desamor me persiguen sin descanso y yo solo ignoro la salida. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 1</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 2
+               ============================================================ -->
+          <article class="book-page" data-page-index="2" data-page-title="Simples Letras">
+            <div class="page-header">
+              <span class="page-category">02 / Paisajes Lejanos</span>
+              <span class="page-number-top">N° 02</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Por más que explore otros paisajes el tuyo lo veo a la distancia, igual tú me enseñaste a escribir, porque de cierta forma te hacía feliz, ahora busco distraer mis pensamientos con la melancolía de mi vida escondida en unas simples letras.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Por más que explore otros paisajes el tuyo lo veo a la distancia, igual tú me enseñaste a escribir, porque de cierta forma te hacía feliz, ahora busco distraer mis pensamientos con la melancolía de mi vida escondida en unas simples letras. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 2</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 3
+               ============================================================ -->
+          <article class="book-page" data-page-index="3" data-page-title="El Humo">
+            <div class="page-header">
+              <span class="page-category">03 / Recuerdos</span>
+              <span class="page-number-top">N° 03</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Quiero amor estar en una pieza riéndonos de bobadas, pero todo desaparece en el humo que dejó tus recuerdos.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Quiero amor estar en una pieza riéndonos de bobadas, pero todo desaparece en el humo que dejó tus recuerdos. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 3</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 4
+               ============================================================ -->
+          <article class="book-page" data-page-index="4" data-page-title="La Luna">
+            <div class="page-header">
+              <span class="page-category">04 / Destello Nocturno</span>
+              <span class="page-number-top">N° 04</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Hoy la luna tiene una belleza deslumbrante, al solo quedarte viéndola te pierdes en su belleza algo parecido a lo que me sucede con vos.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Hoy la luna tiene una belleza deslumbrante, al solo quedarte viéndola te pierdes en su belleza algo parecido a lo que me sucede con vos. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 4</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 5
+               ============================================================ -->
+          <article class="book-page" data-page-index="5" data-page-title="Buen Corazón">
+            <div class="page-header">
+              <span class="page-category">05 / Realidad</span>
+              <span class="page-number-top">N° 05</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                La vida es incierta, ser un joven de buen corazón en este mundo está mal, las personas no valoran lo que uno puede dar, pero porque no eres la persona de la que ellos esperan recibirlo.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('La vida es incierta, ser un joven de buen corazón en este mundo está mal, las personas no valoran lo que uno puede dar, pero porque no eres la persona de la que ellos esperan recibirlo. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 5</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 6
+               ============================================================ -->
+          <article class="book-page" data-page-index="6" data-page-title="El Error Más Grande">
+            <div class="page-header">
+              <span class="page-category">06 / El Sentimiento</span>
+              <span class="page-number-top">N° 06</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                El amor existe o solo es un sentimiento que debemos experimentar un ser humano para sentir cómo laten dos corazones sobre estimulados, al final es lo más bonito y el error más grande que cometemos al sentirlo.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('El amor existe o solo es un sentimiento que debemos experimentar un ser humano para sentir cómo laten dos corazones sobre estimulados, al final es lo más bonito y el error más grande que cometemos al sentirlo. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 6</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 7
+               ============================================================ -->
+          <article class="book-page" data-page-index="7" data-page-title="Habitación de Espejos">
+            <div class="page-header">
+              <span class="page-category">07 / Entrega Total</span>
+              <span class="page-number-top">N° 07</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Soy de las personas que le meten corazón cuando la otra esté dispuesta a recibirlo, aun sabiendo que te lo devuelven roto volviendo a aquella habitación llena de espejos que son tus recuerdos llenos de remordimiento al final qué más da entregarlo todo, aunque diga tu corazón que te faltó dar más siempre lo terminas dando todo.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Soy de las personas que le meten corazón cuando la otra esté dispuesta a recibirlo, aun sabiendo que te lo devuelven roto volviendo a aquella habitación llena de espejos que son tus recuerdos llenos de remordimiento al final qué más da entregarlo todo, aunque diga tu corazón que te faltó dar más siempre lo terminas dando todo. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 7</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 8
+               ============================================================ -->
+          <article class="book-page" data-page-index="8" data-page-title="Tu Estrella">
+            <div class="page-header">
+              <span class="page-category">08 / Destino & Cielo</span>
+              <span class="page-number-top">N° 08</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Si la vida al principio nos destinó a estar juntos, también nos tendrá destinado un reencuentro, al final veo la estrella para pensar en vos, te diría que tiene un nombre, pero realmente se ganó el tuyo.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Si la vida al principio nos destinó a estar juntos, también nos tendrá destinado un reencuentro, al final veo la estrella para pensar en vos, te diría que tiene un nombre, pero realmente se ganó el tuyo. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 8</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 9
+               ============================================================ -->
+          <article class="book-page" data-page-index="9" data-page-title="Dame Calma">
+            <div class="page-header">
+              <span class="page-category">09 / Anhelo</span>
+              <span class="page-number-top">N° 09</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Dame calma en vez de hacer que la pierda, detesto estar en mi cama y desear el calor de tu piel.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Dame calma en vez de hacer que la pierda, detesto estar en mi cama y desear el calor de tu piel. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 9</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 10
+               ============================================================ -->
+          <article class="book-page" data-page-index="10" data-page-title="Bajo la Noche">
+            <div class="page-header">
+              <span class="page-category">10 / En Palabras Sencillas</span>
+              <span class="page-number-top">N° 10</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Entre un montón de estrellas viéndonos constantemente, sintiendo el silencio de la noche, está aquella que brilla con intensidad, esa luna con esa belleza eres tú, espero poder ser quien aclare tus dudas, acompañarte y que brilles en mi mundo, en palabras sencillas que tú me puedas amar, que quieras mis besos a mitad de la noche, que sea lo mejor para ti.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Entre un montón de estrellas viéndonos constantemente, sintiendo el silencio de la noche, está aquella que brilla con intensidad, esa luna con esa belleza eres tú, espero poder ser quien aclare tus dudas, acompañarte y que brilles en mi mundo, en palabras sencillas que tú me puedas amar, que quieras mis besos a mitad de la noche, que sea lo mejor para ti. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 10</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 11
+               ============================================================ -->
+          <article class="book-page" data-page-index="11" data-page-title="La Gran Mentira">
+            <div class="page-header">
+              <span class="page-category">11 / Desengaño</span>
+              <span class="page-number-top">N° 11</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Tuyo la mentira más grande que ha tenido mi corazón hacia vos, qué mal que al final resultamos siendo las mismas porquerías.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Tuyo la mentira más grande que ha tenido mi corazón hacia vos, qué mal que al final resultamos siendo las mismas porquerías. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 11</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 12
+               ============================================================ -->
+          <article class="book-page" data-page-index="12" data-page-title="Destino Irónico">
+            <div class="page-header">
+              <span class="page-category">12 / Ironía</span>
+              <span class="page-number-top">N° 12</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text">
+                Qué bárbaro llegar al punto de que te interese la persona que menos le importes, mi destino es estar solo sabes, ya que no te amo, pero te sigo pensando qué irónica es mi vida.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Qué bárbaro llegar al punto de que te interese la persona que menos le importes, mi destino es estar solo sabes, ya que no te amo, pero te sigo pensando qué irónica es mi vida. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 12</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 13 (REFLEXIÓN EXTENSA / PROSA)
+               ============================================================ -->
+          <article class="book-page" data-page-index="13" data-page-title="Morir de Amor">
+            <div class="page-header">
+              <span class="page-category">13 / Reflexión I</span>
+              <span class="page-number-top">N° 13</span>
+            </div>
+
+            <div class="prose-container">
+              <span class="prose-badge">Reflexión Profunda</span>
+              <h2 class="prose-heading">“Lo malo de morir por amor es que no te mueres”</h2>
+              <p class="prose-body">
+                Vivimos en una ideología del amor en la cual mentimos y nos mentimos al decir que nos moriríamos de amor por una persona, cuando llega al punto de la verdad nadie muere de amor solo termina en un colapso en el cual piensa no volver a experimentar dicho sentimiento, el hombre prefiere entregarlo todo con una persona y morir sintiendo el mismo sentimiento de inicio a fin, lo malo es que vamos a morir de amor constantemente no por una sino por muchas, nada es eterno todo tiene un final así como un cuaderno.
+              </p>
+              <span class="prose-author-tag">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('“Lo malo de morir por amor es que no te mueres” — Vivimos en una ideología del amor en la cual mentimos y nos mentimos al decir que nos moriríamos de amor por una persona... — Samuel Camacho')">
+                <span>📋</span> Copiar texto
+              </button>
+              <span>Pág. 13</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 14 (REFLEXIÓN EXTENSA / PROSA)
+               ============================================================ -->
+          <article class="book-page" data-page-index="14" data-page-title="Conexión de Cuerpos">
+            <div class="page-header">
+              <span class="page-category">14 / Reflexión II</span>
+              <span class="page-number-top">N° 14</span>
+            </div>
+
+            <div class="prose-container">
+              <span class="prose-badge">Reflexión Profunda</span>
+              <h2 class="prose-heading">“Por qué la conexión al unirse dos cuerpos es más fuerte que el amor que sentimos”</h2>
+              <p class="prose-body">
+                El amor es un bucle de sentimientos los cuales afectan al ser humano, al inicio todo es bello pero es más fuerte cuando el “amor” se expresa en una sensación o en una relación sexual, puede que lo que sientas con una sea más fuerte que con otras, te quedas con alguien solo por cómo te sentís no por lo que realmente sientes, o como lo llamamos costumbre, me puedo olvidar de tu cara y nombre, pero no puedo olvidarme de tu cuerpo, aunque se niegue dos personas separadas siempre las van a unir sus recuerdos sexuales que sus momentos de amor, porque amor sentí por muchas pero placer verdadero con una.
+              </p>
+              <span class="prose-author-tag">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('“Por qué la conexión al unirse dos cuerpos es más fuerte que el amor que sentimos” — El amor es un bucle de sentimientos... amor sentí por muchas pero placer verdadero con una. — Samuel Camacho')">
+                <span>📋</span> Copiar texto
+              </button>
+              <span>Pág. 14</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 15 (REFLEXIÓN EXTENSA / PROSA)
+               ============================================================ -->
+          <article class="book-page" data-page-index="15" data-page-title="La Cuerda Floja">
+            <div class="page-header">
+              <span class="page-category">15 / Reflexión III</span>
+              <span class="page-number-top">N° 15</span>
+            </div>
+
+            <div class="prose-container">
+              <span class="prose-badge">Reflexión Profunda</span>
+              <h2 class="prose-heading">“El que ama como nunca pierde como siempre”</h2>
+              <p class="prose-body">
+                Una persona que entrega su corazón sin escudos da un arma de doble filo, entregas el poder de destruir tu corazón a alguien en el cual confías, cuando eso sucede no te importa el trato que te dan. Te volvés ciego a lo que es obvio, sordo a las advertencias e impulsivo de corazón, seguir tu corazón es caminar en una cuerda floja siempre va a llegar el momento que sentís que te caes, aunque sigas avanzando el sentimiento te perseguirá constantemente, amar es hermoso, pero para un sobrepensador son ideas constantes de sufrimiento constante.
+              </p>
+              <span class="prose-author-tag">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('“El que ama como nunca pierde como siempre” — Una persona que entrega su corazón sin escudos da un arma de doble filo... amar es hermoso, pero para un sobrepensador son ideas constantes de sufrimiento constante. — Samuel Camacho')">
+                <span>📋</span> Copiar texto
+              </button>
+              <span>Pág. 15</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 16 (EPÍLOGO / SENTIMIENTO FINAL)
+               ============================================================ -->
+          <article class="book-page" data-page-index="16" data-page-title="Epílogo">
+            <div class="page-header">
+              <span class="page-category">16 / Epílogo</span>
+              <span class="page-number-top">N° 16</span>
+            </div>
+
+            <div class="quote-container">
+              <span class="quote-symbol">“</span>
+              <p class="quote-text" style="font-weight: 600; color: #161a18;">
+                Al final te dejan por ser buen hombre o mujer, pero realmente es porque das el amor que esa persona desearía recibir, pero no de ti.
+              </p>
+              <span class="quote-author">Samuel Camacho</span>
+            </div>
+
+            <div class="page-footer">
+              <button class="copy-quote-btn" onclick="copyText('Al final te dejan por ser buen hombre o mujer pero realmente es porque das el amor que esa persona desearía recibir, pero no de ti. — Samuel Camacho')">
+                <span>📋</span> Copiar frase
+              </button>
+              <span>Pág. 16</span>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               PÁGINA 17: CONTRAPORTADA (Cierre del Cuaderno)
+               ============================================================ -->
+          <article class="book-page page-back-cover" data-page-index="17" data-page-title="Contraportada">
+            <div class="back-cover-box">
+              <span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; color: var(--lime);">
+                FIN DEL PRIMER CUADERNO
+              </span>
+              <h3 style="font-family: var(--font-display); font-size: 24px; font-weight: 800; color: #ffffff;">
+                EL SENTIMIENTO PROFUNDO DE UN OSCURO AMOR
+              </h3>
+              <p style="font-family: var(--font-serif); font-style: italic; color: #a4aaa6; max-width: 440px; font-size: 16px; line-height: 1.5;">
+                «Nada es eterno todo tiene un final así como un cuaderno.»
+              </p>
+              <span style="font-family: var(--font-mono); font-size: 12px; color: #ffffff; opacity: 0.7;">
+                — SAMUEL CAMACHO —
+              </span>
+              <button class="restart-book-btn" id="restart-book-btn">
+                <span>↺</span> Volver a la portada
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Navegación entre páginas -->
+      <nav class="book-controls" aria-label="Navegación del libro">
+        <button id="prev-page-btn" class="book-nav-btn" disabled aria-label="Página anterior">
+          <span aria-hidden="true">←</span> Anterior
+        </button>
+
+        <div id="page-counter" class="book-counter" aria-live="polite">
+          Portada
+        </div>
+
+        <select id="jump-select" class="jump-select" aria-label="Saltar directamente a una página">
+          <!-- Opciones pobladas dinámicamente -->
+        </select>
+
+        <button id="next-page-btn" class="book-nav-btn" aria-label="Página siguiente">
+          Siguiente <span aria-hidden="true">→</span>
+        </button>
+      </nav>
+
+      <p class="keyboard-hint">
+        Navega con las teclas <kbd>←</kbd> y <kbd>→</kbd> · Desliza en celular
+      </p>
+    </main>
+
+    <!-- Notificación emergente Toast -->
+    <div id="toast" class="toast">Texto copiado al portapapeles</div>
+
+    <!-- Footer minimalista -->
+    <footer style="margin-top: 26px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); text-align: center;">
+      El sentimiento profundo de un oscuro amor · Samuel Camacho
+    </footer>
+
+    <!-- ============================================================
+         SCRIPT DEL MOTOR DEL LIBRO
+         ============================================================ -->
+    <script>
+      (function () {
+        const pages = document.querySelectorAll(".book-page");
+        const prevBtn = document.getElementById("prev-page-btn");
+        const nextBtn = document.getElementById("next-page-btn");
+        const counter = document.getElementById("page-counter");
+        const jumpSelect = document.getElementById("jump-select");
+        const readingBar = document.getElementById("reading-bar");
+        const startBtn = document.getElementById("start-reading-btn");
+        const restartBtn = document.getElementById("restart-book-btn");
+        
+        let currentPage = 0;
+        const totalPages = pages.length;
+
+        // Poblar el menú desplegable de páginas
+        pages.forEach((page, idx) => {
+          const opt = document.createElement("option");
+          opt.value = idx;
+          const title = page.getAttribute("data-page-title") || `Página ${idx}`;
+          opt.textContent = idx === 0 ? "Portada" : (idx === totalPages - 1 ? "Contraportada" : `Pág. ${idx}: ${title}`);
+          jumpSelect.appendChild(opt);
+        });
+
+        function updateBookState() {
+          pages.forEach((page, idx) => {
+            if (idx === currentPage) {
+              page.classList.add("active");
+              page.scrollTop = 0; // Regresar al inicio del scroll interno
+            } else {
+              page.classList.remove("active");
+            }
+          });
+
+          // Estado de los botones
+          prevBtn.disabled = currentPage === 0;
+          nextBtn.disabled = currentPage === totalPages - 1;
+
+          // Etiqueta del contador
+          if (currentPage === 0) {
+            counter.textContent = "Portada";
+          } else if (currentPage === totalPages - 1) {
+            counter.textContent = "Contraportada";
+          } else {
+            counter.textContent = `Pág. ${currentPage} de ${totalPages - 2}`;
+          }
+
+          // Actualizar barra de progreso
+          const progressPercent = (currentPage / (totalPages - 1)) * 100;
+          readingBar.style.width = `${progressPercent}%`;
+
+          // Sincronizar select
+          jumpSelect.value = currentPage;
+        }
+
+        prevBtn.addEventListener("click", () => {
+          if (currentPage > 0) {
+            currentPage--;
+            updateBookState();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentPage < totalPages - 1) {
+            currentPage++;
+            updateBookState();
+          }
+        });
+
+        jumpSelect.addEventListener("change", (e) => {
+          currentPage = parseInt(e.target.value, 10);
+          updateBookState();
+        });
+
+        if (startBtn) {
+          startBtn.addEventListener("click", () => {
+            currentPage = 1;
+            updateBookState();
+          });
+        }
+
+        if (restartBtn) {
+          restartBtn.addEventListener("click", () => {
+            currentPage = 0;
+            updateBookState();
+          });
+        }
+
+        // Navegación con teclado
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft" && currentPage > 0) {
+            currentPage--;
+            updateBookState();
+          } else if (e.key === "ArrowRight" && currentPage < totalPages - 1) {
+            currentPage++;
+            updateBookState();
+          }
+        });
+
+        // Soporte táctil / Swipe para móviles
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const viewport = document.getElementById("pages-container");
+
+        viewport.addEventListener("touchstart", (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        viewport.addEventListener("touchend", (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          if (touchStartX - touchEndX > 50 && currentPage < totalPages - 1) {
+            currentPage++;
+            updateBookState();
+          } else if (touchEndX - touchStartX > 50 && currentPage > 0) {
+            currentPage--;
+            updateBookState();
+          }
+        }, { passive: true });
+
+        updateBookState();
+      })();
+
+      // Función para copiar texto al portapapeles con mensaje toast
+      function copyText(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast("Frase copiada al portapapeles 📋");
+          }).catch(() => {
+            showToast("Texto listo para compartir");
+          });
+        } else {
+          showToast("Texto seleccionado");
+        }
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.classList.add("show");
+        setTimeout(() => {
+          toast.classList.remove("show");
+        }, 2400);
+      }
+    </script>
+  </body>
+</html>

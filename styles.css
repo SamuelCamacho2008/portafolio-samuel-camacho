@@ -94,6 +94,16 @@ h2 { margin-bottom: 0; font-size: clamp(37px, 4.4vw, 56px); line-height: 1.12; }
   border: 1px solid rgba(199, 243, 106, 0.45); 
   box-shadow: 14px 12px 0 -2px var(--orange);
 }
+.visual-a11y { background: #0c1a24; color: #38bdf8; }
+.visual-a11y .visual-mark { color: #38bdf8; font-weight: 700; }
+.visual-a11y .visual-shape {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #0284c7 0%, #0369a1 45%, #082f49 100%);
+  border: 2px solid rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+}
 .nav-book-link { color: var(--orange) !important; font-weight: 700 !important; }
 .nav-book-link:hover { opacity: 0.85; }
 .visual-mark { position: absolute; z-index: 1; top: 14px; left: 17px; font: 10px var(--mono); }
