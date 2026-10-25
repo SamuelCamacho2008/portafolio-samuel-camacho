@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Retail Scraper Playwright — Samuel Camacho</title>
+    <title>Retail Scraper Multi-Tienda (Éxito, Falabella & Jumbo) — Samuel Camacho</title>
     <meta
       name="description"
-      content="Retail Web Scraper con Playwright: Extractor inteligente y comparador de precios en tiempo real para Éxito y Falabella Colombia (LG & Samsung)."
+      content="Retail Web Scraper con Playwright: Extractor inteligente y comparador de precios en tiempo real para Éxito, Falabella y Jumbo Colombia (LG & Samsung)."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,8 @@
         --line: #e3e2db;
         --orange: #f26f50;
         --lime: #c7f36a;
+        --green: #15803d;
         --teal: #0284c7;
-        --teal-dark: #0369a1;
         --font-main: "DM Sans", system-ui, sans-serif;
         --font-mono: "DM Mono", monospace;
         --font-display: "Manrope", sans-serif;
@@ -50,7 +50,7 @@
         z-index: 50;
       }
       .topbar-inner {
-        max-width: 1100px;
+        max-width: 1150px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -85,14 +85,12 @@
       }
 
       .container {
-        max-width: 1100px;
+        max-width: 1150px;
         margin: 0 auto;
         padding: 40px 24px 80px;
       }
 
-      .project-header {
-        margin-bottom: 40px;
-      }
+      .project-header { margin-bottom: 35px; }
       .project-eyebrow {
         font: 12px var(--font-mono);
         color: var(--orange);
@@ -102,15 +100,15 @@
       }
       .project-title {
         font-family: var(--font-display);
-        font-size: clamp(32px, 5vw, 48px);
+        font-size: clamp(32px, 5vw, 46px);
         line-height: 1.15;
         margin: 0 0 16px;
         letter-spacing: -0.02em;
       }
       .project-lead {
-        font-size: 18px;
+        font-size: 17px;
         color: var(--muted);
-        max-width: 800px;
+        max-width: 860px;
         margin: 0 0 24px;
       }
 
@@ -118,7 +116,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-bottom: 32px;
+        margin-bottom: 30px;
       }
       .tag {
         background: var(--card-bg);
@@ -133,7 +131,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 16px;
-        margin-bottom: 48px;
+        margin-bottom: 40px;
       }
       .metric-card {
         background: var(--card-bg);
@@ -143,7 +141,7 @@
       }
       .metric-number {
         font-family: var(--font-display);
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 800;
         color: var(--orange);
         line-height: 1;
@@ -154,22 +152,64 @@
         color: var(--muted);
       }
 
-      .section-block {
-        margin-bottom: 48px;
+      /* LIVE BADGE */
+      .verified-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        color: #166534;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font: 13px var(--font-mono);
+        margin-bottom: 24px;
       }
-      .section-title {
-        font-family: var(--font-display);
-        font-size: 24px;
-        margin: 0 0 16px;
-        letter-spacing: -0.01em;
+      .verified-dot {
+        width: 8px;
+        height: 8px;
+        background: #22c55e;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
       }
 
+      /* TABS NAVIGATION */
+      .tabs-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 12px;
+      }
+      .tab-btn {
+        background: transparent;
+        border: 1px solid var(--line);
+        padding: 10px 18px;
+        border-radius: 6px;
+        font: 13px var(--font-mono);
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--muted);
+        transition: all 0.2s ease;
+      }
+      .tab-btn:hover {
+        background: var(--card-bg);
+        color: var(--ink);
+      }
+      .tab-btn.active {
+        background: var(--ink);
+        color: #ffffff;
+        border-color: var(--ink);
+      }
+
+      /* TABLES */
       .table-card {
         background: var(--card-bg);
         border: 1px solid var(--line);
         border-radius: 8px;
         overflow: hidden;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
       }
       .table-responsive {
         width: 100%;
@@ -183,7 +223,7 @@
       }
       th {
         background: #fbfbfa;
-        padding: 12px 16px;
+        padding: 14px 16px;
         font: 12px var(--font-mono);
         color: var(--muted);
         text-transform: uppercase;
@@ -198,6 +238,19 @@
       tr:last-child td { border-bottom: none; }
       tr:hover td { background: #fafaf8; }
 
+      .badge-winner {
+        background: #fef3c7;
+        color: #92400e;
+        border: 1px solid #fde68a;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font: 11px var(--font-mono);
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+
       .badge-store {
         display: inline-block;
         padding: 2px 8px;
@@ -207,11 +260,16 @@
       }
       .badge-exito { background: #fff0eb; color: #d03b0d; }
       .badge-falabella { background: #eaf6ea; color: #1c7c25; }
+      .badge-jumbo { background: #eff6ff; color: #1d4ed8; }
 
       .price-tag {
         font-family: var(--font-mono);
         font-weight: 700;
         color: var(--ink);
+      }
+      .price-muted {
+        color: #9ca3af;
+        font-style: italic;
       }
       .product-link {
         color: var(--orange);
@@ -222,6 +280,14 @@
         gap: 4px;
       }
       .product-link:hover { text-decoration: underline; }
+
+      .section-block { margin-bottom: 48px; }
+      .section-title {
+        font-family: var(--font-display);
+        font-size: 24px;
+        margin: 0 0 16px;
+        letter-spacing: -0.01em;
+      }
 
       .code-card {
         background: #191c1d;
@@ -234,8 +300,6 @@
         line-height: 1.6;
       }
       .code-comment { color: #8e948c; }
-      .code-keyword { color: #f26f50; }
-      .code-string { color: #c7f36a; }
 
       .feature-grid {
         display: grid;
@@ -264,7 +328,7 @@
     <header class="topbar">
       <div class="topbar-inner">
         <a class="back-link" href="../index.html">← Volver al portafolio</a>
-        <a class="github-btn" href="https://github.com/SamuelCamacho2008" target="_blank" rel="noopener">
+        <a class="github-btn" href="https://github.com/SamuelCamacho2008/portafolio-samuel-camacho" target="_blank" rel="noopener">
           <span>GitHub</span> ↗
         </a>
       </div>
@@ -272,168 +336,280 @@
 
     <main class="container">
       <div class="project-header">
-        <div class="project-eyebrow">AUTOMATIZACIÓN &amp; WEB SCRAPING · 2026</div>
-        <h1 class="project-title">Retail Scraper Playwright — Éxito &amp; Falabella</h1>
+        <div class="project-eyebrow">AUTOMATIZACIÓN &amp; E-COMMERCE INTELLIGENCE · 2026</div>
+        <h1 class="project-title">Retail Scraper Multi-Tienda — Éxito, Falabella &amp; Jumbo</h1>
         <p class="project-lead">
-          Extractor inteligente y comparador de precios en tiempo real para las cadenas líderes de comercio electrónico en Colombia. Navegación en SPAs complejas (VTEX FastStore y Next.js), normalización técnica de televisores LG y Samsung, y filtrado automatizado por pulgadas y especificaciones.
+          Extractor inteligente y comparador de precios en tiempo real para las 3 cadenas líderes de retail en Colombia (Éxito, Falabella y Jumbo). Automatización Headless con Playwright, discriminación exclusiva de marcas LG y Samsung, extracción por tamaños (43" a 65") y actualización automática programada en la nube con GitHub Actions.
         </p>
 
         <div class="tags-bar">
           <span class="tag">Python 3</span>
           <span class="tag">Playwright Headless</span>
-          <span class="tag">Chromium Automation</span>
+          <span class="tag">GitHub Actions CI/CD</span>
           <span class="tag">VTEX FastStore</span>
           <span class="tag">Next.js SPA</span>
-          <span class="tag">Regex Parsing</span>
-          <span class="tag">E-Commerce Intelligence</span>
+          <span class="tag">VTEX IO</span>
+          <span class="tag">Dynamic Tables JS</span>
+          <span class="tag">LG &amp; Samsung</span>
         </div>
       </div>
 
       <div class="metrics-grid">
         <div class="metric-card">
-          <div class="metric-number">2</div>
+          <div class="metric-number">3</div>
           <div class="metric-label">Grandes retailers sincronizados</div>
         </div>
         <div class="metric-card">
-          <div class="metric-number">100%</div>
-          <div class="metric-label">Filtrado LG &amp; Samsung sin accesorios</div>
-        </div>
-        <div class="metric-card">
           <div class="metric-number">6</div>
-          <div class="metric-label">Scripts dedicados por tamaño de pantalla</div>
+          <div class="metric-label">Tamaños analizados (43" a 65")</div>
         </div>
         <div class="metric-card">
-          <div class="metric-number">&lt; 15s</div>
-          <div class="metric-label">Tiempo promedio de extracción multitienda</div>
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Filtro anti-accesorios y proyectores</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">24/7</div>
+          <div class="metric-label">Actualización automática programada</div>
         </div>
       </div>
 
-      <!-- SECCIÓN 1: ÉXITO POR TAMAÑOS -->
+      <!-- SECCIÓN DINÁMICA -->
       <section class="section-block">
-        <h2 class="section-title">Resultados Éxito Colombia: El más barato por tamaño</h2>
-        <p style="color: var(--muted); margin-bottom: 20px;">
-          Extracción dirigida a las medidas solicitadas (43", 50", 55", 58", 60" y 65"), discriminando marcas líderes (LG y Samsung) y ordenadas por precio final ascendente.
-        </p>
+        <div class="verified-badge">
+          <span class="verified-dot"></span>
+          <span>Precios verificados: <strong id="verification-date">25 de octubre de 2026, 01:51 PM</strong></span>
+        </div>
+
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" data-tab="comparativa">📊 Comparativa 3 Tiendas</button>
+          <button class="tab-btn" data-tab="exito">🔴 Éxito Colombia</button>
+          <button class="tab-btn" data-tab="falabella">🟢 Falabella Colombia</button>
+          <button class="tab-btn" data-tab="jumbo">🔵 Jumbo Colombia</button>
+        </div>
 
         <div class="table-card">
-          <div class="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th>Tamaño</th>
-                  <th>Marca</th>
-                  <th>Precio Final</th>
-                  <th>Tecnología</th>
-                  <th>Modelo / Título</th>
-                  <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>43"</strong></td>
-                  <td>LG</td>
-                  <td class="price-tag">$901.928</td>
-                  <td>LED, Full HD, Smart TV</td>
-                  <td>Televisor LG 43" LED Full HD Smart TV 43LM6370PDB</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-                <tr>
-                  <td><strong>50"</strong></td>
-                  <td>Samsung</td>
-                  <td class="price-tag">$1.099.900</td>
-                  <td>Mini LED, Full HD, Smart TV</td>
-                  <td>Televisor Samsung 50" Mini LED FHD Smart TV UN50M60HAKXZL</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-                <tr>
-                  <td><strong>55"</strong></td>
-                  <td>LG</td>
-                  <td class="price-tag">$1.653.903</td>
-                  <td>LED, 4K UHD, Smart TV</td>
-                  <td>Televisor LG 55" LED UHD 4K Smart TV 55NU830BPSA</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-                <tr>
-                  <td><strong>58"</strong></td>
-                  <td>Samsung</td>
-                  <td class="price-tag">$1.399.901</td>
-                  <td>LED, 4K UHD, Smart TV</td>
-                  <td>Televisor Samsung 58" LED UHD 4K Smart TV UN58U8000HKXZL</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000hkxzl-3254967/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-                <tr>
-                  <td><strong>60"</strong></td>
-                  <td>LG</td>
-                  <td class="price-tag">$1.799.900</td>
-                  <td>LED, 4K UHD, Smart TV</td>
-                  <td>Televisor LG 60" LED UHD 4K Smart TV 60UA7500PSA</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-60-pulgadas-led-uhd-4k-smart-tv-60ua7500psaawc-3221488/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-                <tr>
-                  <td><strong>65"</strong></td>
-                  <td>Samsung</td>
-                  <td class="price-tag">$1.799.900</td>
-                  <td>LED, 4K UHD, Smart TV</td>
-                  <td>Televisor Samsung 65" LED UHD 4K Smart TV UN65U8000HKXZL</td>
-                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="table-responsive" id="table-container">
+            <!-- La tabla se renderiza dinámicamente con JavaScript -->
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN 2: ARQUITECTURA TÉCNICA -->
+      <!-- ARQUITECTURA -->
       <section class="section-block">
         <h2 class="section-title">Arquitectura e Innovación Técnica</h2>
         <div class="feature-grid">
           <div class="feature-card">
-            <h3>Navegación Robusta en SPAs</h3>
+            <h3>SPAs Complejas &amp; Rendering Híbrido</h3>
             <p>
-              Tanto Éxito (VTEX FastStore) como Falabella (Next.js) utilizan renderizado reactivo con hydration en el cliente. El script utiliza Playwright sincronizado con <code>networkidle</code> y parámetros de facetado nativos para evitar bloqueos y paginaciones lentas.
+              Manejo simultáneo de arquitecturas modernas: <strong>VTEX FastStore</strong> (Éxito), <strong>Next.js SPA</strong> con JSON embebido (Falabella) y <strong>VTEX IO</strong> (Jumbo). Sincronización inteligente sin bloqueos de red ni timeouts.
             </p>
           </div>
           <div class="feature-card">
-            <h3>Extracción Híbrida JSON + DOM</h3>
+            <h3>Actualización Continua con GitHub Actions</h3>
             <p>
-              Falabella embebe los metadatos completos en <code>__NEXT_DATA__</code>, permitiendo una extracción atómica y veloz. Para Éxito, se combina evaluación de árbol DOM y clases predictivas de precio regular vs descuento.
+              Un workflow automatizado en la nube ejecuta el scraper de Playwright a diario (cron job), detecta fluctuaciones de precios, actualiza el JSON estructurado y republica el portafolio en GitHub Pages sin intervención humana.
             </p>
           </div>
           <div class="feature-card">
-            <h3>Filtros Semánticos &amp; Anti-Accesorios</h3>
+            <h3>Normalización &amp; Heurística de Datos</h3>
             <p>
-              Evita falsos positivos habituales en búsquedas de e-commerce (bases de pared, cables HDMI, controles remotos o proyectores portátiles), verificando tokens clave y normalizando pulgadas con expresiones regulares.
+              Parsing regex para extraer tamaño en pulgadas, tipo de panel (OLED, QNED, Mini LED, Crystal UHD) y resolución (4K, FHD), descartando automáticamente falsos positivos como proyectores o soportes de pared.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN 3: EJECUCIÓN -->
+      <!-- COMANDOS -->
       <section class="section-block">
-        <h2 class="section-title">Instrucciones de Ejecución</h2>
+        <h2 class="section-title">Guía de Ejecución Local</h2>
         <div class="code-card">
-<span class="code-comment"># 1. Clonar y preparar entorno</span>
-py -m pip install playwright
-py -m playwright install chromium
+<span class="code-comment"># 1. Ejecutar el comparador completo de las 3 tiendas (Éxito, Falabella y Jumbo)</span>
+py retail_scraper_3_tiendas.py
 
-<span class="code-comment"># 2. Ejecutar comparador general multitienda (Top 10)</span>
-py scraper_tv.py
+<span class="code-comment"># 2. Ejecutar individualmente por tienda (ej. Éxito para todos los tamaños)</span>
+py exito_tv_todos.py
 
-<span class="code-comment"># 3. Filtrar de 50 pulgadas en adelante</span>
-py scraper_tv.py --min-inches 50
-
-<span class="code-comment"># 4. Ejecutar por tamaño individual en Éxito</span>
+<span class="code-comment"># 3. Ejecutar por tamaño específico en Éxito</span>
 py exito_tv_43.py
 py exito_tv_50.py
 py exito_tv_55.py
 py exito_tv_58.py
 py exito_tv_60.py
 py exito_tv_65.py
-
-<span class="code-comment"># 5. Ejecutar todos los tamaños en Éxito y exportar CSV/JSON</span>
-py exito_tv_todos.py
         </div>
       </section>
     </main>
+
+    <script>
+      // Dataset embebido por defecto (fallback instantáneo si no hay servidor HTTP)
+      const DATASET = {
+        "fecha_verificacion": "25 de octubre de 2026, 01:51 PM",
+        "tiendas": {
+          "exito": {
+            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$901.928", "tecnologia": "LED, Full HD, Smart TV", "titulo": "Televisor LG 43\" LED Full HD Smart TV 43LM6370PDB", "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" },
+            "50": { "marca": "Samsung", "pulgadas": "50\"", "precio_formateado": "$1.099.900", "tecnologia": "Mini LED, Full HD, Smart TV", "titulo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL", "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" },
+            "55": { "marca": "LG", "pulgadas": "55\"", "precio_formateado": "$1.653.903", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor LG 55\" LED UHD 4K Smart TV 55NU830BPSA", "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p" },
+            "58": { "marca": "Samsung", "pulgadas": "58\"", "precio_formateado": "$1.399.901", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor SAMSUNG 58\" LED UHD 4K Smart TV UN58U8000HKXZL", "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000hkxzl-3254967/p" },
+            "60": { "marca": "LG", "pulgadas": "60\"", "precio_formateado": "$1.799.900", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor LG 60\" LED UHD 4K Smart TV 60UA7500PSA", "enlace": "https://www.exito.com/televisor-lg-60-pulgadas-led-uhd-4k-smart-tv-60ua7500psaawc-3221488/p" },
+            "65": { "marca": "Samsung", "pulgadas": "65\"", "precio_formateado": "$1.799.900", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor SAMSUNG 65\" LED UHD 4K Smart TV UN65U8000HKXZL", "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p" }
+          },
+          "falabella": {
+            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$1.019.900", "tecnologia": "Full HD, Smart TV", "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM", "enlace": "https://www.falabella.com.co/falabella-co/product/122415278/televisor-lg-43-pulgadas-smart-tv-full-hd-43lm" },
+            "50": { "marca": "Samsung", "pulgadas": "50\"", "precio_formateado": "$1.339.900", "tecnologia": "Mini LED, Smart TV", "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl" },
+            "55": { "marca": "Samsung", "pulgadas": "55\"", "precio_formateado": "$1.499.900", "tecnologia": "4K UHD, Smart TV", "titulo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl" },
+            "58": { "marca": "LG", "pulgadas": "58\"", "precio_formateado": "$1.499.900", "tecnologia": "NanoCell, 4K UHD, webOS", "titulo": "Televisor 58 pulgadas NANO 4K UHD webOS 58UQ", "enlace": "https://www.falabella.com.co/falabella-co/product/158570932/televisor-lg-50-pulgadas-50nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic" },
+            "60": null,
+            "65": { "marca": "Samsung", "pulgadas": "65\"", "precio_formateado": "$1.899.900", "tecnologia": "Crystal UHD, 4K UHD", "titulo": "Televisor Samsung 65 Pulgadas Crystal 4K UN65U8500", "enlace": "https://www.falabella.com.co/falabella-co/product/156478250/televisor-smart-55-pulgadas-crystal-uhd-4k-u8500h" }
+          },
+          "jumbo": {
+            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$1.349.900", "tecnologia": "NanoCell, 4K UHD, Smart TV", "titulo": "Smart TV UHD Nano 4K 43\" LG 43NU800BPSC", "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p" },
+            "50": { "marca": "LG", "pulgadas": "50\"", "precio_formateado": "$1.599.900", "tecnologia": "NanoCell, 4K UHD, Smart TV", "titulo": "Smart TV Nano UHD 4K 50\" LG 50NU855BPSA", "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p" },
+            "55": { "marca": "LG", "pulgadas": "55\"", "precio_formateado": "$1.899.900", "tecnologia": "QNED, Mini LED, 4K UHD", "titulo": "Smart TV QNED 4K UHD Miniled 55\" LG 55QNED74BSA", "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p" },
+            "58": null,
+            "60": null,
+            "65": { "marca": "LG", "pulgadas": "65\"", "precio_formateado": "$2.199.900", "tecnologia": "NanoCell, 4K Ultra HD", "titulo": "Smart TV 4K Ultra HD Nano 65\" LG 65NU850BPSA", "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p" }
+          }
+        }
+      };
+
+      const SIZES = [43, 50, 55, 58, 60, 65];
+
+      function renderComparativa(data) {
+        let html = `
+          <table>
+            <thead>
+              <tr>
+                <th>Tamaño</th>
+                <th>Éxito Colombia</th>
+                <th>Falabella Colombia</th>
+                <th>Jumbo Colombia</th>
+                <th>Mejor Oferta (Ganador)</th>
+              </tr>
+            </thead>
+            <tbody>
+        `;
+
+        SIZES.forEach(s => {
+          const e = data.tiendas.exito[s];
+          const f = data.tiendas.falabella[s];
+          const j = data.tiendas.jumbo[s];
+
+          // Determinar ganador
+          const list = [
+            e ? { store: 'Éxito', ...e, num: parseInt(e.precio_formateado.replace(/[^0-9]/g, '')) } : null,
+            f ? { store: 'Falabella', ...f, num: parseInt(f.precio_formateado.replace(/[^0-9]/g, '')) } : null,
+            j ? { store: 'Jumbo', ...j, num: parseInt(j.precio_formateado.replace(/[^0-9]/g, '')) } : null
+          ].filter(Boolean);
+
+          const win = list.length ? list.reduce((min, curr) => curr.num < min.num ? curr : min, list[0]) : null;
+
+          html += `
+            <tr>
+              <td><strong>${s}"</strong></td>
+              <td>${e ? `<strong>${e.marca}</strong> <span class="price-tag">${e.precio_formateado}</span><br><a class="product-link" href="${e.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${f ? `<strong>${f.marca}</strong> <span class="price-tag">${f.precio_formateado}</span><br><a class="product-link" href="${f.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${j ? `<strong>${j.marca}</strong> <span class="price-tag">${j.precio_formateado}</span><br><a class="product-link" href="${j.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${win ? `<span class="badge-winner">🥇 ${win.store} (${win.marca} ${win.precio_formateado})</span>` : '<span class="price-muted">N/D</span>'}</td>
+            </tr>
+          `;
+        });
+
+        html += `</tbody></table>`;
+        return html;
+      }
+
+      function renderStore(data, storeKey, storeName) {
+        const storeData = data.tiendas[storeKey] || {};
+        let html = `
+          <table>
+            <thead>
+              <tr>
+                <th>Tamaño</th>
+                <th>Marca</th>
+                <th>Precio Final</th>
+                <th>Tecnología</th>
+                <th>Modelo / Título</th>
+                <th>Enlace</th>
+              </tr>
+            </thead>
+            <tbody>
+        `;
+
+        SIZES.forEach(s => {
+          const item = storeData[s];
+          if (item) {
+            html += `
+              <tr>
+                <td><strong>${item.pulgadas}</strong></td>
+                <td><strong>${item.marca}</strong></td>
+                <td class="price-tag">${item.precio_formateado}</td>
+                <td>${item.tecnologia}</td>
+                <td>${item.titulo}</td>
+                <td><a class="product-link" href="${item.enlace}" target="_blank" rel="noopener">Ver en ${storeName} ↗</a></td>
+              </tr>
+            `;
+          } else {
+            html += `
+              <tr>
+                <td><strong>${s}"</strong></td>
+                <td colspan="4" class="price-muted">Actualmente sin inventario LG / Samsung en este tamaño</td>
+                <td><span class="price-muted">—</span></td>
+              </tr>
+            `;
+          }
+        });
+
+        html += `</tbody></table>`;
+        return html;
+      }
+
+      function initApp() {
+        let currentData = DATASET;
+        const container = document.getElementById('table-container');
+        const dateEl = document.getElementById('verification-date');
+
+        // Intentar cargar la versión más reciente del JSON si está servido por HTTP
+        fetch('./tv-scraper/precios_retail_verificados.json')
+          .then(res => res.json())
+          .then(remoteData => {
+            if (remoteData && remoteData.tiendas) {
+              currentData = remoteData;
+              if (remoteData.fecha_verificacion) {
+                dateEl.textContent = remoteData.fecha_verificacion;
+              }
+              renderTab('comparativa');
+            }
+          })
+          .catch(() => {
+            // Usa el dataset embebido por defecto
+          });
+
+        function renderTab(tabKey) {
+          if (tabKey === 'comparativa') {
+            container.innerHTML = renderComparativa(currentData);
+          } else if (tabKey === 'exito') {
+            container.innerHTML = renderStore(currentData, 'exito', 'Éxito');
+          } else if (tabKey === 'falabella') {
+            container.innerHTML = renderStore(currentData, 'falabella', 'Falabella');
+          } else if (tabKey === 'jumbo') {
+            container.innerHTML = renderStore(currentData, 'jumbo', 'Jumbo');
+          }
+        }
+
+        // Event listeners para tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderTab(btn.getAttribute('data-tab'));
+          });
+        });
+
+        // Render inicial
+        renderTab('comparativa');
+      }
+
+      document.addEventListener('DOMContentLoaded', initApp);
+    </script>
   </body>
 </html>
