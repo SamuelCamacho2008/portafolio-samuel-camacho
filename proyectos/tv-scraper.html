@@ -6,7 +6,7 @@
     <title>Top 10 Televisores Más Baratos por Tienda (Éxito, Falabella, Jumbo) — Samuel Camacho</title>
     <meta
       name="description"
-      content="Clasificación de los 10 televisores más baratos de menor a mayor precio en Éxito, Falabella y Jumbo, cubriendo Samsung, LG e Hisense según sus pulgadas."
+      content="Comparativa y filtración interactiva por pulgadas (32, 40, 43, 50, 55, 58, 60 y 65) y marcas (Samsung, LG e Hisense) ordenadas de menor a mayor precio en Éxito, Falabella y Jumbo."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -88,7 +88,7 @@
         padding: 40px 24px 80px;
       }
 
-      .project-header { margin-bottom: 30px; }
+      .project-header { margin-bottom: 25px; }
       .project-eyebrow {
         font: 12px var(--font-mono);
         color: var(--orange);
@@ -108,21 +108,6 @@
         color: var(--muted);
         max-width: 860px;
         margin: 0 0 20px;
-      }
-
-      .tags-bar {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 25px;
-      }
-      .tag {
-        background: var(--card-bg);
-        border: 1px solid var(--line);
-        padding: 4px 12px;
-        border-radius: 100px;
-        font: 12px var(--font-mono);
-        color: var(--ink);
       }
 
       /* LIVE BADGE */
@@ -146,31 +131,89 @@
         box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
       }
 
+      /* PANEL DE CONTROL DE FILTRACIÓN */
+      .filter-panel {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 36px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      }
+      .filter-group {
+        margin-bottom: 14px;
+      }
+      .filter-group:last-child {
+        margin-bottom: 0;
+      }
+      .filter-label {
+        font: 11px var(--font-mono);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--muted);
+        letter-spacing: 0.05em;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .chips-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip-btn {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        color: var(--ink);
+        padding: 6px 14px;
+        border-radius: 100px;
+        font: 13px var(--font-mono);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .chip-btn:hover {
+        background: #eae9e4;
+        border-color: #cfceca;
+      }
+      .chip-btn.active {
+        background: var(--ink);
+        color: #ffffff;
+        border-color: var(--ink);
+      }
+      .filter-summary {
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px dashed var(--line);
+        font: 12px var(--font-mono);
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .filter-state-pill {
+        color: var(--orange);
+        font-weight: 700;
+      }
+
       /* QUICK JUMP */
       .jump-bar {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 36px;
-        padding: 14px 18px;
-        background: var(--card-bg);
-        border: 1px solid var(--line);
-        border-radius: 8px;
         align-items: center;
       }
-      .jump-label {
-        font: 12px var(--font-mono);
-        color: var(--muted);
-        text-transform: uppercase;
-        margin-right: 6px;
-      }
       .jump-btn {
-        background: var(--paper);
+        background: var(--card-bg);
         border: 1px solid var(--line);
         color: var(--ink);
         padding: 6px 14px;
         border-radius: 6px;
-        font: 13px var(--font-mono);
+        font: 12px var(--font-mono);
         text-decoration: none;
         font-weight: 600;
         transition: all 0.2s;
@@ -322,6 +365,13 @@
         text-overflow: ellipsis;
       }
 
+      .empty-row {
+        text-align: center;
+        padding: 28px 16px;
+        color: var(--muted);
+        font: 13px var(--font-mono);
+      }
+
       .product-link {
         color: var(--orange);
         text-decoration: none;
@@ -334,6 +384,7 @@
         background: #fff4ed;
         border: 1px solid #fed7aa;
         border-radius: 4px;
+        transition: all 0.15s ease;
       }
       .product-link:hover {
         background: var(--orange);
@@ -341,17 +392,27 @@
         border-color: var(--orange);
       }
 
-      .code-card {
-        background: #191c1d;
-        color: #f0f0eb;
+      .faq-card {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 20px;
-        font-family: var(--font-mono);
-        font-size: 13px;
-        overflow-x: auto;
-        line-height: 1.6;
+        padding: 24px;
+        margin-top: 48px;
       }
-      .code-comment { color: #8e948c; }
+      .faq-title {
+        font-family: var(--font-display);
+        font-size: 20px;
+        margin: 0 0 12px;
+      }
+      .faq-p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .faq-p strong {
+        color: var(--ink);
+      }
     </style>
   </head>
   <body>
@@ -369,19 +430,8 @@
         <div class="project-eyebrow">RETAIL WEB SCRAPING · 3 TIENDAS &amp; 3 MARCAS</div>
         <h1 class="project-title">Top 10 Televisores Más Baratos: Éxito, Falabella y Jumbo</h1>
         <p class="project-lead">
-          Tablas dinámicas ordenadas de <strong>menor a mayor precio</strong> para cada tienda, comparando las 3 marcas líderes (<strong>Samsung</strong>, <strong>LG</strong> e <strong>Hisense</strong>) y clasificadas según su tamaño en pulgadas.
+          Tablas dinámicas ordenadas de <strong>menor a mayor precio</strong> para cada tienda, comparando las 3 marcas líderes (<strong>Samsung</strong>, <strong>LG</strong> e <strong>Hisense</strong>) con filtrado instantáneo por pulgadas.
         </p>
-
-        <div class="tags-bar">
-          <span class="tag">Samsung</span>
-          <span class="tag">LG</span>
-          <span class="tag">Hisense</span>
-          <span class="tag">De Menor a Mayor Precio</span>
-          <span class="tag">Clasificación por Pulgadas</span>
-          <span class="tag">Éxito · Falabella · Jumbo</span>
-          <span class="tag">Playwright Headless</span>
-          <span class="tag">GitHub Actions CI/CD</span>
-        </div>
       </div>
 
       <div class="verified-badge">
@@ -389,12 +439,45 @@
         <span>Precios verificados: <strong id="verification-date">25 de octubre de 2026, 02:25 PM</strong></span>
       </div>
 
+      <!-- PANEL DE FILTROS POR PULGADAS Y MARCAS -->
+      <section class="filter-panel" aria-label="Filtros interactivos de televisores">
+        <div class="filter-group">
+          <div class="filter-label">📐 Filtrar por Tamaño en Pulgadas:</div>
+          <div class="chips-row" id="inch-chips">
+            <button class="chip-btn active" data-inch="all">⚡ Todos los Tamaños</button>
+            <button class="chip-btn" data-inch="32">32"</button>
+            <button class="chip-btn" data-inch="40">40"</button>
+            <button class="chip-btn" data-inch="43">43"</button>
+            <button class="chip-btn" data-inch="50">50"</button>
+            <button class="chip-btn" data-inch="55">55"</button>
+            <button class="chip-btn" data-inch="58">58"</button>
+            <button class="chip-btn" data-inch="60">60"</button>
+            <button class="chip-btn" data-inch="65">65"</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">🏷️ Filtrar por Marca:</div>
+          <div class="chips-row" id="brand-chips">
+            <button class="chip-btn active" data-brand="all">Todas las marcas</button>
+            <button class="chip-btn" data-brand="Samsung">🔴 Samsung</button>
+            <button class="chip-btn" data-brand="LG">🔵 LG</button>
+            <button class="chip-btn" data-brand="Hisense">🟢 Hisense</button>
+          </div>
+        </div>
+
+        <div class="filter-summary">
+          <span>Vista actual: <strong class="filter-state-pill" id="filter-state-text">Todos los tamaños (Top 10 de menor a mayor precio)</strong></span>
+          <span id="results-count-text">30 televisores en catálogo</span>
+        </div>
+      </section>
+
       <!-- BARRA DE ACCESO RÁPIDO A LAS 3 TABLAS -->
       <nav class="jump-bar" aria-label="Navegación rápida de tiendas">
-        <span class="jump-label">Saltar a:</span>
-        <a class="jump-btn" href="#tabla-exito">🔴 Éxito (Top 10)</a>
-        <a class="jump-btn" href="#tabla-falabella">🟢 Falabella (Top 10)</a>
-        <a class="jump-btn" href="#tabla-jumbo">🔵 Jumbo (Top 10)</a>
+        <span style="font: 12px var(--font-mono); color: var(--muted); margin-right: 6px;">Saltar a:</span>
+        <a class="jump-btn" href="#tabla-exito">🔴 Éxito Colombia</a>
+        <a class="jump-btn" href="#tabla-falabella">🟢 Falabella Colombia</a>
+        <a class="jump-btn" href="#tabla-jumbo">🔵 Jumbo Colombia</a>
       </nav>
 
       <!-- TABLA 1: ÉXITO -->
@@ -402,9 +485,9 @@
         <div class="store-header">
           <div class="store-title-group">
             <span class="store-pill store-pill-exito">Éxito Colombia</span>
-            <h2 class="store-heading">Top 10 Más Baratos en Éxito</h2>
+            <h2 class="store-heading">Televisores en Éxito</h2>
           </div>
-          <span class="store-sub">Ordenado de menor a mayor precio · Samsung, LG e Hisense</span>
+          <span class="store-sub" id="sub-exito">Ordenado de menor a mayor precio</span>
         </div>
 
         <div class="table-card">
@@ -419,9 +502,9 @@
         <div class="store-header">
           <div class="store-title-group">
             <span class="store-pill store-pill-falabella">Falabella Colombia</span>
-            <h2 class="store-heading">Top 10 Más Baratos en Falabella</h2>
+            <h2 class="store-heading">Televisores en Falabella</h2>
           </div>
-          <span class="store-sub">Ordenado de menor a mayor precio · Samsung, LG e Hisense</span>
+          <span class="store-sub" id="sub-falabella">Ordenado de menor a mayor precio</span>
         </div>
 
         <div class="table-card">
@@ -436,9 +519,9 @@
         <div class="store-header">
           <div class="store-title-group">
             <span class="store-pill store-pill-jumbo">Jumbo Colombia</span>
-            <h2 class="store-heading">Top 10 Más Baratos en Jumbo</h2>
+            <h2 class="store-heading">Televisores en Jumbo</h2>
           </div>
-          <span class="store-sub">Ordenado de menor a mayor precio · Samsung y LG</span>
+          <span class="store-sub" id="sub-jumbo">Ordenado de menor a mayor precio</span>
         </div>
 
         <div class="table-card">
@@ -448,61 +531,516 @@
         </div>
       </section>
 
-      <!-- COMANDOS DE EJECUCIÓN -->
-      <section class="store-block">
-        <h2 style="font-family: var(--font-display); font-size: 22px; margin-bottom: 12px;">Comandos para Ejecutar los Scrapers</h2>
-        <div class="code-card">
-<span class="code-comment"># Generar el dataset Top 10 de menor a mayor precio para las 3 tiendas</span>
-py build_top10_stores_dataset.py
-
-<span class="code-comment"># Ejecutar scraper multi-marca con Playwright</span>
-py retail_scraper_marcas.py
-        </div>
+      <!-- PREGUNTAS FRECUENTES Y AUTOMATIZACIÓN -->
+      <section class="faq-card">
+        <h3 class="faq-title">🔄 ¿Cada cuánto tiempo se actualizan los precios?</h3>
+        <p class="faq-p">
+          <strong>1. Actualización Diaria Automática (En la Nube):</strong> El comparador cuenta con un flujo continuo programado en <strong>GitHub Actions</strong> que se ejecuta <strong>todos los días a las 6:00 AM COT (11:00 UTC)</strong> sin necesidad de mantener el computador encendido.
+        </p>
+        <p class="faq-p">
+          <strong>2. Detección Inteligente de Cambios:</strong> Al ejecutarse en un entorno Headless de Playwright, si detecta una variación o descuento en Éxito, Falabella o Jumbo, realiza un commit automático con la etiqueta <code>[skip ci]</code> actualizando el archivo JSON y la marca de fecha de verificación.
+        </p>
+        <p class="faq-p">
+          <strong>3. Actualización Instantánea a Demanda:</strong> Puedes forzar la actualización en cualquier minuto desde la pestaña <strong>Actions</strong> de tu repositorio de GitHub haciendo clic en <em>"Run workflow"</em>, o corriendo en consola: <code>py retail_scraper_marcas.py</code>.
+        </p>
       </section>
     </main>
 
     <script>
-      const DATA = {
-        "fecha_verificacion": "25 de octubre de 2026, 02:25 PM",
-        "tiendas": {
-          "Éxito": [
-            { "posicion": 1, "marca": "Hisense", "pulgadas": "32\"", "precio_final": 499900, "precio_formateado": "$499.900", "tecnologia": "LED, HD, Smart TV", "modelo": "Televisor HISENSE 32 pulgadas LED Hd Smart TV 32A4NV", "enlace": "https://www.exito.com/televisor-hisense-32-pulgadas-led-hd-smart-tv-32a4nv-3208353/p" },
-            { "posicion": 2, "marca": "Samsung", "pulgadas": "32\"", "precio_final": 581530, "precio_formateado": "$581.530", "tecnologia": "LED, HD, Smart TV", "modelo": "Televisor Samsung 32 pulgadas Hd Led Un32h5000fkxzl", "enlace": "https://www.exito.com/televisor-samsung-flat-led-smart-tv-32-pulgadas-hd-hdmi-abre-y-edita-archivos-de-office-104755836-mp/p" },
-            { "posicion": 3, "marca": "Hisense", "pulgadas": "40\"", "precio_final": 695900, "precio_formateado": "$695.900", "tecnologia": "LED, Full HD, Smart TV", "modelo": "Televisor HISENSE 40 pulgadas LED Fhd Smart TV 40A4NV", "enlace": "https://www.exito.com/televisor-hisense-40-pulgadas-led-fhd-smart-tv-40a4nv-3218633/p" },
-            { "posicion": 4, "marca": "Hisense", "pulgadas": "43\"", "precio_final": 715906, "precio_formateado": "$715.906", "tecnologia": "QLED, Full HD, Smart TV", "modelo": "Televisor HISENSE 43 pulgadas QLED Fhd Smart TV 43Q4SV", "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p" },
-            { "posicion": 5, "marca": "Samsung", "pulgadas": "40\"", "precio_final": 716122, "precio_formateado": "$716.122", "tecnologia": "Full HD, Smart TV", "modelo": "Televisor Samsung 40 Pulgadas Full Hd F6000 Smart Tv", "enlace": "https://www.exito.com/televisor-samsung-40-pulgadas-full-hd-f6000-smart-tv-un40f6000fkxzl-104497688-mp/p" },
-            { "posicion": 6, "marca": "LG", "pulgadas": "43\"", "precio_final": 939900, "precio_formateado": "$939.900", "tecnologia": "LED, Full HD, Smart TV", "modelo": "Televisor LG 43 Pulgadas Led Full Hd Smart Tv 43LM6370PDB", "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" },
-            { "posicion": 7, "marca": "Hisense", "pulgadas": "50\"", "precio_final": 1007904, "precio_formateado": "$1.007.904", "tecnologia": "QLED, Full HD, Smart TV", "modelo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV", "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p" },
-            { "posicion": 8, "marca": "Samsung", "pulgadas": "50\"", "precio_final": 1099900, "precio_formateado": "$1.099.900", "tecnologia": "Mini LED, Full HD, Smart TV", "modelo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL", "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" },
-            { "posicion": 9, "marca": "Hisense", "pulgadas": "58\"", "precio_final": 1399900, "precio_formateado": "$1.399.900", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor HISENSE 58 pulgadas LED Uhd4K Smart TV 58A6N", "enlace": "https://www.exito.com/televisor-hisense-58-pulgadas-led-uhd-4k-smart-tv-58a6n-3161945/p" },
-            { "posicion": 10, "marca": "Samsung", "pulgadas": "58\"", "precio_final": 1599869, "precio_formateado": "$1.599.869", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv UN58U8000", "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p" }
-          ],
-          "Falabella": [
-            { "posicion": 1, "marca": "Samsung", "pulgadas": "32\"", "precio_final": 589900, "precio_formateado": "$589.900", "tecnologia": "LED, HD, Smart TV", "modelo": "Televisor 32 Pulgadas LED Smart TV HD UN32H5000FKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/147903470/Televisor-Samsung-32-Pulgadas-LED-Smart-TV-HD-TV-UN32H5000FKXZL" },
-            { "posicion": 2, "marca": "Hisense", "pulgadas": "32\"", "precio_final": 679999, "precio_formateado": "$679.999", "tecnologia": "HD, VIDAA OS", "modelo": "Televisor 32 HD VIDAA 32A4NV Smart Tv", "enlace": "https://www.falabella.com.co/falabella-co/product/153369992/televisor-hisense-32-hd-vidaa-32a4nv-smart-tv" },
-            { "posicion": 3, "marca": "Hisense", "pulgadas": "40\"", "precio_final": 727900, "precio_formateado": "$727.900", "tecnologia": "Full HD, VIDAA OS", "modelo": "Televisor 40″ Smart TV Full HD 40A4NV S.O VIDAA", "enlace": "https://www.falabella.com.co/falabella-co/product/156083646/televisor-hisense-40-smart-tv-full-hd-40a4nv-s-o-vidaa" },
-            { "posicion": 4, "marca": "Samsung", "pulgadas": "43\"", "precio_final": 1139900, "precio_formateado": "$1.139.900", "tecnologia": "Crystal UHD, 4K, Smart TV", "modelo": "Televisor 43′ 4K UHD Crystal Smart Tv UN43U8000FK", "enlace": "https://www.falabella.com.co/falabella-co/product/146574660/Televisor-Samsung-43%E2%80%B2-4K-UHD-Crystal-Smart-Tv-UN43U8000FK" },
-            { "posicion": 5, "marca": "LG", "pulgadas": "50\"", "precio_final": 1394900, "precio_formateado": "$1.394.900", "tecnologia": "NanoCell, 4K UHD", "modelo": "Televisor 50 Pulgadas Nano 4k Uhd IA - HDR10 Pro", "enlace": "https://www.falabella.com.co/falabella-co/product/156684867/televisor-lg-50-pulgadas-nano-4k-uhd-ia" },
-            { "posicion": 6, "marca": "Hisense", "pulgadas": "55\"", "precio_final": 1449900, "precio_formateado": "$1.449.900", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55A6NV", "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv" },
-            { "posicion": 7, "marca": "LG", "pulgadas": "58\"", "precio_final": 1499900, "precio_formateado": "$1.499.900", "tecnologia": "NanoCell, 4K UHD, webOS", "modelo": "Televisor 58 pulgadas NANO 4K UHD webOS 58NU850BPSD", "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq" },
-            { "posicion": 8, "marca": "Samsung", "pulgadas": "55\"", "precio_final": 1499900, "precio_formateado": "$1.499.900", "tecnologia": "4K UHD, Smart TV", "modelo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl" },
-            { "posicion": 9, "marca": "LG", "pulgadas": "55\"", "precio_final": 1642900, "precio_formateado": "$1.642.900", "tecnologia": "NanoCell, 4K UHD, webOS", "modelo": "Televisor 55 Pulgadas 55NU85 Nano 4K UHD Smart TV", "enlace": "https://www.falabella.com.co/falabella-co/product/158570049/televisor-lg-55-pulgadas-55nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic" },
-            { "posicion": 10, "marca": "Samsung", "pulgadas": "65\"", "precio_final": 1899900, "precio_formateado": "$1.899.900", "tecnologia": "Crystal UHD, 4K, Smart TV", "modelo": "Televisor 65 Pulgadas Crystal UHD 4K Smart TV UN65DU7000", "enlace": "https://www.falabella.com.co/falabella-co/product/139045763/televisor-samsung-65-crystal-uhd-4k-smart-tv" }
-          ],
-          "Jumbo": [
-            { "posicion": 1, "marca": "Samsung", "pulgadas": "32\"", "precio_final": 659900, "precio_formateado": "$659.900", "tecnologia": "LED, HD, Smart TV", "modelo": "Televisor Samsung 32'' Pulgadas LED Smart TV HD UN32H5000", "enlace": "https://www.jumbocolombia.com/televisor-samsung-32-pulgadas-led-smart-tv-hd-tv-un32h5000fkxzl-3682958/p" },
-            { "posicion": 2, "marca": "Samsung", "pulgadas": "40\"", "precio_final": 849900, "precio_formateado": "$849.900", "tecnologia": "LED, Full HD, Smart TV", "modelo": "Televisor Samsung 40'' Pulgadas LED FHD UN40F6000", "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p" },
-            { "posicion": 3, "marca": "Samsung", "pulgadas": "40\"", "precio_final": 886900, "precio_formateado": "$886.900", "tecnologia": "Full HD, Smart TV", "modelo": "Televisor Samsung 40 Pulgadas FHD Smart TV UN40F6000", "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-fhd-smart-tv-un40f6000fkxzl-20139349/p" },
-            { "posicion": 4, "marca": "Samsung", "pulgadas": "43\"", "precio_final": 1199900, "precio_formateado": "$1.199.900", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor Samsung 43\" Pulgadas LED UHD 4K UN43U8000", "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p" },
-            { "posicion": 5, "marca": "LG", "pulgadas": "43\"", "precio_final": 1349900, "precio_formateado": "$1.349.900", "tecnologia": "NanoCell, 4K UHD, Smart TV", "modelo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC", "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p" },
-            { "posicion": 6, "marca": "Samsung", "pulgadas": "50\"", "precio_final": 1599900, "precio_formateado": "$1.599.900", "tecnologia": "Mini LED, Smart TV", "modelo": "Televisor Samsung 50\" Pulgadas Mini LED UN50M75HAKXZL", "enlace": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p" },
-            { "posicion": 7, "marca": "Samsung", "pulgadas": "55\"", "precio_final": 1649900, "precio_formateado": "$1.649.900", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000", "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p" },
-            { "posicion": 8, "marca": "Samsung", "pulgadas": "55\"", "precio_final": 1699900, "precio_formateado": "$1.699.900", "tecnologia": "LED, 4K UHD, Smart TV", "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000FK", "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000fkxzl-3682954/p" },
-            { "posicion": 9, "marca": "Samsung", "pulgadas": "55\"", "precio_final": 1849900, "precio_formateado": "$1.849.900", "tecnologia": "Mini LED, Smart TV", "modelo": "Televisor Samsung 55'' Pulgadas Mini LED UN55M75HAKXZL", "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p" },
-            { "posicion": 10, "marca": "LG", "pulgadas": "55\"", "precio_final": 1899900, "precio_formateado": "$1.899.900", "tecnologia": "QNED, 4K UHD, Smart TV", "modelo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74", "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p" }
-          ]
-        }
-      };
+      let CATALOGO = {
+  "fecha_verificacion": "25 de octubre de 2026, 02:25 PM",
+  "timestamp_iso": "2026-10-25T14:25:00.000000",
+  "tiendas": {
+    "Éxito": [
+      {
+        "marca": "Hisense",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 499900,
+        "precio_formateado": "$499.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor HISENSE 32 pulgadas LED Hd Smart TV 32A4NV",
+        "enlace": "https://www.exito.com/televisor-hisense-32-pulgadas-led-hd-smart-tv-32a4nv-3208353/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 556000,
+        "precio_formateado": "$556.000",
+        "tecnologia": "LED, HD, VIDAA OS",
+        "modelo": "Televisor Hisense 32\" Pulgadas 32A4NV VIDAA LED HD",
+        "enlace": "https://www.exito.com/televisor-hisense-32--pulgadas-32a4nv-vidaa-led-hd-smart-tv-124188882/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 581530,
+        "precio_formateado": "$581.530",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor Samsung 32 pulgadas Hd Led Un32h5000fkxzl",
+        "enlace": "https://www.exito.com/televisor-samsung-flat-led-smart-tv-32-pulgadas-hd-hdmi-abre-y-edita-archivos-de-office-104755836-mp/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 639798,
+        "precio_formateado": "$639.798",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor Samsung 32 Pulgadas Led Hd Smarttv Un32t4300",
+        "enlace": "https://www.exito.com/televisor-led-samsung-32-pulgadas-smart-tv-un32t4300-100134345-mp/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "40\"",
+        "pulgadas_num": 40,
+        "precio_final": 695900,
+        "precio_formateado": "$695.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 40 pulgadas LED Fhd Smart TV 40A4NV",
+        "enlace": "https://www.exito.com/televisor-hisense-40-pulgadas-led-fhd-smart-tv-40a4nv-3218633/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 715906,
+        "precio_formateado": "$715.906",
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 43 pulgadas QLED Fhd Smart TV 43Q4SV",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "pulgadas_num": 40,
+        "precio_final": 716122,
+        "precio_formateado": "$716.122",
+        "tecnologia": "Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40 Pulgadas Full Hd F6000 Smart Tv",
+        "enlace": "https://www.exito.com/televisor-samsung-40-pulgadas-full-hd-f6000-smart-tv-un40f6000fkxzl-104497688-mp/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 799900,
+        "precio_formateado": "$799.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 43 pulgadas LED Fhd Smart TV 43A4NV",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-led-hd-smart-tv-43a4nv-3208346/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 939900,
+        "precio_formateado": "$939.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor LG 43 Pulgadas Led Full Hd Smart Tv 43LM6370PDB",
+        "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1007904,
+        "precio_formateado": "$1.007.904",
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1099900,
+        "precio_formateado": "$1.099.900",
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "modelo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1429900,
+        "precio_formateado": "$1.429.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor LG 50 pulgadas LED 4K UHD 50UR7800",
+        "enlace": "https://www.exito.com/tecnologia/televisores?brand=lg"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor HISENSE 55 pulgadas LED UHD 4K Smart TV 55A6N",
+        "enlace": "https://www.exito.com/tecnologia/televisores?brand=hisense"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1549900,
+        "precio_formateado": "$1.549.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor SAMSUNG 55\" Crystal UHD 4K UN55DU7000",
+        "enlace": "https://www.exito.com/tecnologia/televisores?brand=samsung"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1699900,
+        "precio_formateado": "$1.699.900",
+        "tecnologia": "NanoCell, 4K, Smart TV",
+        "modelo": "Televisor LG 55 pulgadas NanoCell 4K UHD 55NANO",
+        "enlace": "https://www.exito.com/tecnologia/televisores?brand=lg"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "58\"",
+        "pulgadas_num": 58,
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor HISENSE 58 pulgadas LED Uhd4K Smart TV 58A6N",
+        "enlace": "https://www.exito.com/televisor-hisense-58-pulgadas-led-uhd-4k-smart-tv-58a6n-3161945/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "58\"",
+        "pulgadas_num": 58,
+        "precio_final": 1599869,
+        "precio_formateado": "$1.599.869",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv UN58U8000",
+        "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 1799900,
+        "precio_formateado": "$1.799.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000HKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 1835904,
+        "precio_formateado": "$1.835.904",
+        "tecnologia": "QLED, 4K UHD, Smart TV",
+        "modelo": "Televisor HISENSE 65 pulgadas QLED Uhd4K Smart TV 65QD5SV",
+        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-qled-uhd-4k-smart-tv-65qd5sv-3245570/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 1999900,
+        "precio_formateado": "$1.999.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65UR7800PSB",
+        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
+      }
+    ],
+    "Falabella": [
+      {
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 589900,
+        "precio_formateado": "$589.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor 32 Pulgadas LED Smart TV HD UN32H5000FKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/147903470/Televisor-Samsung-32-Pulgadas-LED-Smart-TV-HD-TV-UN32H5000FKXZL"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 679999,
+        "precio_formateado": "$679.999",
+        "tecnologia": "HD, VIDAA OS",
+        "modelo": "Televisor 32 HD VIDAA 32A4NV Smart Tv",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/153369992/televisor-hisense-32-hd-vidaa-32a4nv-smart-tv"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "40\"",
+        "pulgadas_num": 40,
+        "precio_final": 727900,
+        "precio_formateado": "$727.900",
+        "tecnologia": "Full HD, VIDAA OS",
+        "modelo": "Televisor 40″ Smart TV Full HD 40A4NV S.O VIDAA",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156083646/televisor-hisense-40-smart-tv-full-hd-40a4nv-s-o-vidaa"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 1139900,
+        "precio_formateado": "$1.139.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor 43′ 4K UHD Crystal Smart Tv UN43U8000FK",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/146574660/Televisor-Samsung-43%E2%80%B2-4K-UHD-Crystal-Smart-Tv-UN43U8000FK"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 1199900,
+        "precio_formateado": "$1.199.900",
+        "tecnologia": "4K UHD, Smart TV",
+        "modelo": "Televisor 43 Pulgadas 4K UHD Smart TV 43A6N",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 1299900,
+        "precio_formateado": "$1.299.900",
+        "tecnologia": "LED, 4K UHD, webOS",
+        "modelo": "Televisor LG 43 Pulgadas 4K UHD Smart TV 43UR7800",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1394900,
+        "precio_formateado": "$1.394.900",
+        "tecnologia": "NanoCell, 4K UHD",
+        "modelo": "Televisor 50 Pulgadas Nano 4k Uhd IA - HDR10 Pro",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156684867/televisor-lg-50-pulgadas-nano-4k-uhd-ia"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1429900,
+        "precio_formateado": "$1.429.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor Samsung 50 Pulgadas Crystal UHD UN50DU7000",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1349900,
+        "precio_formateado": "$1.349.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor 50 Pulgadas UHD 4K Smart TV 50A6N",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1449900,
+        "precio_formateado": "$1.449.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55A6NV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "58\"",
+        "pulgadas_num": 58,
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "modelo": "Televisor 58 pulgadas NANO 4K UHD webOS 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "tecnologia": "4K UHD, Smart TV",
+        "modelo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1642900,
+        "precio_formateado": "$1.642.900",
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "modelo": "Televisor 55 Pulgadas 55NU85 Nano 4K UHD Smart TV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158570049/televisor-lg-55-pulgadas-55nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor 65 Pulgadas Crystal UHD 4K Smart TV UN65DU7000",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/139045763/televisor-samsung-65-crystal-uhd-4k-smart-tv"
+      },
+      {
+        "marca": "Hisense",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 1949900,
+        "precio_formateado": "$1.949.900",
+        "tecnologia": "QLED, 4K UHD, Smart TV",
+        "modelo": "Televisor Hisense 65 Pulgadas QLED 4K 65Q6N",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 2099900,
+        "precio_formateado": "$2.099.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor LG 65 Pulgadas LED 4K UHD 65UT8000",
+        "enlace": "https://www.falabella.com.co/falabella-co/category/cat2070028/Televisores"
+      }
+    ],
+    "Jumbo": [
+      {
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "pulgadas_num": 32,
+        "precio_final": 659900,
+        "precio_formateado": "$659.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor Samsung 32'' Pulgadas LED Smart TV HD UN32H5000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-32-pulgadas-led-smart-tv-hd-tv-un32h5000fkxzl-3682958/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "pulgadas_num": 40,
+        "precio_final": 849900,
+        "precio_formateado": "$849.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40'' Pulgadas LED FHD UN40F6000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "pulgadas_num": 40,
+        "precio_final": 886900,
+        "precio_formateado": "$886.900",
+        "tecnologia": "Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40 Pulgadas FHD Smart TV UN40F6000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-fhd-smart-tv-un40f6000fkxzl-20139349/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 1199900,
+        "precio_formateado": "$1.199.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 43\" Pulgadas LED UHD 4K UN43U8000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "43\"",
+        "pulgadas_num": 43,
+        "precio_final": 1349900,
+        "precio_formateado": "$1.349.900",
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "modelo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1599900,
+        "precio_formateado": "$1.599.900",
+        "tecnologia": "Mini LED, Smart TV",
+        "modelo": "Televisor Samsung 50\" Pulgadas Mini LED UN50M75HAKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "precio_final": 1649900,
+        "precio_formateado": "$1.649.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Smart TV LG 50 Pulgadas UHD 4K 50UR7800",
+        "enlace": "https://www.jumbocolombia.com/co/televisores-y-audio/television/lg?order=OrderByPriceASC"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1649900,
+        "precio_formateado": "$1.649.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1699900,
+        "precio_formateado": "$1.699.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000FK",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000fkxzl-3682954/p"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "55\"",
+        "pulgadas_num": 55,
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "tecnologia": "QNED, 4K UHD, Smart TV",
+        "modelo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74",
+        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
+      },
+      {
+        "marca": "Samsung",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 2199900,
+        "precio_formateado": "$2.199.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor Samsung 65\" UHD 4K UN65DU7000",
+        "enlace": "https://www.jumbocolombia.com/co/televisores-y-audio/television/samsung?order=OrderByPriceASC"
+      },
+      {
+        "marca": "LG",
+        "pulgadas": "65\"",
+        "pulgadas_num": 65,
+        "precio_final": 2299900,
+        "precio_formateado": "$2.299.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor LG 65\" UHD 4K Smart TV 65UR7800",
+        "enlace": "https://www.jumbocolombia.com/co/televisores-y-audio/television/lg?order=OrderByPriceASC"
+      }
+    ]
+  }
+};
+      let activeInch = 'all';
+      let activeBrand = 'all';
 
       function getBrandClass(b) {
         if (b === 'Samsung') return 'brand-samsung';
@@ -517,7 +1055,37 @@ py retail_scraper_marcas.py
         return '';
       }
 
-      function renderTable(items) {
+      function filterItems(items, inch, brand) {
+        let res = items.slice();
+        if (inch !== 'all') {
+          const inchNum = parseInt(inch);
+          res = res.filter(it => it.pulgadas_num === inchNum);
+        }
+        if (brand !== 'all') {
+          res = res.filter(it => it.marca === brand);
+        }
+        res.sort((a, b) => a.precio_final - b.precio_final);
+        return res;
+      }
+
+      function renderTable(items, storeName) {
+        if (!items || items.length === 0) {
+          let extraMsg = (activeInch === '60') 
+            ? 'Los fabricantes actuales reemplazaron el estándar de 60" por 58" y 65".' 
+            : 'Sin inventario bajo este criterio.';
+          return `
+            <table>
+              <tbody>
+                <tr>
+                  <td class="empty-row" colspan="7">
+                    No se encontraron modelos de <strong>${activeInch !== 'all' ? activeInch + '"' : ''} ${activeBrand !== 'all' ? activeBrand : ''}</strong> en ${storeName}. ${extraMsg}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          `;
+        }
+
         let html = `
           <table>
             <thead>
@@ -534,13 +1102,14 @@ py retail_scraper_marcas.py
             <tbody>
         `;
 
-        items.forEach(it => {
+        items.forEach((it, idx) => {
+          const pos = idx + 1;
           html += `
             <tr>
-              <td style="text-align: center;"><span class="pos-pill ${getPosClass(it.posicion)}">${it.posicion}</span></td>
+              <td style="text-align: center;"><span class="pos-pill ${getPosClass(pos)}">${pos}</span></td>
               <td><span class="brand-badge ${getBrandClass(it.marca)}">${it.marca}</span></td>
               <td><span class="inches-pill">${it.pulgadas}</span></td>
-              <td><span class="price-tag ${it.posicion === 1 ? 'price-tag-gold' : ''}">${it.precio_formateado}</span></td>
+              <td><span class="price-tag ${pos === 1 ? 'price-tag-gold' : ''}">${it.precio_formateado}</span></td>
               <td><span class="tech-label">${it.tecnologia}</span></td>
               <td><div class="model-name" title="${it.modelo}">${it.modelo}</div></td>
               <td style="text-align: center;">
@@ -554,32 +1123,62 @@ py retail_scraper_marcas.py
         return html;
       }
 
+      function updateUI() {
+        if (!CATALOGO || !CATALOGO.tiendas) return;
+
+        const exitoItems = filterItems(CATALOGO.tiendas['Éxito'] || [], activeInch, activeBrand);
+        const falabellaItems = filterItems(CATALOGO.tiendas['Falabella'] || [], activeInch, activeBrand);
+        const jumboItems = filterItems(CATALOGO.tiendas['Jumbo'] || [], activeInch, activeBrand);
+
+        document.getElementById('container-exito').innerHTML = renderTable(exitoItems, 'Éxito');
+        document.getElementById('container-falabella').innerHTML = renderTable(falabellaItems, 'Falabella');
+        document.getElementById('container-jumbo').innerHTML = renderTable(jumboItems, 'Jumbo');
+
+        // Actualizar textos de resumen
+        let inchText = activeInch === 'all' ? 'Todos los tamaños' : `${activeInch} pulgadas`;
+        let brandText = activeBrand === 'all' ? 'todas las marcas' : activeBrand;
+        document.getElementById('filter-state-text').textContent = `${inchText} · ${brandText} (de menor a mayor precio)`;
+
+        const totalFound = exitoItems.length + falabellaItems.length + jumboItems.length;
+        document.getElementById('results-count-text').textContent = `${totalFound} televisores encontrados`;
+      }
+
+      function setupFilterListeners() {
+        document.querySelectorAll('#inch-chips .chip-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('#inch-chips .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeInch = btn.getAttribute('data-inch');
+            updateUI();
+          });
+        });
+
+        document.querySelectorAll('#brand-chips .chip-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('#brand-chips .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeBrand = btn.getAttribute('data-brand');
+            updateUI();
+          });
+        });
+      }
+
       function initApp() {
-        let currentData = DATA;
-        const dateEl = document.getElementById('verification-date');
+        setupFilterListeners();
+        updateUI();
 
-        function updateDOM(dataset) {
-          if (dataset.fecha_verificacion) {
-            dateEl.textContent = dataset.fecha_verificacion;
-          }
-          document.getElementById('container-exito').innerHTML = renderTable(dataset.tiendas['Éxito']);
-          document.getElementById('container-falabella').innerHTML = renderTable(dataset.tiendas['Falabella']);
-          document.getElementById('container-jumbo').innerHTML = renderTable(dataset.tiendas['Jumbo']);
-        }
-
-        fetch('./tv-scraper/top10_3tiendas_3marcas.json')
+        fetch('./tv-scraper/catalogo_tv_completo.json')
           .then(res => res.json())
-          .then(remote => {
-            if (remote && remote.tiendas) {
-              currentData = remote;
-              updateDOM(currentData);
+          .then(data => {
+            if (data && data.tiendas) {
+              CATALOGO = data;
+              if (data.fecha_verificacion) {
+                document.getElementById('verification-date').textContent = data.fecha_verificacion;
+              }
+              updateUI();
             }
           })
-          .catch(() => {
-            updateDOM(currentData);
-          });
-
-        updateDOM(currentData);
+          .catch(() => {});
       }
 
       document.addEventListener('DOMContentLoaded', initApp);
