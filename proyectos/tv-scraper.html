@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Retail Scraper Multi-Tienda (Éxito, Falabella & Jumbo) — Samuel Camacho</title>
+    <title>Comparador de Televisores por Marca (Samsung, LG e Hisense) — Samuel Camacho</title>
     <meta
       name="description"
-      content="Retail Web Scraper con Playwright: Extractor inteligente y comparador de precios en tiempo real para Éxito, Falabella y Jumbo Colombia (LG & Samsung)."
+      content="Retail Web Scraper con Playwright: Extractor inteligente y comparador de televisores clasificados por marcas (Samsung, LG e Hisense) y pulgadas en Éxito, Falabella y Jumbo."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,6 @@
         --line: #e3e2db;
         --orange: #f26f50;
         --lime: #c7f36a;
-        --green: #15803d;
-        --teal: #0284c7;
         --font-main: "DM Sans", system-ui, sans-serif;
         --font-mono: "DM Mono", monospace;
         --font-display: "Manrope", sans-serif;
@@ -100,7 +98,7 @@
       }
       .project-title {
         font-family: var(--font-display);
-        font-size: clamp(32px, 5vw, 46px);
+        font-size: clamp(30px, 5vw, 44px);
         line-height: 1.15;
         margin: 0 0 16px;
         letter-spacing: -0.02em;
@@ -253,10 +251,11 @@
 
       .badge-store {
         display: inline-block;
-        padding: 2px 8px;
+        padding: 2px 7px;
         border-radius: 4px;
         font: 11px var(--font-mono);
         font-weight: 600;
+        margin-left: 6px;
       }
       .badge-exito { background: #fff0eb; color: #d03b0d; }
       .badge-falabella { background: #eaf6ea; color: #1c7c25; }
@@ -336,36 +335,35 @@
 
     <main class="container">
       <div class="project-header">
-        <div class="project-eyebrow">AUTOMATIZACIÓN &amp; E-COMMERCE INTELLIGENCE · 2026</div>
-        <h1 class="project-title">Retail Scraper Multi-Tienda — Éxito, Falabella &amp; Jumbo</h1>
+        <div class="project-eyebrow">AUTOMATIZACIÓN &amp; COMPARATIVA POR MARCAS · 2026</div>
+        <h1 class="project-title">Comparador de Televisores: Samsung, LG &amp; Hisense</h1>
         <p class="project-lead">
-          Extractor inteligente y comparador de precios en tiempo real para las 3 cadenas líderes de retail en Colombia (Éxito, Falabella y Jumbo). Automatización Headless con Playwright, discriminación exclusiva de marcas LG y Samsung, extracción por tamaños (43" a 65") y actualización automática programada en la nube con GitHub Actions.
+          Clasificación y análisis de precios en tiempo real para las 3 marcas más demandadas en el mercado colombiano (**Samsung**, **LG** e **Hisense**) separadas por pulgadas (43" a 65"). Sincronización continua en Éxito, Falabella y Jumbo con actualización automática programada en GitHub Actions.
         </p>
 
         <div class="tags-bar">
-          <span class="tag">Python 3</span>
+          <span class="tag">Samsung</span>
+          <span class="tag">LG</span>
+          <span class="tag">Hisense</span>
           <span class="tag">Playwright Headless</span>
           <span class="tag">GitHub Actions CI/CD</span>
-          <span class="tag">VTEX FastStore</span>
-          <span class="tag">Next.js SPA</span>
-          <span class="tag">VTEX IO</span>
-          <span class="tag">Dynamic Tables JS</span>
-          <span class="tag">LG &amp; Samsung</span>
+          <span class="tag">Precios Verificados</span>
+          <span class="tag">Éxito · Falabella · Jumbo</span>
         </div>
       </div>
 
       <div class="metrics-grid">
         <div class="metric-card">
           <div class="metric-number">3</div>
-          <div class="metric-label">Grandes retailers sincronizados</div>
+          <div class="metric-label">Marcas líderes comparadas</div>
         </div>
         <div class="metric-card">
           <div class="metric-number">6</div>
-          <div class="metric-label">Tamaños analizados (43" a 65")</div>
+          <div class="metric-label">Tamaños clasificados (43" a 65")</div>
         </div>
         <div class="metric-card">
-          <div class="metric-number">100%</div>
-          <div class="metric-label">Filtro anti-accesorios y proyectores</div>
+          <div class="metric-number">3</div>
+          <div class="metric-label">Retailers analizados</div>
         </div>
         <div class="metric-card">
           <div class="metric-number">24/7</div>
@@ -377,43 +375,43 @@
       <section class="section-block">
         <div class="verified-badge">
           <span class="verified-dot"></span>
-          <span>Precios verificados: <strong id="verification-date">25 de octubre de 2026, 01:51 PM</strong></span>
+          <span>Precios verificados: <strong id="verification-date">25 de octubre de 2026, 02:07 PM</strong></span>
         </div>
 
         <div class="tabs-nav" role="tablist">
-          <button class="tab-btn active" data-tab="comparativa">📊 Comparativa 3 Tiendas</button>
-          <button class="tab-btn" data-tab="exito">🔴 Éxito Colombia</button>
-          <button class="tab-btn" data-tab="falabella">🟢 Falabella Colombia</button>
-          <button class="tab-btn" data-tab="jumbo">🔵 Jumbo Colombia</button>
+          <button class="tab-btn active" data-tab="comparativa">📊 Comparativa 3 Marcas</button>
+          <button class="tab-btn" data-tab="Samsung">🔴 Samsung</button>
+          <button class="tab-btn" data-tab="LG">🔵 LG</button>
+          <button class="tab-btn" data-tab="Hisense">🟢 Hisense</button>
         </div>
 
         <div class="table-card">
           <div class="table-responsive" id="table-container">
-            <!-- La tabla se renderiza dinámicamente con JavaScript -->
+            <!-- Renderizado dinámico vía JavaScript -->
           </div>
         </div>
       </section>
 
       <!-- ARQUITECTURA -->
       <section class="section-block">
-        <h2 class="section-title">Arquitectura e Innovación Técnica</h2>
+        <h2 class="section-title">Arquitectura Técnica y Automatización</h2>
         <div class="feature-grid">
           <div class="feature-card">
-            <h3>SPAs Complejas &amp; Rendering Híbrido</h3>
+            <h3>Clasificación Atómica por Marca</h3>
             <p>
-              Manejo simultáneo de arquitecturas modernas: <strong>VTEX FastStore</strong> (Éxito), <strong>Next.js SPA</strong> con JSON embebido (Falabella) y <strong>VTEX IO</strong> (Jumbo). Sincronización inteligente sin bloqueos de red ni timeouts.
+              El motor agrupa y normaliza las referencias de <strong>Samsung</strong>, <strong>LG</strong> e <strong>Hisense</strong>, filtrando accesorios no deseados (soportes, controles o proyectores) y asignando tecnologías específicas (Crystal UHD, NanoCell, QLED, webOS, VIDAA o Tizen).
             </p>
           </div>
           <div class="feature-card">
-            <h3>Actualización Continua con GitHub Actions</h3>
+            <h3>Actualización Continua CI/CD</h3>
             <p>
-              Un workflow automatizado en la nube ejecuta el scraper de Playwright a diario (cron job), detecta fluctuaciones de precios, actualiza el JSON estructurado y republica el portafolio en GitHub Pages sin intervención humana.
+              Un flujo de trabajo en <strong>GitHub Actions</strong> ejecuta Playwright diariamente a las 6:00 AM COT, actualizando los precios en el repositorio con un commit automático y reflejando las variaciones en la web sin intervención manual.
             </p>
           </div>
           <div class="feature-card">
-            <h3>Normalización &amp; Heurística de Datos</h3>
+            <h3>Multi-Plataforma Resiliente</h3>
             <p>
-              Parsing regex para extraer tamaño en pulgadas, tipo de panel (OLED, QNED, Mini LED, Crystal UHD) y resolución (4K, FHD), descartando automáticamente falsos positivos como proyectores o soportes de pared.
+              Extrae datos de <strong>VTEX FastStore</strong> (Éxito), <strong>Next.js SPA</strong> (Falabella) y <strong>VTEX IO</strong> (Jumbo) garantizando que siempre se seleccione la tienda con el mejor precio disponible.
             </p>
           </div>
         </div>
@@ -423,51 +421,42 @@
       <section class="section-block">
         <h2 class="section-title">Guía de Ejecución Local</h2>
         <div class="code-card">
-<span class="code-comment"># 1. Ejecutar el comparador completo de las 3 tiendas (Éxito, Falabella y Jumbo)</span>
-py retail_scraper_3_tiendas.py
+<span class="code-comment"># 1. Ejecutar el comparador separado por marcas (Samsung, LG e Hisense)</span>
+py retail_scraper_marcas.py
 
-<span class="code-comment"># 2. Ejecutar individualmente por tienda (ej. Éxito para todos los tamaños)</span>
-py exito_tv_todos.py
-
-<span class="code-comment"># 3. Ejecutar por tamaño específico en Éxito</span>
-py exito_tv_43.py
-py exito_tv_50.py
-py exito_tv_55.py
-py exito_tv_58.py
-py exito_tv_60.py
-py exito_tv_65.py
+<span class="code-comment"># 2. Ejecutar con navegador visible</span>
+py retail_scraper_marcas.py --headful
         </div>
       </section>
     </main>
 
     <script>
-      // Dataset embebido por defecto (fallback instantáneo si no hay servidor HTTP)
       const DATASET = {
-        "fecha_verificacion": "25 de octubre de 2026, 01:51 PM",
-        "tiendas": {
-          "exito": {
-            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$901.928", "tecnologia": "LED, Full HD, Smart TV", "titulo": "Televisor LG 43\" LED Full HD Smart TV 43LM6370PDB", "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" },
-            "50": { "marca": "Samsung", "pulgadas": "50\"", "precio_formateado": "$1.099.900", "tecnologia": "Mini LED, Full HD, Smart TV", "titulo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL", "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" },
-            "55": { "marca": "LG", "pulgadas": "55\"", "precio_formateado": "$1.653.903", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor LG 55\" LED UHD 4K Smart TV 55NU830BPSA", "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p" },
-            "58": { "marca": "Samsung", "pulgadas": "58\"", "precio_formateado": "$1.399.901", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor SAMSUNG 58\" LED UHD 4K Smart TV UN58U8000HKXZL", "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000hkxzl-3254967/p" },
-            "60": { "marca": "LG", "pulgadas": "60\"", "precio_formateado": "$1.799.900", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor LG 60\" LED UHD 4K Smart TV 60UA7500PSA", "enlace": "https://www.exito.com/televisor-lg-60-pulgadas-led-uhd-4k-smart-tv-60ua7500psaawc-3221488/p" },
-            "65": { "marca": "Samsung", "pulgadas": "65\"", "precio_formateado": "$1.799.900", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor SAMSUNG 65\" LED UHD 4K Smart TV UN65U8000HKXZL", "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p" }
-          },
-          "falabella": {
-            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$1.019.900", "tecnologia": "Full HD, Smart TV", "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM", "enlace": "https://www.falabella.com.co/falabella-co/product/122415278/televisor-lg-43-pulgadas-smart-tv-full-hd-43lm" },
-            "50": { "marca": "Samsung", "pulgadas": "50\"", "precio_formateado": "$1.339.900", "tecnologia": "Mini LED, Smart TV", "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl" },
-            "55": { "marca": "Samsung", "pulgadas": "55\"", "precio_formateado": "$1.499.900", "tecnologia": "4K UHD, Smart TV", "titulo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl" },
-            "58": { "marca": "LG", "pulgadas": "58\"", "precio_formateado": "$1.499.900", "tecnologia": "NanoCell, 4K UHD, webOS", "titulo": "Televisor 58 pulgadas NANO 4K UHD webOS 58UQ", "enlace": "https://www.falabella.com.co/falabella-co/product/158570932/televisor-lg-50-pulgadas-50nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic" },
+        "fecha_verificacion": "25 de octubre de 2026, 02:07 PM",
+        "marcas": {
+          "Samsung": {
+            "43": { "marca": "Samsung", "pulgadas": "43\"", "precio_formateado": "$1.139.900", "tienda": "Falabella", "tecnologia": "Crystal UHD, 4K UHD, Smart TV", "titulo": "Televisor 43′ 4K UHD Crystal Smart Tv UN43U8000FK", "enlace": "https://www.falabella.com.co/falabella-co/product/146574660/Televisor-Samsung-43%E2%80%B2-4K-UHD-Crystal-Smart-Tv-UN43U8000FK" },
+            "50": { "marca": "Samsung", "pulgadas": "50\"", "precio_formateado": "$1.099.900", "tienda": "Éxito", "tecnologia": "Mini LED, Full HD, Smart TV", "titulo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL", "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" },
+            "55": { "marca": "Samsung", "pulgadas": "55\"", "precio_formateado": "$1.499.900", "tienda": "Falabella", "tecnologia": "4K UHD", "titulo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL", "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl" },
+            "58": { "marca": "Samsung", "pulgadas": "58\"", "precio_formateado": "$1.599.869", "tienda": "Éxito", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv UN58U8000", "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p" },
             "60": null,
-            "65": { "marca": "Samsung", "pulgadas": "65\"", "precio_formateado": "$1.899.900", "tecnologia": "Crystal UHD, 4K UHD", "titulo": "Televisor Samsung 65 Pulgadas Crystal 4K UN65U8500", "enlace": "https://www.falabella.com.co/falabella-co/product/156478250/televisor-smart-55-pulgadas-crystal-uhd-4k-u8500h" }
+            "65": { "marca": "Samsung", "pulgadas": "65\"", "precio_formateado": "$1.799.900", "tienda": "Éxito", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000HKXZL", "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p" }
           },
-          "jumbo": {
-            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$1.349.900", "tecnologia": "NanoCell, 4K UHD, Smart TV", "titulo": "Smart TV UHD Nano 4K 43\" LG 43NU800BPSC", "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p" },
-            "50": { "marca": "LG", "pulgadas": "50\"", "precio_formateado": "$1.599.900", "tecnologia": "NanoCell, 4K UHD, Smart TV", "titulo": "Smart TV Nano UHD 4K 50\" LG 50NU855BPSA", "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p" },
-            "55": { "marca": "LG", "pulgadas": "55\"", "precio_formateado": "$1.899.900", "tecnologia": "QNED, Mini LED, 4K UHD", "titulo": "Smart TV QNED 4K UHD Miniled 55\" LG 55QNED74BSA", "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p" },
-            "58": null,
+          "LG": {
+            "43": { "marca": "LG", "pulgadas": "43\"", "precio_formateado": "$939.900", "tienda": "Éxito", "tecnologia": "LED, Full HD, Smart TV", "titulo": "Televisor LG 43 Pulgadas Led Full Hd Smart Tv 43LM6370PDB", "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" },
+            "50": { "marca": "LG", "pulgadas": "50\"", "precio_formateado": "$1.394.900", "tienda": "Falabella", "tecnologia": "NanoCell, 4K UHD", "titulo": "Televisor 50 Pulgadas Nano 4k Uhd IA - HDR10 Pro", "enlace": "https://www.falabella.com.co/falabella-co/product/156684867/televisor-lg-50-pulgadas-nano-4k-uhd-ia" },
+            "55": { "marca": "LG", "pulgadas": "55\"", "precio_formateado": "$1.642.900", "tienda": "Falabella", "tecnologia": "NanoCell, 4K UHD, webOS", "titulo": "Televisor 55 Pulgadas 55NU85 Nano 4K UHD Smart TV webOS", "enlace": "https://www.falabella.com.co/falabella-co/product/158570049/televisor-lg-55-pulgadas-55nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic" },
+            "58": { "marca": "LG", "pulgadas": "58\"", "precio_formateado": "$1.499.900", "tienda": "Falabella", "tecnologia": "NanoCell, 4K UHD, webOS", "titulo": "Televisor 58 pulgadas NANO 4K UHD webOs26", "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq" },
             "60": null,
-            "65": { "marca": "LG", "pulgadas": "65\"", "precio_formateado": "$2.199.900", "tecnologia": "NanoCell, 4K Ultra HD", "titulo": "Smart TV 4K Ultra HD Nano 65\" LG 65NU850BPSA", "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p" }
+            "65": { "marca": "LG", "pulgadas": "65\"", "precio_formateado": "$1.999.900", "tienda": "Éxito", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65UR7800PSB", "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p" }
+          },
+          "Hisense": {
+            "43": { "marca": "Hisense", "pulgadas": "43\"", "precio_formateado": "$799.900", "tienda": "Éxito", "tecnologia": "LED, Full HD, Smart TV", "titulo": "Televisor HISENSE 43 pulgadas LED Fhd Smart TV 43A4NV", "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-led-hd-smart-tv-43a4nv-3208346/p" },
+            "50": { "marca": "Hisense", "pulgadas": "50\"", "precio_formateado": "$1.007.904", "tienda": "Éxito", "tecnologia": "QLED, Full HD, Smart TV", "titulo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV", "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p" },
+            "55": { "marca": "Hisense", "pulgadas": "55\"", "precio_formateado": "$1.449.900", "tienda": "Falabella", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55a6nv", "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv" },
+            "58": { "marca": "Hisense", "pulgadas": "58\"", "precio_formateado": "$1.399.900", "tienda": "Éxito", "tecnologia": "LED, 4K UHD, Smart TV", "titulo": "Televisor HISENSE 58 pulgadas LED Uhd4K Smart TV 58A6N", "enlace": "https://www.exito.com/televisor-hisense-58-pulgadas-led-uhd-4k-smart-tv-58a6n-3161945/p" },
+            "60": null,
+            "65": { "marca": "Hisense", "pulgadas": "65\"", "precio_formateado": "$1.835.904", "tienda": "Éxito", "tecnologia": "QLED, 4K UHD, Smart TV", "titulo": "Televisor HISENSE 65 pulgadas QLED Uhd4K Smart TV 65QD5SV", "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-qled-uhd-4k-smart-tv-65qd5sv-3245570/p" }
           }
         }
       };
@@ -480,36 +469,41 @@ py exito_tv_65.py
             <thead>
               <tr>
                 <th>Tamaño</th>
-                <th>Éxito Colombia</th>
-                <th>Falabella Colombia</th>
-                <th>Jumbo Colombia</th>
-                <th>Mejor Oferta (Ganador)</th>
+                <th>Samsung</th>
+                <th>LG</th>
+                <th>Hisense</th>
+                <th>Marca Ganadora</th>
               </tr>
             </thead>
             <tbody>
         `;
 
         SIZES.forEach(s => {
-          const e = data.tiendas.exito[s];
-          const f = data.tiendas.falabella[s];
-          const j = data.tiendas.jumbo[s];
+          const sam = data.marcas.Samsung[s];
+          const lg = data.marcas.LG[s];
+          const his = data.marcas.Hisense[s];
 
-          // Determinar ganador
           const list = [
-            e ? { store: 'Éxito', ...e, num: parseInt(e.precio_formateado.replace(/[^0-9]/g, '')) } : null,
-            f ? { store: 'Falabella', ...f, num: parseInt(f.precio_formateado.replace(/[^0-9]/g, '')) } : null,
-            j ? { store: 'Jumbo', ...j, num: parseInt(j.precio_formateado.replace(/[^0-9]/g, '')) } : null
+            sam ? { ...sam, num: parseInt(sam.precio_formateado.replace(/[^0-9]/g, '')) } : null,
+            lg ? { ...lg, num: parseInt(lg.precio_formateado.replace(/[^0-9]/g, '')) } : null,
+            his ? { ...his, num: parseInt(his.precio_formateado.replace(/[^0-9]/g, '')) } : null
           ].filter(Boolean);
 
           const win = list.length ? list.reduce((min, curr) => curr.num < min.num ? curr : min, list[0]) : null;
 
+          function getStoreClass(st) {
+            if (st === 'Éxito') return 'badge-exito';
+            if (st === 'Falabella') return 'badge-falabella';
+            return 'badge-jumbo';
+          }
+
           html += `
             <tr>
               <td><strong>${s}"</strong></td>
-              <td>${e ? `<strong>${e.marca}</strong> <span class="price-tag">${e.precio_formateado}</span><br><a class="product-link" href="${e.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
-              <td>${f ? `<strong>${f.marca}</strong> <span class="price-tag">${f.precio_formateado}</span><br><a class="product-link" href="${f.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
-              <td>${j ? `<strong>${j.marca}</strong> <span class="price-tag">${j.precio_formateado}</span><br><a class="product-link" href="${j.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
-              <td>${win ? `<span class="badge-winner">🥇 ${win.store} (${win.marca} ${win.precio_formateado})</span>` : '<span class="price-muted">N/D</span>'}</td>
+              <td>${sam ? `<span class="price-tag">${sam.precio_formateado}</span> <span class="badge-store ${getStoreClass(sam.tienda)}">${sam.tienda}</span><br><a class="product-link" href="${sam.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${lg ? `<span class="price-tag">${lg.precio_formateado}</span> <span class="badge-store ${getStoreClass(lg.tienda)}">${lg.tienda}</span><br><a class="product-link" href="${lg.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${his ? `<span class="price-tag">${his.precio_formateado}</span> <span class="badge-store ${getStoreClass(his.tienda)}">${his.tienda}</span><br><a class="product-link" href="${his.enlace}" target="_blank" rel="noopener">Ver oferta ↗</a>` : '<span class="price-muted">No disponible</span>'}</td>
+              <td>${win ? `<span class="badge-winner">🥇 ${win.marca} ${win.precio_formateado} en ${win.tienda}</span>` : '<span class="price-muted">N/D</span>'}</td>
             </tr>
           `;
         });
@@ -518,41 +512,42 @@ py exito_tv_65.py
         return html;
       }
 
-      function renderStore(data, storeKey, storeName) {
-        const storeData = data.tiendas[storeKey] || {};
+      function renderBrand(data, brandName) {
+        const brandData = data.marcas[brandName] || {};
         let html = `
           <table>
             <thead>
               <tr>
                 <th>Tamaño</th>
-                <th>Marca</th>
                 <th>Precio Final</th>
+                <th>Tienda</th>
                 <th>Tecnología</th>
                 <th>Modelo / Título</th>
-                <th>Enlace</th>
+                <th>Enlace Directo</th>
               </tr>
             </thead>
             <tbody>
         `;
 
         SIZES.forEach(s => {
-          const item = storeData[s];
+          const item = brandData[s];
           if (item) {
+            let storeClass = item.tienda === 'Éxito' ? 'badge-exito' : (item.tienda === 'Falabella' ? 'badge-falabella' : 'badge-jumbo');
             html += `
               <tr>
                 <td><strong>${item.pulgadas}</strong></td>
-                <td><strong>${item.marca}</strong></td>
                 <td class="price-tag">${item.precio_formateado}</td>
+                <td><span class="badge-store ${storeClass}">${item.tienda}</span></td>
                 <td>${item.tecnologia}</td>
                 <td>${item.titulo}</td>
-                <td><a class="product-link" href="${item.enlace}" target="_blank" rel="noopener">Ver en ${storeName} ↗</a></td>
+                <td><a class="product-link" href="${item.enlace}" target="_blank" rel="noopener">Ver en ${item.tienda} ↗</a></td>
               </tr>
             `;
           } else {
             html += `
               <tr>
                 <td><strong>${s}"</strong></td>
-                <td colspan="4" class="price-muted">Actualmente sin inventario LG / Samsung en este tamaño</td>
+                <td colspan="4" class="price-muted">Actualmente sin inventario en esta medida</td>
                 <td><span class="price-muted">—</span></td>
               </tr>
             `;
@@ -568,11 +563,10 @@ py exito_tv_65.py
         const container = document.getElementById('table-container');
         const dateEl = document.getElementById('verification-date');
 
-        // Intentar cargar la versión más reciente del JSON si está servido por HTTP
-        fetch('./tv-scraper/precios_retail_verificados.json')
+        fetch('./tv-scraper/precios_marcas_separadas.json')
           .then(res => res.json())
           .then(remoteData => {
-            if (remoteData && remoteData.tiendas) {
+            if (remoteData && remoteData.marcas) {
               currentData = remoteData;
               if (remoteData.fecha_verificacion) {
                 dateEl.textContent = remoteData.fecha_verificacion;
@@ -580,23 +574,16 @@ py exito_tv_65.py
               renderTab('comparativa');
             }
           })
-          .catch(() => {
-            // Usa el dataset embebido por defecto
-          });
+          .catch(() => {});
 
         function renderTab(tabKey) {
           if (tabKey === 'comparativa') {
             container.innerHTML = renderComparativa(currentData);
-          } else if (tabKey === 'exito') {
-            container.innerHTML = renderStore(currentData, 'exito', 'Éxito');
-          } else if (tabKey === 'falabella') {
-            container.innerHTML = renderStore(currentData, 'falabella', 'Falabella');
-          } else if (tabKey === 'jumbo') {
-            container.innerHTML = renderStore(currentData, 'jumbo', 'Jumbo');
+          } else {
+            container.innerHTML = renderBrand(currentData, tabKey);
           }
         }
 
-        // Event listeners para tabs
         document.querySelectorAll('.tab-btn').forEach(btn => {
           btn.addEventListener('click', () => {
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -605,7 +592,6 @@ py exito_tv_65.py
           });
         });
 
-        // Render inicial
         renderTab('comparativa');
       }
 

@@ -28,16 +28,17 @@ jobs:
           pip install playwright
           playwright install --with-deps chromium
 
-      - name: Ejecutar Scraper Multi-Retail (Éxito, Falabella y Jumbo)
+      - name: Ejecutar Scrapers de Televisores (Marcas y Retailers)
         run: |
           cd proyectos/tv-scraper
+          python retail_scraper_marcas.py
           python retail_scraper_3_tiendas.py
 
       - name: Comprobar cambios y hacer commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add proyectos/tv-scraper/precios_retail_verificados.json proyectos/tv-scraper/comparativa_3_tiendas.csv
+          git add proyectos/tv-scraper/*.json proyectos/tv-scraper/*.csv
           if git diff --staged --quiet; then
             echo "No hay variaciones en los precios detectados hoy."
           else
