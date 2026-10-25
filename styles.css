@@ -104,6 +104,16 @@ h2 { margin-bottom: 0; font-size: clamp(37px, 4.4vw, 56px); line-height: 1.12; }
   border: 2px solid rgba(56, 189, 248, 0.6);
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
 }
+.visual-scraper { background: #1a1622; color: #f26f50; }
+.visual-scraper .visual-mark { color: #f26f50; font-weight: 700; }
+.visual-scraper .visual-shape {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(242, 111, 80, 0.35) 0%, rgba(199, 243, 106, 0.25) 100%);
+  border: 1px solid rgba(242, 111, 80, 0.5);
+  box-shadow: 12px 12px 0 -3px rgba(242, 111, 80, 0.4);
+}
 .nav-book-link { color: var(--orange) !important; font-weight: 700 !important; }
 .nav-book-link:hover { opacity: 0.85; }
 .visual-mark { position: absolute; z-index: 1; top: 14px; left: 17px; font: 10px var(--mono); }

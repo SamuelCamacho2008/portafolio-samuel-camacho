@@ -1,0 +1,68 @@
+[
+  {
+    "tienda": "Éxito",
+    "marca": "LG",
+    "pulgadas": "43\"",
+    "pulgadas_num": 43,
+    "tecnologia": "LED, Full HD, Smart TV",
+    "precio_final": 901928,
+    "precio_formateado": "$901.928",
+    "titulo": "Televisor Lg 43 Pulgadas Led Full Hd Smart Tv 43Lm6370pdb",
+    "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p"
+  },
+  {
+    "tienda": "Éxito",
+    "marca": "Samsung",
+    "pulgadas": "50\"",
+    "pulgadas_num": 50,
+    "tecnologia": "Mini LED, Full HD, Smart TV",
+    "precio_final": 1099900,
+    "precio_formateado": "$1.099.900",
+    "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+    "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+  },
+  {
+    "tienda": "Éxito",
+    "marca": "LG",
+    "pulgadas": "55\"",
+    "pulgadas_num": 55,
+    "tecnologia": "LED, 4K UHD, Smart TV",
+    "precio_final": 1653903,
+    "precio_formateado": "$1.653.903",
+    "titulo": "Televisor LG 55 pulgadas LED Uhd4K Smart TV 55NU830BPSA",
+    "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p"
+  },
+  {
+    "tienda": "Éxito",
+    "marca": "Samsung",
+    "pulgadas": "58\"",
+    "pulgadas_num": 58,
+    "tecnologia": "LED, 4K UHD, Smart TV",
+    "precio_final": 1399901,
+    "precio_formateado": "$1.399.901",
+    "titulo": "Televisor SAMSUNG 58 pulgadas LED Uhd4K Smart TV UN58U8000HKXZL",
+    "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000hkxzl-3254967/p"
+  },
+  {
+    "tienda": "Éxito",
+    "marca": "LG",
+    "pulgadas": "60\"",
+    "pulgadas_num": 60,
+    "tecnologia": "LED, 4K UHD, Smart TV",
+    "precio_final": 1799900,
+    "precio_formateado": "$1.799.900",
+    "titulo": "Televisor LG 60 pulgadas LED Uhd4K Smart TV 60UA7500PSA",
+    "enlace": "https://www.exito.com/televisor-lg-60-pulgadas-led-uhd-4k-smart-tv-60ua7500psaawc-3221488/p"
+  },
+  {
+    "tienda": "Éxito",
+    "marca": "Samsung",
+    "pulgadas": "65\"",
+    "pulgadas_num": 65,
+    "tecnologia": "LED, 4K UHD, Smart TV",
+    "precio_final": 1799900,
+    "precio_formateado": "$1.799.900",
+    "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000HKXZL",
+    "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p"
+  }
+]

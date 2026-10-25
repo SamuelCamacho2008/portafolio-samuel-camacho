@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retail Scraper Playwright — Samuel Camacho</title>
+    <meta
+      name="description"
+      content="Retail Web Scraper con Playwright: Extractor inteligente y comparador de precios en tiempo real para Éxito y Falabella Colombia (LG & Samsung)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --paper: #f7f6f2;
+        --card-bg: #ffffff;
+        --ink: #1d201d;
+        --muted: #6a6e66;
+        --line: #e3e2db;
+        --orange: #f26f50;
+        --lime: #c7f36a;
+        --teal: #0284c7;
+        --teal-dark: #0369a1;
+        --font-main: "DM Sans", system-ui, sans-serif;
+        --font-mono: "DM Mono", monospace;
+        --font-display: "Manrope", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-main);
+        line-height: 1.6;
+      }
+
+      .topbar {
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+        padding: 14px 24px;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .topbar-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-link {
+        color: var(--ink);
+        text-decoration: none;
+        font: 13px var(--font-mono);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .back-link:hover { color: var(--orange); }
+
+      .github-btn {
+        background: var(--ink);
+        color: var(--paper);
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font: 12px var(--font-mono);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: transform 0.2s, background 0.2s;
+      }
+      .github-btn:hover {
+        background: #000;
+        transform: translateY(-1px);
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+
+      .project-header {
+        margin-bottom: 40px;
+      }
+      .project-eyebrow {
+        font: 12px var(--font-mono);
+        color: var(--orange);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .project-title {
+        font-family: var(--font-display);
+        font-size: clamp(32px, 5vw, 48px);
+        line-height: 1.15;
+        margin: 0 0 16px;
+        letter-spacing: -0.02em;
+      }
+      .project-lead {
+        font-size: 18px;
+        color: var(--muted);
+        max-width: 800px;
+        margin: 0 0 24px;
+      }
+
+      .tags-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 32px;
+      }
+      .tag {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        padding: 4px 12px;
+        border-radius: 100px;
+        font: 12px var(--font-mono);
+        color: var(--ink);
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-bottom: 48px;
+      }
+      .metric-card {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .metric-number {
+        font-family: var(--font-display);
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--orange);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .metric-label {
+        font: 13px var(--font-mono);
+        color: var(--muted);
+      }
+
+      .section-block {
+        margin-bottom: 48px;
+      }
+      .section-title {
+        font-family: var(--font-display);
+        font-size: 24px;
+        margin: 0 0 16px;
+        letter-spacing: -0.01em;
+      }
+
+      .table-card {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 24px;
+      }
+      .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        text-align: left;
+      }
+      th {
+        background: #fbfbfa;
+        padding: 12px 16px;
+        font: 12px var(--font-mono);
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid var(--line);
+      }
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: middle;
+      }
+      tr:last-child td { border-bottom: none; }
+      tr:hover td { background: #fafaf8; }
+
+      .badge-store {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font: 11px var(--font-mono);
+        font-weight: 600;
+      }
+      .badge-exito { background: #fff0eb; color: #d03b0d; }
+      .badge-falabella { background: #eaf6ea; color: #1c7c25; }
+
+      .price-tag {
+        font-family: var(--font-mono);
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .product-link {
+        color: var(--orange);
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .product-link:hover { text-decoration: underline; }
+
+      .code-card {
+        background: #191c1d;
+        color: #f0f0eb;
+        border-radius: 8px;
+        padding: 20px;
+        font-family: var(--font-mono);
+        font-size: 13px;
+        overflow-x: auto;
+        line-height: 1.6;
+      }
+      .code-comment { color: #8e948c; }
+      .code-keyword { color: #f26f50; }
+      .code-string { color: #c7f36a; }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .feature-card {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 24px;
+      }
+      .feature-card h3 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        font-family: var(--font-display);
+      }
+      .feature-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="back-link" href="../index.html">← Volver al portafolio</a>
+        <a class="github-btn" href="https://github.com/SamuelCamacho2008" target="_blank" rel="noopener">
+          <span>GitHub</span> ↗
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="project-header">
+        <div class="project-eyebrow">AUTOMATIZACIÓN &amp; WEB SCRAPING · 2026</div>
+        <h1 class="project-title">Retail Scraper Playwright — Éxito &amp; Falabella</h1>
+        <p class="project-lead">
+          Extractor inteligente y comparador de precios en tiempo real para las cadenas líderes de comercio electrónico en Colombia. Navegación en SPAs complejas (VTEX FastStore y Next.js), normalización técnica de televisores LG y Samsung, y filtrado automatizado por pulgadas y especificaciones.
+        </p>
+
+        <div class="tags-bar">
+          <span class="tag">Python 3</span>
+          <span class="tag">Playwright Headless</span>
+          <span class="tag">Chromium Automation</span>
+          <span class="tag">VTEX FastStore</span>
+          <span class="tag">Next.js SPA</span>
+          <span class="tag">Regex Parsing</span>
+          <span class="tag">E-Commerce Intelligence</span>
+        </div>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">2</div>
+          <div class="metric-label">Grandes retailers sincronizados</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Filtrado LG &amp; Samsung sin accesorios</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">6</div>
+          <div class="metric-label">Scripts dedicados por tamaño de pantalla</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">&lt; 15s</div>
+          <div class="metric-label">Tiempo promedio de extracción multitienda</div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 1: ÉXITO POR TAMAÑOS -->
+      <section class="section-block">
+        <h2 class="section-title">Resultados Éxito Colombia: El más barato por tamaño</h2>
+        <p style="color: var(--muted); margin-bottom: 20px;">
+          Extracción dirigida a las medidas solicitadas (43", 50", 55", 58", 60" y 65"), discriminando marcas líderes (LG y Samsung) y ordenadas por precio final ascendente.
+        </p>
+
+        <div class="table-card">
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tamaño</th>
+                  <th>Marca</th>
+                  <th>Precio Final</th>
+                  <th>Tecnología</th>
+                  <th>Modelo / Título</th>
+                  <th>Enlace</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>43"</strong></td>
+                  <td>LG</td>
+                  <td class="price-tag">$901.928</td>
+                  <td>LED, Full HD, Smart TV</td>
+                  <td>Televisor LG 43" LED Full HD Smart TV 43LM6370PDB</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+                <tr>
+                  <td><strong>50"</strong></td>
+                  <td>Samsung</td>
+                  <td class="price-tag">$1.099.900</td>
+                  <td>Mini LED, Full HD, Smart TV</td>
+                  <td>Televisor Samsung 50" Mini LED FHD Smart TV UN50M60HAKXZL</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+                <tr>
+                  <td><strong>55"</strong></td>
+                  <td>LG</td>
+                  <td class="price-tag">$1.653.903</td>
+                  <td>LED, 4K UHD, Smart TV</td>
+                  <td>Televisor LG 55" LED UHD 4K Smart TV 55NU830BPSA</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+                <tr>
+                  <td><strong>58"</strong></td>
+                  <td>Samsung</td>
+                  <td class="price-tag">$1.399.901</td>
+                  <td>LED, 4K UHD, Smart TV</td>
+                  <td>Televisor Samsung 58" LED UHD 4K Smart TV UN58U8000HKXZL</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000hkxzl-3254967/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+                <tr>
+                  <td><strong>60"</strong></td>
+                  <td>LG</td>
+                  <td class="price-tag">$1.799.900</td>
+                  <td>LED, 4K UHD, Smart TV</td>
+                  <td>Televisor LG 60" LED UHD 4K Smart TV 60UA7500PSA</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-lg-60-pulgadas-led-uhd-4k-smart-tv-60ua7500psaawc-3221488/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+                <tr>
+                  <td><strong>65"</strong></td>
+                  <td>Samsung</td>
+                  <td class="price-tag">$1.799.900</td>
+                  <td>LED, 4K UHD, Smart TV</td>
+                  <td>Televisor Samsung 65" LED UHD 4K Smart TV UN65U8000HKXZL</td>
+                  <td><a class="product-link" href="https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p" target="_blank" rel="noopener">Ver oferta ↗</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: ARQUITECTURA TÉCNICA -->
+      <section class="section-block">
+        <h2 class="section-title">Arquitectura e Innovación Técnica</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Navegación Robusta en SPAs</h3>
+            <p>
+              Tanto Éxito (VTEX FastStore) como Falabella (Next.js) utilizan renderizado reactivo con hydration en el cliente. El script utiliza Playwright sincronizado con <code>networkidle</code> y parámetros de facetado nativos para evitar bloqueos y paginaciones lentas.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Extracción Híbrida JSON + DOM</h3>
+            <p>
+              Falabella embebe los metadatos completos en <code>__NEXT_DATA__</code>, permitiendo una extracción atómica y veloz. Para Éxito, se combina evaluación de árbol DOM y clases predictivas de precio regular vs descuento.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Filtros Semánticos &amp; Anti-Accesorios</h3>
+            <p>
+              Evita falsos positivos habituales en búsquedas de e-commerce (bases de pared, cables HDMI, controles remotos o proyectores portátiles), verificando tokens clave y normalizando pulgadas con expresiones regulares.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: EJECUCIÓN -->
+      <section class="section-block">
+        <h2 class="section-title">Instrucciones de Ejecución</h2>
+        <div class="code-card">
+<span class="code-comment"># 1. Clonar y preparar entorno</span>
+py -m pip install playwright
+py -m playwright install chromium
+
+<span class="code-comment"># 2. Ejecutar comparador general multitienda (Top 10)</span>
+py scraper_tv.py
+
+<span class="code-comment"># 3. Filtrar de 50 pulgadas en adelante</span>
+py scraper_tv.py --min-inches 50
+
+<span class="code-comment"># 4. Ejecutar por tamaño individual en Éxito</span>
+py exito_tv_43.py
+py exito_tv_50.py
+py exito_tv_55.py
+py exito_tv_58.py
+py exito_tv_60.py
+py exito_tv_65.py
+
+<span class="code-comment"># 5. Ejecutar todos los tamaños en Éxito y exportar CSV/JSON</span>
+py exito_tv_todos.py
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
