@@ -1,0 +1,312 @@
+{
+  "fecha_verificacion": "25 de octubre de 2026, 02:25 PM",
+  "timestamp_iso": "2026-10-25T14:25:00.000000",
+  "tiendas": {
+    "Éxito": [
+      {
+        "posicion": 1,
+        "marca": "Hisense",
+        "pulgadas": "32\"",
+        "precio_final": 499900,
+        "precio_formateado": "$499.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor HISENSE 32 pulgadas LED Hd Smart TV 32A4NV",
+        "enlace": "https://www.exito.com/televisor-hisense-32-pulgadas-led-hd-smart-tv-32a4nv-3208353/p"
+      },
+      {
+        "posicion": 2,
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "precio_final": 581530,
+        "precio_formateado": "$581.530",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor Samsung 32 pulgadas Hd Led Un32h5000fkxzl",
+        "enlace": "https://www.exito.com/televisor-samsung-flat-led-smart-tv-32-pulgadas-hd-hdmi-abre-y-edita-archivos-de-office-104755836-mp/p"
+      },
+      {
+        "posicion": 3,
+        "marca": "Hisense",
+        "pulgadas": "40\"",
+        "precio_final": 695900,
+        "precio_formateado": "$695.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 40 pulgadas LED Fhd Smart TV 40A4NV",
+        "enlace": "https://www.exito.com/televisor-hisense-40-pulgadas-led-fhd-smart-tv-40a4nv-3218633/p"
+      },
+      {
+        "posicion": 4,
+        "marca": "Hisense",
+        "pulgadas": "43\"",
+        "precio_final": 715906,
+        "precio_formateado": "$715.906",
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 43 pulgadas QLED Fhd Smart TV 43Q4SV",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p"
+      },
+      {
+        "posicion": 5,
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "precio_final": 716122,
+        "precio_formateado": "$716.122",
+        "tecnologia": "Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40 Pulgadas Full Hd F6000 Smart Tv",
+        "enlace": "https://www.exito.com/televisor-samsung-40-pulgadas-full-hd-f6000-smart-tv-un40f6000fkxzl-104497688-mp/p"
+      },
+      {
+        "posicion": 6,
+        "marca": "LG",
+        "pulgadas": "43\"",
+        "precio_final": 939900,
+        "precio_formateado": "$939.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor LG 43 Pulgadas Led Full Hd Smart Tv 43LM6370PDB",
+        "enlace": "https://www.exito.com/televisor-lg-43-pulgadas-109-cm-led-full-hd-plano-smart-tv-101542779-mp/p"
+      },
+      {
+        "posicion": 7,
+        "marca": "Hisense",
+        "pulgadas": "50\"",
+        "precio_final": 1007904,
+        "precio_formateado": "$1.007.904",
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "modelo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p"
+      },
+      {
+        "posicion": 8,
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "precio_final": 1099900,
+        "precio_formateado": "$1.099.900",
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "modelo": "Televisor SAMSUNG 50\" Mini LED FHD Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+      },
+      {
+        "posicion": 9,
+        "marca": "Hisense",
+        "pulgadas": "58\"",
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor HISENSE 58 pulgadas LED Uhd4K Smart TV 58A6N",
+        "enlace": "https://www.exito.com/televisor-hisense-58-pulgadas-led-uhd-4k-smart-tv-58a6n-3161945/p"
+      },
+      {
+        "posicion": 10,
+        "marca": "Samsung",
+        "pulgadas": "58\"",
+        "precio_final": 1599869,
+        "precio_formateado": "$1.599.869",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv UN58U8000",
+        "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
+      }
+    ],
+    "Falabella": [
+      {
+        "posicion": 1,
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "precio_final": 589900,
+        "precio_formateado": "$589.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor 32 Pulgadas LED Smart TV HD UN32H5000FKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/147903470/Televisor-Samsung-32-Pulgadas-LED-Smart-TV-HD-TV-UN32H5000FKXZL"
+      },
+      {
+        "posicion": 2,
+        "marca": "Hisense",
+        "pulgadas": "32\"",
+        "precio_final": 679999,
+        "precio_formateado": "$679.999",
+        "tecnologia": "HD, VIDAA OS",
+        "modelo": "Televisor 32 HD VIDAA 32A4NV Smart Tv",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/153369992/televisor-hisense-32-hd-vidaa-32a4nv-smart-tv"
+      },
+      {
+        "posicion": 3,
+        "marca": "Hisense",
+        "pulgadas": "40\"",
+        "precio_final": 727900,
+        "precio_formateado": "$727.900",
+        "tecnologia": "Full HD, VIDAA OS",
+        "modelo": "Televisor 40″ Smart TV Full HD 40A4NV S.O VIDAA",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156083646/televisor-hisense-40-smart-tv-full-hd-40a4nv-s-o-vidaa"
+      },
+      {
+        "posicion": 4,
+        "marca": "Samsung",
+        "pulgadas": "43\"",
+        "precio_final": 1139900,
+        "precio_formateado": "$1.139.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor 43′ 4K UHD Crystal Smart Tv UN43U8000FK",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/146574660/Televisor-Samsung-43%E2%80%B2-4K-UHD-Crystal-Smart-Tv-UN43U8000FK"
+      },
+      {
+        "posicion": 5,
+        "marca": "LG",
+        "pulgadas": "50\"",
+        "precio_final": 1394900,
+        "precio_formateado": "$1.394.900",
+        "tecnologia": "NanoCell, 4K UHD",
+        "modelo": "Televisor 50 Pulgadas Nano 4k Uhd IA - HDR10 Pro",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156684867/televisor-lg-50-pulgadas-nano-4k-uhd-ia"
+      },
+      {
+        "posicion": 6,
+        "marca": "Hisense",
+        "pulgadas": "55\"",
+        "precio_final": 1449900,
+        "precio_formateado": "$1.449.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55A6NV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
+      },
+      {
+        "posicion": 7,
+        "marca": "LG",
+        "pulgadas": "58\"",
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "modelo": "Televisor 58 pulgadas NANO 4K UHD webOS 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
+      },
+      {
+        "posicion": 8,
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "tecnologia": "4K UHD, Smart TV",
+        "modelo": "Televisor 55 Pulgadas 4K UHD UN55U8000HKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+      },
+      {
+        "posicion": 9,
+        "marca": "LG",
+        "pulgadas": "55\"",
+        "precio_final": 1642900,
+        "precio_formateado": "$1.642.900",
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "modelo": "Televisor 55 Pulgadas 55NU85 Nano 4K UHD Smart TV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158570049/televisor-lg-55-pulgadas-55nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic"
+      },
+      {
+        "posicion": 10,
+        "marca": "Samsung",
+        "pulgadas": "65\"",
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "tecnologia": "Crystal UHD, 4K, Smart TV",
+        "modelo": "Televisor 65 Pulgadas Crystal UHD 4K Smart TV UN65DU7000",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/139045763/televisor-samsung-65-crystal-uhd-4k-smart-tv"
+      }
+    ],
+    "Jumbo": [
+      {
+        "posicion": 1,
+        "marca": "Samsung",
+        "pulgadas": "32\"",
+        "precio_final": 659900,
+        "precio_formateado": "$659.900",
+        "tecnologia": "LED, HD, Smart TV",
+        "modelo": "Televisor Samsung 32'' Pulgadas LED Smart TV HD UN32H5000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-32-pulgadas-led-smart-tv-hd-tv-un32h5000fkxzl-3682958/p"
+      },
+      {
+        "posicion": 2,
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "precio_final": 849900,
+        "precio_formateado": "$849.900",
+        "tecnologia": "LED, Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40'' Pulgadas LED FHD UN40F6000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p"
+      },
+      {
+        "posicion": 3,
+        "marca": "Samsung",
+        "pulgadas": "40\"",
+        "precio_final": 886900,
+        "precio_formateado": "$886.900",
+        "tecnologia": "Full HD, Smart TV",
+        "modelo": "Televisor Samsung 40 Pulgadas FHD Smart TV UN40F6000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-fhd-smart-tv-un40f6000fkxzl-20139349/p"
+      },
+      {
+        "posicion": 4,
+        "marca": "Samsung",
+        "pulgadas": "43\"",
+        "precio_final": 1199900,
+        "precio_formateado": "$1.199.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 43\" Pulgadas LED UHD 4K UN43U8000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
+      },
+      {
+        "posicion": 5,
+        "marca": "LG",
+        "pulgadas": "43\"",
+        "precio_final": 1349900,
+        "precio_formateado": "$1.349.900",
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "modelo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
+      },
+      {
+        "posicion": 6,
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "precio_final": 1599900,
+        "precio_formateado": "$1.599.900",
+        "tecnologia": "Mini LED, Smart TV",
+        "modelo": "Televisor Samsung 50\" Pulgadas Mini LED UN50M75HAKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p"
+      },
+      {
+        "posicion": 7,
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "precio_final": 1649900,
+        "precio_formateado": "$1.649.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
+      },
+      {
+        "posicion": 8,
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "precio_final": 1699900,
+        "precio_formateado": "$1.699.900",
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "modelo": "Televisor Samsung 55'' Pulgadas LED UHD 4K UN55U8000FK",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000fkxzl-3682954/p"
+      },
+      {
+        "posicion": 9,
+        "marca": "Samsung",
+        "pulgadas": "55\"",
+        "precio_final": 1849900,
+        "precio_formateado": "$1.849.900",
+        "tecnologia": "Mini LED, Smart TV",
+        "modelo": "Televisor Samsung 55'' Pulgadas Mini LED UN55M75HAKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p"
+      },
+      {
+        "posicion": 10,
+        "marca": "LG",
+        "pulgadas": "55\"",
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "tecnologia": "QNED, 4K UHD, Smart TV",
+        "modelo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74",
+        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
+      }
+    ]
+  }
+}
