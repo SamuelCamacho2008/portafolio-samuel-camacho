@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "26 de octubre de 2026, 05:06 PM",
-  "timestamp_iso": "2026-10-26T17:06:49.766619",
+  "fecha_verificacion": "27 de octubre de 2026, 04:11 PM",
+  "timestamp_iso": "2026-10-27T16:11:08.015885",
   "marcas": {
     "Samsung": {
       "43": {
@@ -15,26 +15,26 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/146574660/Televisor-Samsung-43%E2%80%B2-4K-UHD-Crystal-Smart-Tv-UN43U8000FK"
       },
       "50": {
-        "tienda": "Éxito",
+        "tienda": "Falabella",
         "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "Mini LED, Full HD, Smart TV",
-        "precio_final": 1099900,
-        "precio_formateado": "$1.099.900",
-        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+        "tecnologia": "Mini LED, Smart TV",
+        "precio_final": 1339900,
+        "precio_formateado": "$1.339.900",
+        "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl"
       },
       "55": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD",
-        "precio_final": 1499900,
-        "precio_formateado": "$1.499.900",
-        "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 2079900,
+        "precio_formateado": "$2.079.900",
+        "titulo": "Televisor SAMSUNG 55 pulgadas LED Uhd4K Smart TV UN55DU7000KXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55du7000kxzl-3172868/p"
       },
       "58": {
         "tienda": "Éxito",
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1599869,
-        "precio_formateado": "$1.599.869",
+        "precio_final": 1599858,
+        "precio_formateado": "$1.599.858",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -54,10 +54,10 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1799900,
-        "precio_formateado": "$1.799.900",
-        "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000HKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p"
+        "precio_final": 2019904,
+        "precio_formateado": "$2.019.904",
+        "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000FKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000fkxzl-3213988/p"
       }
     },
     "LG": {
@@ -135,22 +135,22 @@
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 1007904,
-        "precio_formateado": "$1.007.904",
-        "titulo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1099900,
+        "precio_formateado": "$1.099.900",
+        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       },
       "55": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1449900,
-        "precio_formateado": "$1.449.900",
-        "titulo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55a6nv",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
+        "tecnologia": "QLED, 4K UHD, Smart TV",
+        "precio_final": 1545831,
+        "precio_formateado": "$1.545.831",
+        "titulo": "Televisor Hisense 55 Pulgadas Hi Qled 4K Smart Tv 55Qd5sv",
+        "enlace": "https://www.exito.com/televisor-hisense-55-pulgadas-hi-qled-4k-smart-tv-55qd5sv-105136993-mp/p"
       },
       "58": {
         "tienda": "Éxito",
@@ -169,11 +169,11 @@
         "marca": "Hisense",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1835904,
-        "precio_formateado": "$1.835.904",
-        "titulo": "Televisor HISENSE 65 pulgadas QLED Uhd4K Smart TV 65QD5SV",
-        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-qled-uhd-4k-smart-tv-65qd5sv-3245570/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1793954,
+        "precio_formateado": "$1.793.954",
+        "titulo": "Televisor HISENSE 65 pulgadas LED Uhd4K Smart TV 65A6K",
+        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-led-uhd-4k-smart-tv-65a6k-3130850/p"
       }
     }
   },
@@ -226,20 +226,20 @@
       "pulgadas_num": 50,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$1.007.904",
+        "precio_formateado": "$1.099.900",
         "tienda": "Éxito",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p"
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       },
       "samsung": {
-        "tienda": "Éxito",
+        "tienda": "Falabella",
         "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "Mini LED, Full HD, Smart TV",
-        "precio_final": 1099900,
-        "precio_formateado": "$1.099.900",
-        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+        "tecnologia": "Mini LED, Smart TV",
+        "precio_final": 1339900,
+        "precio_formateado": "$1.339.900",
+        "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl"
       },
       "lg": {
         "tienda": "Falabella",
@@ -257,11 +257,11 @@
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 1007904,
-        "precio_formateado": "$1.007.904",
-        "titulo": "Televisor HISENSE 50 pulgadas QLED Fhd Smart TV 50Q4SV",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-qled-fhd-smart-tv-50q4sv-3242628/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1099900,
+        "precio_formateado": "$1.099.900",
+        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       }
     },
     {
@@ -269,20 +269,20 @@
       "pulgadas_num": 55,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$1.449.900",
-        "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
+        "precio_formateado": "$1.545.831",
+        "tienda": "Éxito",
+        "enlace": "https://www.exito.com/televisor-hisense-55-pulgadas-hi-qled-4k-smart-tv-55qd5sv-105136993-mp/p"
       },
       "samsung": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD",
-        "precio_final": 1499900,
-        "precio_formateado": "$1.499.900",
-        "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 2079900,
+        "precio_formateado": "$2.079.900",
+        "titulo": "Televisor SAMSUNG 55 pulgadas LED Uhd4K Smart TV UN55DU7000KXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55du7000kxzl-3172868/p"
       },
       "lg": {
         "tienda": "Falabella",
@@ -296,15 +296,15 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/158570049/televisor-lg-55-pulgadas-55nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic"
       },
       "hisense": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1449900,
-        "precio_formateado": "$1.449.900",
-        "titulo": "Televisor 55 Pulgadas Led Uhd 4k Smart Tv 55a6nv",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
+        "tecnologia": "QLED, 4K UHD, Smart TV",
+        "precio_final": 1545831,
+        "precio_formateado": "$1.545.831",
+        "titulo": "Televisor Hisense 55 Pulgadas Hi Qled 4K Smart Tv 55Qd5sv",
+        "enlace": "https://www.exito.com/televisor-hisense-55-pulgadas-hi-qled-4k-smart-tv-55qd5sv-105136993-mp/p"
       }
     },
     {
@@ -322,8 +322,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1599869,
-        "precio_formateado": "$1.599.869",
+        "precio_final": 1599858,
+        "precio_formateado": "$1.599.858",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -367,10 +367,10 @@
       "pulgadas": "65\"",
       "pulgadas_num": 65,
       "ganador": {
-        "marca": "Samsung",
-        "precio_formateado": "$1.799.900",
+        "marca": "Hisense",
+        "precio_formateado": "$1.793.954",
         "tienda": "Éxito",
-        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p"
+        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-led-uhd-4k-smart-tv-65a6k-3130850/p"
       },
       "samsung": {
         "tienda": "Éxito",
@@ -378,10 +378,10 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1799900,
-        "precio_formateado": "$1.799.900",
-        "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000HKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3251270/p"
+        "precio_final": 2019904,
+        "precio_formateado": "$2.019.904",
+        "titulo": "Televisor SAMSUNG 65 pulgadas LED Uhd4K Smart TV UN65U8000FKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000fkxzl-3213988/p"
       },
       "lg": {
         "tienda": "Éxito",
@@ -399,11 +399,11 @@
         "marca": "Hisense",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1835904,
-        "precio_formateado": "$1.835.904",
-        "titulo": "Televisor HISENSE 65 pulgadas QLED Uhd4K Smart TV 65QD5SV",
-        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-qled-uhd-4k-smart-tv-65qd5sv-3245570/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1793954,
+        "precio_formateado": "$1.793.954",
+        "titulo": "Televisor HISENSE 65 pulgadas LED Uhd4K Smart TV 65A6K",
+        "enlace": "https://www.exito.com/televisor-hisense-65-pulgadas-led-uhd-4k-smart-tv-65a6k-3130850/p"
       }
     }
   ]
