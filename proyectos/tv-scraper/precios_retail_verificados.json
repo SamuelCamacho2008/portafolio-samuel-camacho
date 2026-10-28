@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "27 de octubre de 2026, 04:09 PM",
-  "timestamp_iso": "2026-10-27T16:09:37.490026",
+  "fecha_verificacion": "28 de octubre de 2026, 04:57 PM",
+  "timestamp_iso": "2026-10-28T16:57:13.505203",
   "tiendas": {
     "exito": {
       "43": {
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1543383,
-        "precio_formateado": "$1.543.383",
+        "precio_final": 1543366,
+        "precio_formateado": "$1.543.366",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -111,36 +111,36 @@
     "jumbo": {
       "43": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1349900,
-        "precio_formateado": "$1.349.900",
-        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC Smart TV UHD Nano 4K 43\" LG 43NU800BPSC",
-        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1199900,
+        "precio_formateado": "$1.199.900",
+        "titulo": "Televisor Samsung 43\" Pulgadas LED UHD 4K Smart TV UN43U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
       },
       "50": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "tecnologia": "Mini LED, Smart TV",
         "precio_final": 1599900,
         "precio_formateado": "$1.599.900",
-        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA Smart TV Nano UHD 4K 50\" LG 50NU855BPSA",
-        "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p"
+        "titulo": "Televisor Samsung 50\" Pulgadas Mini LED Smart TV UN50M75HAKXZL Televisor Samsung 50\" Mini LED Smart TV UN50M75HAKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p"
       },
       "55": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "QNED, 4K UHD, Smart TV",
-        "precio_final": 1899900,
-        "precio_formateado": "$1.899.900",
-        "titulo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74BSA",
-        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1649900,
+        "precio_formateado": "$1.649.900",
+        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
       },
       "58": null,
       "60": null,
@@ -152,7 +152,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 2199900,
         "precio_formateado": "$2.199.900",
-        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA Smart TV 4K Ultra HD 65\" LG 65NU850BPSA",
+        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA",
         "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p"
       }
     }
@@ -182,14 +182,14 @@
       "falabella": null,
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1349900,
-        "precio_formateado": "$1.349.900",
-        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC Smart TV UHD Nano 4K 43\" LG 43NU800BPSC",
-        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1199900,
+        "precio_formateado": "$1.199.900",
+        "titulo": "Televisor Samsung 43\" Pulgadas LED UHD 4K Smart TV UN43U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
       }
     },
     {
@@ -226,14 +226,14 @@
       },
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "tecnologia": "Mini LED, Smart TV",
         "precio_final": 1599900,
         "precio_formateado": "$1.599.900",
-        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA Smart TV Nano UHD 4K 50\" LG 50NU855BPSA",
-        "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p"
+        "titulo": "Televisor Samsung 50\" Pulgadas Mini LED Smart TV UN50M75HAKXZL Televisor Samsung 50\" Mini LED Smart TV UN50M75HAKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p"
       }
     },
     {
@@ -270,14 +270,14 @@
       },
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "QNED, 4K UHD, Smart TV",
-        "precio_final": 1899900,
-        "precio_formateado": "$1.899.900",
-        "titulo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74BSA",
-        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1649900,
+        "precio_formateado": "$1.649.900",
+        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
       }
     },
     {
@@ -296,8 +296,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1543383,
-        "precio_formateado": "$1.543.383",
+        "precio_final": 1543366,
+        "precio_formateado": "$1.543.366",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -368,7 +368,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 2199900,
         "precio_formateado": "$2.199.900",
-        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA Smart TV 4K Ultra HD 65\" LG 65NU850BPSA",
+        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA",
         "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p"
       }
     }
