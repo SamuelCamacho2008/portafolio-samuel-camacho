@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "30 de octubre de 2026, 04:56 PM",
-  "timestamp_iso": "2026-10-30T16:56:21.316811",
+  "fecha_verificacion": "31 de octubre de 2026, 03:56 PM",
+  "timestamp_iso": "2026-10-31T15:56:51.183528",
   "tiendas": {
     "exito": {
       "43": {
@@ -31,8 +31,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1443908,
-        "precio_formateado": "$1.443.908",
+        "precio_final": 1603903,
+        "precio_formateado": "$1.603.903",
         "titulo": "Televisor LG 55 pulgadas LED Uhd4K Smart TV 55NU830BPSA",
         "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p"
       },
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1543336,
-        "precio_formateado": "$1.543.336",
+        "precio_final": 1533770,
+        "precio_formateado": "$1.533.770",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -63,11 +63,11 @@
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1879910,
-        "precio_formateado": "$1.879.910",
-        "titulo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65NU851BPSG NANO",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65nu851bpsgawc-3259099/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1999900,
+        "precio_formateado": "$1.999.900",
+        "titulo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65UR7800PSB",
+        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
       }
     },
     "falabella": {
@@ -112,8 +112,8 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 1949900,
-        "precio_formateado": "$1.949.900",
+        "precio_final": 1999900,
+        "precio_formateado": "$1.999.900",
         "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
         "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
       }
@@ -127,7 +127,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 1349900,
         "precio_formateado": "$1.349.900",
-        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC Smart TV UHD Nano 4K 43\" LG 43NU800BPSC",
         "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
       },
       "50": {
@@ -138,7 +138,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 1599900,
         "precio_formateado": "$1.599.900",
-        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA Smart TV Nano UHD 4K 50\" LG 50NU855BPSA",
+        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA",
         "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p"
       },
       "55": {
@@ -198,7 +198,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 1349900,
         "precio_formateado": "$1.349.900",
-        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC Smart TV UHD Nano 4K 43\" LG 43NU800BPSC",
         "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
       }
     },
@@ -242,7 +242,7 @@
         "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 1599900,
         "precio_formateado": "$1.599.900",
-        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA Smart TV Nano UHD 4K 50\" LG 50NU855BPSA",
+        "titulo": "Smart TV Nano UHD 4K 50\" Pulgadas LG 50NU855BPSA",
         "enlace": "https://www.jumbocolombia.com/smart-tv-nano-uhd-4k-50-lg-50nu855bpsa-438714/p"
       }
     },
@@ -250,11 +250,11 @@
       "pulgadas": "55\"",
       "pulgadas_num": 55,
       "ganador": {
-        "tienda": "Éxito",
-        "precio": 1443908,
-        "precio_formateado": "$1.443.908",
-        "marca": "LG",
-        "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p"
+        "tienda": "Falabella",
+        "precio": 1449900,
+        "precio_formateado": "$1.449.900",
+        "marca": "Samsung",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
       },
       "exito": {
         "tienda": "Éxito",
@@ -262,8 +262,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1443908,
-        "precio_formateado": "$1.443.908",
+        "precio_final": 1603903,
+        "precio_formateado": "$1.603.903",
         "titulo": "Televisor LG 55 pulgadas LED Uhd4K Smart TV 55NU830BPSA",
         "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55nu830bpsa-3266663/p"
       },
@@ -295,8 +295,8 @@
       "pulgadas_num": 58,
       "ganador": {
         "tienda": "Éxito",
-        "precio": 1543336,
-        "precio_formateado": "$1.543.336",
+        "precio": 1533770,
+        "precio_formateado": "$1.533.770",
         "marca": "Samsung",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -306,8 +306,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1543336,
-        "precio_formateado": "$1.543.336",
+        "precio_final": 1533770,
+        "precio_formateado": "$1.533.770",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -353,21 +353,21 @@
       "pulgadas_num": 65,
       "ganador": {
         "tienda": "Éxito",
-        "precio": 1879910,
-        "precio_formateado": "$1.879.910",
+        "precio": 1999900,
+        "precio_formateado": "$1.999.900",
         "marca": "LG",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65nu851bpsgawc-3259099/p"
+        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
       },
       "exito": {
         "tienda": "Éxito",
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1879910,
-        "precio_formateado": "$1.879.910",
-        "titulo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65NU851BPSG NANO",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65nu851bpsgawc-3259099/p"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 1999900,
+        "precio_formateado": "$1.999.900",
+        "titulo": "Televisor LG 65 pulgadas LED Uhd4K Smart TV 65UR7800PSB",
+        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
       },
       "falabella": {
         "tienda": "Falabella",
@@ -375,8 +375,8 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 1949900,
-        "precio_formateado": "$1.949.900",
+        "precio_final": 1999900,
+        "precio_formateado": "$1.999.900",
         "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
         "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
       },
