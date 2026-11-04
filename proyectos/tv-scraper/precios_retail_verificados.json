@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "3 de noviembre de 2026, 06:13 PM",
-  "timestamp_iso": "2026-11-03T18:13:23.851933",
+  "fecha_verificacion": "4 de noviembre de 2026, 06:23 PM",
+  "timestamp_iso": "2026-11-04T18:23:38.657157",
   "tiendas": {
     "exito": {
       "43": {
@@ -16,14 +16,14 @@
       },
       "50": {
         "tienda": "Éxito",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "4K UHD, Smart TV",
-        "precio_final": 1515900,
-        "precio_formateado": "$1.515.900",
-        "titulo": "Televisor Lg 50 Pulgadas 50Ua8055psa 4K Uhd Smart Tv Con Ai",
-        "enlace": "https://www.exito.com/televisor-lg-50--pulgadas-50ua8055psa-mg-4k-uhd-smart-tv-con-ai-124168774/p"
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1179904,
+        "precio_formateado": "$1.179.904",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
       },
       "55": {
         "tienda": "Éxito",
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533750,
-        "precio_formateado": "$1.533.750",
+        "precio_final": 1533736,
+        "precio_formateado": "$1.533.736",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -68,8 +68,8 @@
         "pulgadas": "50\"",
         "pulgadas_num": 50,
         "tecnologia": "Mini LED, Smart TV",
-        "precio_final": 1339900,
-        "precio_formateado": "$1.339.900",
+        "precio_final": 1409900,
+        "precio_formateado": "$1.409.900",
         "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL",
         "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl"
       },
@@ -89,11 +89,11 @@
         "marca": "LG",
         "pulgadas": "58\"",
         "pulgadas_num": 58,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1709900,
-        "precio_formateado": "$1.709.900",
-        "titulo": "Televisor 58 Pulgadas IA Nano UHD 4k Smart TV HDR10 Pro - AI Picture Pro - AI Sound Pro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156318396/televisor-58-pulgadas-nano-uhd-4k-smart-tv-58nu850bpsd-awcq"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1799900,
+        "precio_formateado": "$1.799.900",
+        "titulo": "Televisor 58 pulgadas NANO 4K UHD webOs26 channels gratís 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
       },
       "60": null,
       "65": {
@@ -196,22 +196,22 @@
       "pulgadas": "50\"",
       "pulgadas_num": 50,
       "ganador": {
-        "tienda": "Falabella",
-        "precio": 1339900,
-        "precio_formateado": "$1.339.900",
+        "tienda": "Éxito",
+        "precio": 1179904,
+        "precio_formateado": "$1.179.904",
         "marca": "Samsung",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl"
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
       },
       "exito": {
         "tienda": "Éxito",
-        "marca": "LG",
+        "marca": "Samsung",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "4K UHD, Smart TV",
-        "precio_final": 1515900,
-        "precio_formateado": "$1.515.900",
-        "titulo": "Televisor Lg 50 Pulgadas 50Ua8055psa 4K Uhd Smart Tv Con Ai",
-        "enlace": "https://www.exito.com/televisor-lg-50--pulgadas-50ua8055psa-mg-4k-uhd-smart-tv-con-ai-124168774/p"
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1179904,
+        "precio_formateado": "$1.179.904",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
       },
       "falabella": {
         "tienda": "Falabella",
@@ -219,8 +219,8 @@
         "pulgadas": "50\"",
         "pulgadas_num": 50,
         "tecnologia": "Mini LED, Smart TV",
-        "precio_final": 1339900,
-        "precio_formateado": "$1.339.900",
+        "precio_final": 1409900,
+        "precio_formateado": "$1.409.900",
         "titulo": "Televisor 50 pulgadas Mini LED Smart TV UN50M60HAKXZL",
         "enlace": "https://www.falabella.com.co/falabella-co/product/158343925/televisor-samsung-50-pulgadas-mini-led-uhd4k-smart-tv-un50m60hakxzl"
       },
@@ -285,8 +285,8 @@
       "pulgadas_num": 58,
       "ganador": {
         "tienda": "Éxito",
-        "precio": 1533750,
-        "precio_formateado": "$1.533.750",
+        "precio": 1533736,
+        "precio_formateado": "$1.533.736",
         "marca": "Samsung",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -296,8 +296,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533750,
-        "precio_formateado": "$1.533.750",
+        "precio_final": 1533736,
+        "precio_formateado": "$1.533.736",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -306,11 +306,11 @@
         "marca": "LG",
         "pulgadas": "58\"",
         "pulgadas_num": 58,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1709900,
-        "precio_formateado": "$1.709.900",
-        "titulo": "Televisor 58 Pulgadas IA Nano UHD 4k Smart TV HDR10 Pro - AI Picture Pro - AI Sound Pro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156318396/televisor-58-pulgadas-nano-uhd-4k-smart-tv-58nu850bpsd-awcq"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1799900,
+        "precio_formateado": "$1.799.900",
+        "titulo": "Televisor 58 pulgadas NANO 4K UHD webOs26 channels gratís 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
       },
       "jumbo": null
     },
