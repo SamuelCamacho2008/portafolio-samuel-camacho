@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "7 de noviembre de 2026, 04:45 PM",
-  "timestamp_iso": "2026-11-07T16:45:08.606505",
+  "fecha_verificacion": "8 de noviembre de 2026, 04:56 PM",
+  "timestamp_iso": "2026-11-08T16:56:01.104437",
   "marcas": {
     "Samsung": {
       "43": {
@@ -26,15 +26,15 @@
         "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
       },
       "55": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD",
-        "precio_final": 1459900,
-        "precio_formateado": "$1.459.900",
-        "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+        "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
+        "precio_final": 1739900,
+        "precio_formateado": "$1.739.900",
+        "titulo": "Televisor Samsung 55 Pulgadas (139Cm) Crystal 4K Ultra Uhd Led Smart Tv Un55u8500hkxzl",
+        "enlace": "https://www.exito.com/televisor-samsung-55-pulgadas-139cm-crystal-4k-ultra-uhd-led-smart-tv-un55u8500hkxzl-105226904-mp/p"
       },
       "58": {
         "tienda": "Éxito",
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533715,
-        "precio_formateado": "$1.533.715",
+        "precio_final": 1533712,
+        "precio_formateado": "$1.533.712",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -284,15 +284,15 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/149503201/televisor-hisense-55-pulgadas-led-uhd-4k-smart-tv-55a6nv"
       },
       "samsung": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD",
-        "precio_final": 1459900,
-        "precio_formateado": "$1.459.900",
-        "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+        "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
+        "precio_final": 1739900,
+        "precio_formateado": "$1.739.900",
+        "titulo": "Televisor Samsung 55 Pulgadas (139Cm) Crystal 4K Ultra Uhd Led Smart Tv Un55u8500hkxzl",
+        "enlace": "https://www.exito.com/televisor-samsung-55-pulgadas-139cm-crystal-4k-ultra-uhd-led-smart-tv-un55u8500hkxzl-105226904-mp/p"
       },
       "lg": {
         "tienda": "Falabella",
@@ -332,8 +332,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533715,
-        "precio_formateado": "$1.533.715",
+        "precio_final": 1533712,
+        "precio_formateado": "$1.533.712",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
