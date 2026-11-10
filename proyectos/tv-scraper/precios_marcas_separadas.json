@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "9 de noviembre de 2026, 09:17 PM",
-  "timestamp_iso": "2026-11-09T21:17:15.287323",
+  "fecha_verificacion": "10 de noviembre de 2026, 06:26 PM",
+  "timestamp_iso": "2026-11-10T18:26:58.072598",
   "marcas": {
     "Samsung": {
       "43": {
@@ -42,8 +42,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533703,
-        "precio_formateado": "$1.533.703",
+        "precio_final": 1533697,
+        "precio_formateado": "$1.533.697",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
@@ -135,10 +135,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 763461,
-        "precio_formateado": "$763.461",
-        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv Y Soporte",
-        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
+        "precio_final": 749915,
+        "precio_formateado": "$749.915",
+        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p"
       },
       "50": {
         "tienda": "Éxito",
@@ -193,9 +193,9 @@
       "pulgadas_num": 43,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$763.461",
+        "precio_formateado": "$749.915",
         "tienda": "Éxito",
-        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p"
       },
       "samsung": {
         "tienda": "Éxito",
@@ -225,10 +225,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 763461,
-        "precio_formateado": "$763.461",
-        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv Y Soporte",
-        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
+        "precio_final": 749915,
+        "precio_formateado": "$749.915",
+        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-3242627/p"
       }
     },
     {
@@ -332,8 +332,8 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1533703,
-        "precio_formateado": "$1.533.703",
+        "precio_final": 1533697,
+        "precio_formateado": "$1.533.697",
         "titulo": "Televisor Samsung 58 Pulgadas Led Uhd4k Smart Tv Un58u8000fkxzl+Soporte.",
         "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd4k-smart-tv-un58u8000fkxzlsoporte-104792041-mp/p"
       },
