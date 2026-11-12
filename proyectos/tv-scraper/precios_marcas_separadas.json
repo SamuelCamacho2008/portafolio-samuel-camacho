@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "11 de noviembre de 2026, 06:18 PM",
-  "timestamp_iso": "2026-11-11T18:18:52.778149",
+  "fecha_verificacion": "12 de noviembre de 2026, 06:42 PM",
+  "timestamp_iso": "2026-11-12T18:42:07.287182",
   "marcas": {
     "Samsung": {
       "43": {
@@ -20,8 +20,8 @@
         "pulgadas": "50\"",
         "pulgadas_num": 50,
         "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
-        "precio_final": 1359900,
-        "precio_formateado": "$1.359.900",
+        "precio_final": 1299900,
+        "precio_formateado": "$1.299.900",
         "titulo": "Televisor Crystal UHD 4K Smart TV de 50 pulgadas U8500H",
         "enlace": "https://www.falabella.com.co/falabella-co/product/159345760/televisor-samsung-crystal-uhd-4k-smart-tv-de-50-pulgadas-u8500h"
       },
@@ -31,8 +31,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "4K UHD",
-        "precio_final": 1459900,
-        "precio_formateado": "$1.459.900",
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
         "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
         "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
       },
@@ -47,10 +47,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1049900,
-        "precio_formateado": "$1.049.900",
-        "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM"
+        "precio_final": 1044900,
+        "precio_formateado": "$1.044.900",
+        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
       },
       "50": {
         "tienda": "Falabella",
@@ -101,11 +101,11 @@
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
+        "tecnologia": "4K UHD, Smart TV",
         "precio_final": 2309900,
         "precio_formateado": "$2.309.900",
-        "titulo": "Televisor 65\"4k Uhd Led Smart Tv 65ur8750 Negro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/137278644/televisor-lg-65-4k-uhd-led-smart-tv-65ur8750-negro"
+        "titulo": "Televisor 65\" Smart tv 4k UHD AI Thinq Incluye Control Magic",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/133248125/Televisor-lg-65-smart-tv-4k-uhd-ai-thinq-incluye-control-magic"
       }
     },
     "Hisense": {
@@ -114,11 +114,11 @@
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, 4K UHD",
-        "precio_final": 999999,
-        "precio_formateado": "$999.999",
-        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "precio_final": 919900,
+        "precio_formateado": "$919.900",
+        "titulo": "Televisor 43 Pulgadas QLED Q4SV Smart TV Full HD 43Q4SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
       },
       "50": {
         "tienda": "Falabella",
@@ -137,8 +137,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1539900,
-        "precio_formateado": "$1.539.900",
+        "precio_final": 1464900,
+        "precio_formateado": "$1.464.900",
         "titulo": "Televisor 55 Pulgadas Qled Uhd 4k Smart Tv 55q6qv",
         "enlace": "https://www.falabella.com.co/falabella-co/product/149503208/televisor-hisense-55-pulgadas-qled-uhd-4k-smart-tv-55q6qv"
       },
@@ -163,9 +163,9 @@
       "pulgadas_num": 43,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$999.999",
+        "precio_formateado": "$919.900",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -184,21 +184,21 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1049900,
-        "precio_formateado": "$1.049.900",
-        "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM"
+        "precio_final": 1044900,
+        "precio_formateado": "$1.044.900",
+        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
       },
       "hisense": {
         "tienda": "Falabella",
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, 4K UHD",
-        "precio_final": 999999,
-        "precio_formateado": "$999.999",
-        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "precio_final": 919900,
+        "precio_formateado": "$919.900",
+        "titulo": "Televisor 43 Pulgadas QLED Q4SV Smart TV Full HD 43Q4SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
       }
     },
     {
@@ -216,8 +216,8 @@
         "pulgadas": "50\"",
         "pulgadas_num": 50,
         "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
-        "precio_final": 1359900,
-        "precio_formateado": "$1.359.900",
+        "precio_final": 1299900,
+        "precio_formateado": "$1.299.900",
         "titulo": "Televisor Crystal UHD 4K Smart TV de 50 pulgadas U8500H",
         "enlace": "https://www.falabella.com.co/falabella-co/product/159345760/televisor-samsung-crystal-uhd-4k-smart-tv-de-50-pulgadas-u8500h"
       },
@@ -248,10 +248,10 @@
       "pulgadas": "55\"",
       "pulgadas_num": 55,
       "ganador": {
-        "marca": "Samsung",
-        "precio_formateado": "$1.459.900",
+        "marca": "Hisense",
+        "precio_formateado": "$1.464.900",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/149503208/televisor-hisense-55-pulgadas-qled-uhd-4k-smart-tv-55q6qv"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -259,8 +259,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "4K UHD",
-        "precio_final": 1459900,
-        "precio_formateado": "$1.459.900",
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
         "titulo": "Televisor I 55 Pulgadas I 4K I Uhd I Un55U8000Hkxzl",
         "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
       },
@@ -281,8 +281,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1539900,
-        "precio_formateado": "$1.539.900",
+        "precio_final": 1464900,
+        "precio_formateado": "$1.464.900",
         "titulo": "Televisor 55 Pulgadas Qled Uhd 4k Smart Tv 55q6qv",
         "enlace": "https://www.falabella.com.co/falabella-co/product/149503208/televisor-hisense-55-pulgadas-qled-uhd-4k-smart-tv-55q6qv"
       }
@@ -348,11 +348,11 @@
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
+        "tecnologia": "4K UHD, Smart TV",
         "precio_final": 2309900,
         "precio_formateado": "$2.309.900",
-        "titulo": "Televisor 65\"4k Uhd Led Smart Tv 65ur8750 Negro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/137278644/televisor-lg-65-4k-uhd-led-smart-tv-65ur8750-negro"
+        "titulo": "Televisor 65\" Smart tv 4k UHD AI Thinq Incluye Control Magic",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/133248125/Televisor-lg-65-smart-tv-4k-uhd-ai-thinq-incluye-control-magic"
       },
       "hisense": {
         "tienda": "Falabella",
