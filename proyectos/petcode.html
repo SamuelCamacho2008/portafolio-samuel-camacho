@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetCode — Red de Rescate de Mascotas (Popayán, Cauca) — Samuel Camacho</title>
+    <meta
+      name="description"
+      content="Plataforma comunitaria de reporte y rescate de mascotas perdidas en Popayán, Cauca con placas QR, chats privados y sistema transparente de recompensas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --paper: #f7f6f2;
+        --card-bg: #ffffff;
+        --ink: #1d201d;
+        --muted: #6a6e66;
+        --line: #e3e2db;
+        --primary: #c77b56;
+        --forest: #1e3a2f;
+        --font-main: "DM Sans", system-ui, sans-serif;
+        --font-mono: "DM Mono", monospace;
+        --font-display: "Manrope", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-main);
+        line-height: 1.6;
+      }
+
+      .topbar {
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+        padding: 14px 24px;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .topbar-inner {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-link {
+        color: var(--ink);
+        text-decoration: none;
+        font: 13px var(--font-mono);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .back-link:hover { color: var(--primary); }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 24px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #1e3a2f 0%, #263b32 100%);
+        color: #ffffff;
+        padding: 48px;
+        border-radius: 16px;
+        margin-bottom: 32px;
+      }
+      .hero-tag {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        color: #f5f4ed;
+        background: rgba(255,255,255,0.15);
+        padding: 4px 12px;
+        border-radius: 999px;
+        display: inline-block;
+        margin-bottom: 16px;
+      }
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: 2.4rem;
+        margin: 0 0 16px;
+        color: #ffffff;
+      }
+      .hero p {
+        font-size: 1.15rem;
+        color: #cbd5e1;
+        max-width: 780px;
+        margin: 0 0 24px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: transform 0.15s, opacity 0.15s;
+      }
+      .btn-primary {
+        background: var(--primary);
+        color: #ffffff;
+      }
+      .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .btn-secondary:hover { background: rgba(255, 255, 255, 0.25); }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        margin-bottom: 32px;
+      }
+      .card {
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 24px;
+      }
+      .card h2 {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        margin: 0 0 12px;
+        color: var(--forest);
+      }
+      .card p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin: 0 0 16px;
+      }
+      .card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--ink);
+        font-size: 0.92rem;
+      }
+      .card li { margin-bottom: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a href="../index.html" class="back-link">← Volver al portafolio</a>
+        <span style="font-family: var(--font-mono); font-size: 13px; color: var(--muted);">Popayán, Cauca</span>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="hero">
+        <span class="hero-tag">🐾 Proyecto Web & Firebase</span>
+        <h1>PetCode — Red de Rescate de Mascotas</h1>
+        <p>
+          Plataforma comunitaria diseñada para ayudar a las mascotas perdidas de <strong>Popayán, Cauca</strong> a reencontrarse con sus familias. Protege la privacidad evitando la difusión de números personales y coordina rescates seguros con códigos QR y chats privados.
+        </p>
+        <div class="hero-actions">
+          <a href="https://petcode-rescue-samuel.web.app" target="_blank" rel="noopener" class="btn btn-primary">
+            Abrir App en Firebase Hosting ↗
+          </a>
+          <a href="https://github.com/SamuelCamacho2008/portafolio-samuel-camacho/tree/main/proyectos/petcode" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ver Código Fuente en GitHub ↗
+          </a>
+        </div>
+      </section>
+
+      <div class="grid">
+        <div class="card">
+          <h2>🏷️ Placa Digital con Código QR</h2>
+          <p>Generación instantánea al registrar la mascota para imprimir o adjuntar al collar.</p>
+          <ul>
+            <li>Enlace directo <code>?pet=ID</code> para escanear con la cámara del celular.</li>
+            <li>Alerta inmediata de condiciones médicas y cuidados urgentes.</li>
+            <li>Descarga en formato PNG de alta resolución.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>💬 Chats Privados y Confidenciales</h2>
+          <p>Conversaciones seguras vinculadas al aviso de la mascota encontrada.</p>
+          <ul>
+            <li>Solo los participantes del rescate y administración ven la conversación.</li>
+            <li>Actualizaciones en tiempo real mediante Firestore <code>onSnapshot</code>.</li>
+            <li>Filtro anti-abuso que protege la privacidad de números y datos personales.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>📍 Cobertura Popayán, Cauca</h2>
+          <p>Organización geográfica especializada por comunas y barrios locales.</p>
+          <ul>
+            <li>Comunas 1 a 7 (Centro, La Pamba, Bello Horizonte, Campamento, Pandiguando, Pomona, etc.).</li>
+            <li>Veredas y corregimientos (Julumito, Puelenje, La Rejoya).</li>
+            <li>Filtrado ágil de avisos por barrio y especie.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>💰 Modelo de Recompensas Justo</h2>
+          <p>Mecanismo transparente para incentivar el cuidado y rescate responsable.</p>
+          <ul>
+            <li><strong>95%</strong> del monto para quien rescató y cuidó a la mascota.</li>
+            <li><strong>5%</strong> de comisión de sostenimiento para la plataforma.</li>
+            <li>Cálculo automático y visualización de estado en el chat privado.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
