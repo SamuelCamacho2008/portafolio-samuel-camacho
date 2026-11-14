@@ -1,24 +1,24 @@
 {
-  "fecha_verificacion": "13 de noviembre de 2026, 06:20 PM",
-  "timestamp_iso": "2026-11-13T18:20:51.844311",
+  "fecha_verificacion": "14 de noviembre de 2026, 04:49 PM",
+  "timestamp_iso": "2026-11-14T16:49:30.079937",
   "tiendas": {
     "exito": {
       "43": null,
-      "50": null,
+      "50": {
+        "tienda": "Éxito",
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+      },
       "55": null,
       "58": null,
       "60": null,
-      "65": {
-        "tienda": "Éxito",
-        "marca": "LG",
-        "pulgadas": "65\"",
-        "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1999900,
-        "precio_formateado": "$1.999.900",
-        "titulo": "Televisor Lg 65 Pulgadas Led Uhd4k Smart Tv 65Ur7800psb",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
-      }
+      "65": null
     },
     "falabella": {
       "43": {
@@ -27,10 +27,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1044900,
-        "precio_formateado": "$1.044.900",
-        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "precio_final": 1029900,
+        "precio_formateado": "$1.029.900",
+        "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM"
       },
       "50": {
         "tienda": "Falabella",
@@ -82,10 +82,10 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 2049900,
-        "precio_formateado": "$2.049.900",
-        "titulo": "Combo Televisor 65 pulgadas UN65U8500HKXZL + Barra de sonido HW-B400F",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159388565/combo-televisor-samsung-65-pulgadas-un65u8500hkxzl-barra-de-sonido-hw-b400f"
+        "precio_final": 2069900,
+        "precio_formateado": "$2.069.900",
+        "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
       }
     },
     "jumbo": {
@@ -117,10 +117,10 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1549900,
-        "precio_formateado": "$1.549.900",
-        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000FKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000FKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000fkxzl-3682954/p"
+        "precio_final": 1699900,
+        "precio_formateado": "$1.699.900",
+        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
       },
       "58": null,
       "60": null,
@@ -143,10 +143,10 @@
       "pulgadas_num": 43,
       "ganador": {
         "tienda": "Falabella",
-        "precio": 1044900,
-        "precio_formateado": "$1.044.900",
+        "precio": 1029900,
+        "precio_formateado": "$1.029.900",
         "marca": "LG",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM"
       },
       "exito": null,
       "falabella": {
@@ -155,10 +155,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1044900,
-        "precio_formateado": "$1.044.900",
-        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "precio_final": 1029900,
+        "precio_formateado": "$1.029.900",
+        "titulo": "Televisor 43 Pulgadas Smart Tv Full HD 43LM",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM"
       },
       "jumbo": {
         "tienda": "Jumbo",
@@ -182,7 +182,17 @@
         "marca": "Samsung",
         "enlace": "https://www.falabella.com.co/falabella-co/product/159345760/televisor-samsung-crystal-uhd-4k-smart-tv-de-50-pulgadas-u8500h"
       },
-      "exito": null,
+      "exito": {
+        "tienda": "Éxito",
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+      },
       "falabella": {
         "tienda": "Falabella",
         "marca": "Samsung",
@@ -234,10 +244,10 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1549900,
-        "precio_formateado": "$1.549.900",
-        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000FKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000FKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000fkxzl-3682954/p"
+        "precio_final": 1699900,
+        "precio_formateado": "$1.699.900",
+        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
       }
     },
     {
@@ -292,33 +302,23 @@
       "pulgadas": "65\"",
       "pulgadas_num": 65,
       "ganador": {
-        "tienda": "Éxito",
-        "precio": 1999900,
-        "precio_formateado": "$1.999.900",
-        "marca": "LG",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
+        "tienda": "Falabella",
+        "precio": 2069900,
+        "precio_formateado": "$2.069.900",
+        "marca": "Samsung",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
       },
-      "exito": {
-        "tienda": "Éxito",
-        "marca": "LG",
-        "pulgadas": "65\"",
-        "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1999900,
-        "precio_formateado": "$1.999.900",
-        "titulo": "Televisor Lg 65 Pulgadas Led Uhd4k Smart Tv 65Ur7800psb",
-        "enlace": "https://www.exito.com/televisor-lg-65-pulgadas-led-uhd-4k-smart-tv-65ur7800psbawc-3127321/p"
-      },
+      "exito": null,
       "falabella": {
         "tienda": "Falabella",
         "marca": "Samsung",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 2049900,
-        "precio_formateado": "$2.049.900",
-        "titulo": "Combo Televisor 65 pulgadas UN65U8500HKXZL + Barra de sonido HW-B400F",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159388565/combo-televisor-samsung-65-pulgadas-un65u8500hkxzl-barra-de-sonido-hw-b400f"
+        "precio_final": 2069900,
+        "precio_formateado": "$2.069.900",
+        "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
       },
       "jumbo": {
         "tienda": "Jumbo",
