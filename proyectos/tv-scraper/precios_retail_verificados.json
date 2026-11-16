@@ -1,32 +1,22 @@
 {
-  "fecha_verificacion": "15 de noviembre de 2026, 05:32 PM",
-  "timestamp_iso": "2026-11-15T17:32:01.711957",
+  "fecha_verificacion": "16 de noviembre de 2026, 08:46 PM",
+  "timestamp_iso": "2026-11-16T20:46:52.447097",
   "tiendas": {
     "exito": {
       "43": null,
-      "50": null,
-      "55": {
-        "tienda": "Éxito",
-        "marca": "LG",
-        "pulgadas": "55\"",
-        "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor LG 55 pulgadas LED Uhd4K Smart TV 55UA8000PSB",
-        "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55ua8000psbawc-3225918/p"
-      },
-      "58": {
+      "50": {
         "tienda": "Éxito",
         "marca": "Samsung",
-        "pulgadas": "58\"",
-        "pulgadas_num": 58,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor SAMSUNG 58 pulgadas LED Uhd4K Smart TV UN58U8000FKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000fkxzl-3209290/p"
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
       },
+      "55": null,
+      "58": null,
       "60": null,
       "65": null
     },
@@ -69,11 +59,11 @@
         "marca": "LG",
         "pulgadas": "58\"",
         "pulgadas_num": 58,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1785906,
-        "precio_formateado": "$1.785.906",
-        "titulo": "Televisor 58 Pulgadas IA Nano UHD 4k Smart TV HDR10 Pro - AI Picture Pro - AI Sound Pro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156318396/televisor-58-pulgadas-nano-uhd-4k-smart-tv-58nu850bpsd-awcq"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1849900,
+        "precio_formateado": "$1.849.900",
+        "titulo": "Televisor 58 pulgadas NANO 4K UHD webOs26 channels gratís 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
       },
       "60": {
         "tienda": "Falabella",
@@ -92,23 +82,23 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 2069900,
-        "precio_formateado": "$2.069.900",
-        "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
+        "precio_final": 2049900,
+        "precio_formateado": "$2.049.900",
+        "titulo": "Combo Televisor 65 pulgadas UN65U8500HKXZL + Barra de sonido HW-B400F",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159388565/combo-televisor-samsung-65-pulgadas-un65u8500hkxzl-barra-de-sonido-hw-b400f"
       }
     },
     "jumbo": {
       "43": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1199900,
-        "precio_formateado": "$1.199.900",
-        "titulo": "Televisor Samsung 43\" Pulgadas LED UHD 4K Smart TV UN43U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "precio_final": 1214900,
+        "precio_formateado": "$1.214.900",
+        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
       },
       "50": {
         "tienda": "Jumbo",
@@ -123,27 +113,27 @@
       },
       "55": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
+        "tecnologia": "QNED, 4K UHD, Smart TV",
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "titulo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74BSA",
+        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
       },
       "58": null,
       "60": null,
       "65": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 2199900,
         "precio_formateado": "$2.199.900",
-        "titulo": "Televisor Samsung 65'' Pulgadas LED UHD 4K Smart TV UN65U8000HKXZL Televisor Samsung 65'' LED UHD 4K Smart TV UN65U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3749771/p"
+        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p"
       }
     }
   },
@@ -172,14 +162,14 @@
       },
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1199900,
-        "precio_formateado": "$1.199.900",
-        "titulo": "Televisor Samsung 43\" Pulgadas LED UHD 4K Smart TV UN43U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-43-led-uhd-4k-smart-tv-un43u8000hkxzl-459829/p"
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
+        "precio_final": 1214900,
+        "precio_formateado": "$1.214.900",
+        "titulo": "Smart TV UHD Nano 4K 43\" Pulgadas LG 43NU800BPSC",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-uhd-nano-4k-43-pulgadas-lg-43nu800bpsc-3748579/p"
       }
     },
     {
@@ -192,7 +182,17 @@
         "marca": "Samsung",
         "enlace": "https://www.falabella.com.co/falabella-co/product/159345760/televisor-samsung-crystal-uhd-4k-smart-tv-de-50-pulgadas-u8500h"
       },
-      "exito": null,
+      "exito": {
+        "tienda": "Éxito",
+        "marca": "Samsung",
+        "pulgadas": "50\"",
+        "pulgadas_num": 50,
+        "tecnologia": "Mini LED, Full HD, Smart TV",
+        "precio_final": 1399900,
+        "precio_formateado": "$1.399.900",
+        "titulo": "Televisor SAMSUNG 50 pulgadas Mini LED Fhd Smart TV UN50M60HAKXZL",
+        "enlace": "https://www.exito.com/televisor-samsung-50-pulgadas-mini-led-uhd-4k-smart-tv-un50m60hakxzl-3263624/p"
+      },
       "falabella": {
         "tienda": "Falabella",
         "marca": "Samsung",
@@ -226,17 +226,7 @@
         "marca": "Samsung",
         "enlace": "https://www.falabella.com.co/falabella-co/product/73658705/tv-55-samsungung-uhd-55u8000hkxzl"
       },
-      "exito": {
-        "tienda": "Éxito",
-        "marca": "LG",
-        "pulgadas": "55\"",
-        "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor LG 55 pulgadas LED Uhd4K Smart TV 55UA8000PSB",
-        "enlace": "https://www.exito.com/televisor-lg-55-pulgadas-led-uhd-4k-smart-tv-55ua8000psbawc-3225918/p"
-      },
+      "exito": null,
       "falabella": {
         "tienda": "Falabella",
         "marca": "Samsung",
@@ -250,47 +240,37 @@
       },
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
+        "tecnologia": "QNED, 4K UHD, Smart TV",
+        "precio_final": 1899900,
+        "precio_formateado": "$1.899.900",
+        "titulo": "Smart TV Qned 4K UHD Miniled 55 Pulgadas LG 55QNED74BSA",
+        "enlace": "https://www.jumbocolombia.com/smart-tv%C2%A0qned%C2%A04k-uhd-miniled-55-pulgadas-lg-55qned74bsa-448658/p"
       }
     },
     {
       "pulgadas": "58\"",
       "pulgadas_num": 58,
       "ganador": {
-        "tienda": "Éxito",
-        "precio": 1699900,
-        "precio_formateado": "$1.699.900",
-        "marca": "Samsung",
-        "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000fkxzl-3209290/p"
+        "tienda": "Falabella",
+        "precio": 1849900,
+        "precio_formateado": "$1.849.900",
+        "marca": "LG",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
       },
-      "exito": {
-        "tienda": "Éxito",
-        "marca": "Samsung",
-        "pulgadas": "58\"",
-        "pulgadas_num": 58,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 1699900,
-        "precio_formateado": "$1.699.900",
-        "titulo": "Televisor SAMSUNG 58 pulgadas LED Uhd4K Smart TV UN58U8000FKXZL",
-        "enlace": "https://www.exito.com/televisor-samsung-58-pulgadas-led-uhd-4k-smart-tv-un58u8000fkxzl-3209290/p"
-      },
+      "exito": null,
       "falabella": {
         "tienda": "Falabella",
         "marca": "LG",
         "pulgadas": "58\"",
         "pulgadas_num": 58,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1785906,
-        "precio_formateado": "$1.785.906",
-        "titulo": "Televisor 58 Pulgadas IA Nano UHD 4k Smart TV HDR10 Pro - AI Picture Pro - AI Sound Pro",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156318396/televisor-58-pulgadas-nano-uhd-4k-smart-tv-58nu850bpsd-awcq"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1849900,
+        "precio_formateado": "$1.849.900",
+        "titulo": "Televisor 58 pulgadas NANO 4K UHD webOs26 channels gratís 58NU850BPSD",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73669874/tv-58-uhd-lg-58nu850bpsd-awcq"
       },
       "jumbo": null
     },
@@ -323,10 +303,10 @@
       "pulgadas_num": 65,
       "ganador": {
         "tienda": "Falabella",
-        "precio": 2069900,
-        "precio_formateado": "$2.069.900",
+        "precio": 2049900,
+        "precio_formateado": "$2.049.900",
         "marca": "Samsung",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159388565/combo-televisor-samsung-65-pulgadas-un65u8500hkxzl-barra-de-sonido-hw-b400f"
       },
       "exito": null,
       "falabella": {
@@ -335,21 +315,21 @@
         "pulgadas": "65\"",
         "pulgadas_num": 65,
         "tecnologia": "Smart TV",
-        "precio_final": 2069900,
-        "precio_formateado": "$2.069.900",
-        "titulo": "Televisor 65 PULGADAS UN65U8500HKXZL",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156470001/televisor-samsung-65-pulgadas-un65u8500hkxzl"
+        "precio_final": 2049900,
+        "precio_formateado": "$2.049.900",
+        "titulo": "Combo Televisor 65 pulgadas UN65U8500HKXZL + Barra de sonido HW-B400F",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159388565/combo-televisor-samsung-65-pulgadas-un65u8500hkxzl-barra-de-sonido-hw-b400f"
       },
       "jumbo": {
         "tienda": "Jumbo",
-        "marca": "Samsung",
+        "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "LED, 4K UHD, Smart TV",
+        "tecnologia": "NanoCell, 4K UHD, Smart TV",
         "precio_final": 2199900,
         "precio_formateado": "$2.199.900",
-        "titulo": "Televisor Samsung 65'' Pulgadas LED UHD 4K Smart TV UN65U8000HKXZL Televisor Samsung 65'' LED UHD 4K Smart TV UN65U8000HKXZL",
-        "enlace": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3749771/p"
+        "titulo": "Smart TV 4K Ultra HD Nano 65\" Pulgadas LG 65NU850BPSA",
+        "enlace": "https://www.jumbocolombia.com/smart-tv-4k-ultra-hd-nano-65-pulgadas-lg-65nu850bpsa-3745300/p"
       }
     }
   ]

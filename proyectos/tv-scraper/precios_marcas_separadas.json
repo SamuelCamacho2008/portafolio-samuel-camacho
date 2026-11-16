@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "15 de noviembre de 2026, 05:35 PM",
-  "timestamp_iso": "2026-11-15T17:35:04.878655",
+  "fecha_verificacion": "16 de noviembre de 2026, 08:50 PM",
+  "timestamp_iso": "2026-11-16T20:50:02.336848",
   "marcas": {
     "Samsung": {
       "43": {
@@ -114,22 +114,22 @@
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 919900,
-        "precio_formateado": "$919.900",
-        "titulo": "Televisor 43 Pulgadas QLED Q4SV Smart TV Full HD 43Q4SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
+        "tecnologia": "QLED, 4K UHD",
+        "precio_final": 999999,
+        "precio_formateado": "$999.999",
+        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
       },
       "50": {
-        "tienda": "Éxito",
+        "tienda": "Falabella",
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 949900,
-        "precio_formateado": "$949.900",
-        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
+        "tecnologia": "LED, Full HD, Smart TV",
+        "precio_final": 1179900,
+        "precio_formateado": "$1.179.900",
+        "titulo": "Televisor 50 Pulgadas Smart Tv LED FHD 50A4NV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
       },
       "55": {
         "tienda": "Falabella",
@@ -163,9 +163,9 @@
       "pulgadas_num": 43,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$919.900",
+        "precio_formateado": "$999.999",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -194,11 +194,11 @@
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, Full HD, Smart TV",
-        "precio_final": 919900,
-        "precio_formateado": "$919.900",
-        "titulo": "Televisor 43 Pulgadas QLED Q4SV Smart TV Full HD 43Q4SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/152690203/televisor-hisense-43-pulgadas-qled-q4sv-smart-tv-full-hd-43q4sv"
+        "tecnologia": "QLED, 4K UHD",
+        "precio_final": 999999,
+        "precio_formateado": "$999.999",
+        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
       }
     },
     {
@@ -206,9 +206,9 @@
       "pulgadas_num": 50,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$949.900",
-        "tienda": "Éxito",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
+        "precio_formateado": "$1.179.900",
+        "tienda": "Falabella",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -233,15 +233,15 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/155772412/televisor-lg-50-pulgadas-4k-ultra-hd-50ua731c0sb-smart-tv"
       },
       "hisense": {
-        "tienda": "Éxito",
+        "tienda": "Falabella",
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "LED, 4K UHD, Smart TV",
-        "precio_final": 949900,
-        "precio_formateado": "$949.900",
-        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
-        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
+        "tecnologia": "LED, Full HD, Smart TV",
+        "precio_final": 1179900,
+        "precio_formateado": "$1.179.900",
+        "titulo": "Televisor 50 Pulgadas Smart Tv LED FHD 50A4NV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
       }
     },
     {
