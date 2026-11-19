@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "18 de noviembre de 2026, 07:23 PM",
-  "timestamp_iso": "2026-11-18T19:23:27.654424",
+  "fecha_verificacion": "19 de noviembre de 2026, 07:21 PM",
+  "timestamp_iso": "2026-11-19T19:21:31.795900",
   "marcas": {
     "Samsung": {
       "43": {
@@ -30,11 +30,11 @@
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
+        "tecnologia": "4K UHD, Smart TV",
         "precio_final": 1589900,
         "precio_formateado": "$1.589.900",
-        "titulo": "Televisor Smart 55” Crystal Uhd 4k U8200",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/158031954/televisor-smart-samsung-55-crystal-uhd-4k-u8200"
+        "titulo": "Televisor 55 Pulgadas Smarttv 4k Uhd Un55cu7000kxzl Negro",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/133952284/televisor-samsung-55-pulgadas-smarttv-4k-uhd-un55cu7000kxzl-negro"
       },
       "58": {
         "tienda": "Falabella",
@@ -67,11 +67,11 @@
         "marca": "LG",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1356000,
-        "precio_formateado": "$1.356.000",
-        "titulo": "Televisor 50 Pulgadas Nano 4k Uhd IA Smart Tv HDR10 Pro 50NU800BPSC",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156822522/televisor-lg-50-pulgadas-nano-4k-uhd-ia-smart-tv-50nu800bpsc"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1469900,
+        "precio_formateado": "$1.469.900",
+        "titulo": "Televisor 50\" Pulgadas 50NU85 Nano 4K UHD Smart TV webOS con IA + Control Magic",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158570932/televisor-lg-50-pulgadas-50nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic"
       },
       "55": {
         "tienda": "Falabella",
@@ -120,15 +120,15 @@
     },
     "Hisense": {
       "43": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, 4K UHD",
-        "precio_final": 999999,
-        "precio_formateado": "$999.999",
-        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "precio_final": 799785,
+        "precio_formateado": "$799.785",
+        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv Y Soporte",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
       },
       "50": {
         "tienda": "Falabella",
@@ -172,10 +172,10 @@
       "pulgadas": "43\"",
       "pulgadas_num": 43,
       "ganador": {
-        "marca": "LG",
-        "precio_formateado": "$993.900",
-        "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/157940532/televisor-lg-43-led-full-hd-smart-tv-con-ia-43lb6500psb"
+        "marca": "Hisense",
+        "precio_formateado": "$799.785",
+        "tienda": "Éxito",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -200,15 +200,15 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/157940532/televisor-lg-43-led-full-hd-smart-tv-con-ia-43lb6500psb"
       },
       "hisense": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "43\"",
         "pulgadas_num": 43,
-        "tecnologia": "QLED, 4K UHD",
-        "precio_final": 999999,
-        "precio_formateado": "$999.999",
-        "titulo": "Televisor | 43 Pulgadas | Hi-QLED 4K | 43QD5SV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
+        "tecnologia": "QLED, Full HD, Smart TV",
+        "precio_final": 799785,
+        "precio_formateado": "$799.785",
+        "titulo": "Televisor Hisense 43 Pulgadas Qled Fhd Smart Tv 43Q4sv Y Soporte",
+        "enlace": "https://www.exito.com/televisor-hisense-43-pulgadas-qled-fhd-smart-tv-43q4sv-y-soporte-105123560-mp/p"
       }
     },
     {
@@ -236,11 +236,11 @@
         "marca": "LG",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 1356000,
-        "precio_formateado": "$1.356.000",
-        "titulo": "Televisor 50 Pulgadas Nano 4k Uhd IA Smart Tv HDR10 Pro 50NU800BPSC",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/156822522/televisor-lg-50-pulgadas-nano-4k-uhd-ia-smart-tv-50nu800bpsc"
+        "tecnologia": "NanoCell, 4K UHD, webOS",
+        "precio_final": 1469900,
+        "precio_formateado": "$1.469.900",
+        "titulo": "Televisor 50\" Pulgadas 50NU85 Nano 4K UHD Smart TV webOS con IA + Control Magic",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158570932/televisor-lg-50-pulgadas-50nu85-nano-4k-uhd-smart-tv-webos-con-ia-control-magic"
       },
       "hisense": {
         "tienda": "Falabella",
@@ -268,11 +268,11 @@
         "marca": "Samsung",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
+        "tecnologia": "4K UHD, Smart TV",
         "precio_final": 1589900,
         "precio_formateado": "$1.589.900",
-        "titulo": "Televisor Smart 55” Crystal Uhd 4k U8200",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/158031954/televisor-smart-samsung-55-crystal-uhd-4k-u8200"
+        "titulo": "Televisor 55 Pulgadas Smarttv 4k Uhd Un55cu7000kxzl Negro",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/133952284/televisor-samsung-55-pulgadas-smarttv-4k-uhd-un55cu7000kxzl-negro"
       },
       "lg": {
         "tienda": "Falabella",
