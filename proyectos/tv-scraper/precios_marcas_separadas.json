@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "20 de noviembre de 2026, 07:00 PM",
-  "timestamp_iso": "2026-11-20T19:00:33.578420",
+  "fecha_verificacion": "21 de noviembre de 2026, 05:55 PM",
+  "timestamp_iso": "2026-11-21T17:55:27.976949",
   "marcas": {
     "Samsung": {
       "43": {
@@ -42,10 +42,10 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
-        "precio_final": 1599900,
-        "precio_formateado": "$1.599.900",
-        "titulo": "Televisor Smart TV 58” Crystal UHD 4K U8500H 2026",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153001297/televisor-i-58-pulgadas-samsung-i-crystal-4k-i-u8000f-2025"
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "titulo": "Televisor Smart 58” Crystal 4K U8000F",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156243955/televisor-smart-55-pulgadas-crystal-uhd-4k-u8500h"
       },
       "60": null,
       "65": null
@@ -131,26 +131,26 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/73568538/tv-qled-43-hisense-4k-43qd5sv"
       },
       "50": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "LED, Full HD, Smart TV",
-        "precio_final": 1179900,
-        "precio_formateado": "$1.179.900",
-        "titulo": "Televisor 50 Pulgadas Smart Tv LED FHD 50A4NV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 949900,
+        "precio_formateado": "$949.900",
+        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       },
       "55": {
         "tienda": "Falabella",
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD, VIDAA OS",
+        "tecnologia": "QLED, 4K UHD, Smart TV",
         "precio_final": 1484900,
         "precio_formateado": "$1.484.900",
-        "titulo": "Tv 55\" 4k Uhd Smart Tv 55a6n Vidaa",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153487221/tv-hisense-55-4k-uhd-smart-tv-55a6n-vidaa"
+        "titulo": "Televisor 55\" Pulgadas 55qd5sv QLed UHD 4K Smart TV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
       },
       "58": null,
       "60": null,
@@ -216,9 +216,9 @@
       "pulgadas_num": 50,
       "ganador": {
         "marca": "Hisense",
-        "precio_formateado": "$1.179.900",
-        "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
+        "precio_formateado": "$949.900",
+        "tienda": "Éxito",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -243,15 +243,15 @@
         "enlace": "https://www.falabella.com.co/falabella-co/product/156822522/televisor-lg-50-pulgadas-nano-4k-uhd-ia-smart-tv-50nu800bpsc"
       },
       "hisense": {
-        "tienda": "Falabella",
+        "tienda": "Éxito",
         "marca": "Hisense",
         "pulgadas": "50\"",
         "pulgadas_num": 50,
-        "tecnologia": "LED, Full HD, Smart TV",
-        "precio_final": 1179900,
-        "precio_formateado": "$1.179.900",
-        "titulo": "Televisor 50 Pulgadas Smart Tv LED FHD 50A4NV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/148264760/televisor-hisense-50-pulgadas-smart-tv-led-fhd-50a4nv"
+        "tecnologia": "LED, 4K UHD, Smart TV",
+        "precio_final": 949900,
+        "precio_formateado": "$949.900",
+        "titulo": "Televisor HISENSE 50 pulgadas LED Uhd4K Smart TV 50A6NV",
+        "enlace": "https://www.exito.com/televisor-hisense-50-pulgadas-led-uhd-4k-smart-tv-50a6nv-3208348/p"
       }
     },
     {
@@ -261,7 +261,7 @@
         "marca": "Hisense",
         "precio_formateado": "$1.484.900",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153487221/tv-hisense-55-4k-uhd-smart-tv-55a6n-vidaa"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -290,11 +290,11 @@
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "4K UHD, VIDAA OS",
+        "tecnologia": "QLED, 4K UHD, Smart TV",
         "precio_final": 1484900,
         "precio_formateado": "$1.484.900",
-        "titulo": "Tv 55\" 4k Uhd Smart Tv 55a6n Vidaa",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153487221/tv-hisense-55-4k-uhd-smart-tv-55a6n-vidaa"
+        "titulo": "Televisor 55\" Pulgadas 55qd5sv QLed UHD 4K Smart TV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
       }
     },
     {
@@ -302,9 +302,9 @@
       "pulgadas_num": 58,
       "ganador": {
         "marca": "Samsung",
-        "precio_formateado": "$1.599.900",
+        "precio_formateado": "$1.499.900",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153001297/televisor-i-58-pulgadas-samsung-i-crystal-4k-i-u8000f-2025"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156243955/televisor-smart-55-pulgadas-crystal-uhd-4k-u8500h"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -312,10 +312,10 @@
         "pulgadas": "58\"",
         "pulgadas_num": 58,
         "tecnologia": "Crystal UHD, 4K UHD, Smart TV",
-        "precio_final": 1599900,
-        "precio_formateado": "$1.599.900",
-        "titulo": "Televisor Smart TV 58” Crystal UHD 4K U8500H 2026",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/153001297/televisor-i-58-pulgadas-samsung-i-crystal-4k-i-u8000f-2025"
+        "precio_final": 1499900,
+        "precio_formateado": "$1.499.900",
+        "titulo": "Televisor Smart 58” Crystal 4K U8000F",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/156243955/televisor-smart-55-pulgadas-crystal-uhd-4k-u8500h"
       },
       "lg": {
         "tienda": "Falabella",
