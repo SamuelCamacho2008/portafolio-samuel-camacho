@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "23 de noviembre de 2026, 10:23 PM",
-  "timestamp_iso": "2026-11-23T22:23:08.865552",
+  "fecha_verificacion": "24 de noviembre de 2026, 08:58 PM",
+  "timestamp_iso": "2026-11-24T20:58:30.896672",
   "tiendas": {
     "exito": {
       "43": null,
@@ -27,10 +27,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1044900,
-        "precio_formateado": "$1.044.900",
-        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "precio_final": 999900,
+        "precio_formateado": "$999.900",
+        "titulo": "Combo Televisor de 43 pulgadas Full HD Smart TV con IA + Soporte de Pared Fijo TV de 32\" a 75\"",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158573665/combo-televisor-lg-de-43-pulgadas-full-hd-smart-tv-con-ia-soporte-de-pared-fijo-tv-de-32-a-75"
       },
       "50": {
         "tienda": "Falabella",
@@ -143,10 +143,10 @@
       "pulgadas_num": 43,
       "ganador": {
         "tienda": "Falabella",
-        "precio": 1044900,
-        "precio_formateado": "$1.044.900",
+        "precio": 999900,
+        "precio_formateado": "$999.900",
         "marca": "LG",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158573665/combo-televisor-lg-de-43-pulgadas-full-hd-smart-tv-con-ia-soporte-de-pared-fijo-tv-de-32-a-75"
       },
       "exito": null,
       "falabella": {
@@ -155,10 +155,10 @@
         "pulgadas": "43\"",
         "pulgadas_num": 43,
         "tecnologia": "Full HD, Smart TV",
-        "precio_final": 1044900,
-        "precio_formateado": "$1.044.900",
-        "titulo": "Televisor Smart 43 Pulgadas FHD IA 43lb 100 V 240 V 96 cm 57 cm",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021721/televisor-lg-smart-43-pulgadas-fhd-ia-43lb-100-v-240-v-96-cm-57-cm"
+        "precio_final": 999900,
+        "precio_formateado": "$999.900",
+        "titulo": "Combo Televisor de 43 pulgadas Full HD Smart TV con IA + Soporte de Pared Fijo TV de 32\" a 75\"",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/158573665/combo-televisor-lg-de-43-pulgadas-full-hd-smart-tv-con-ia-soporte-de-pared-fijo-tv-de-32-a-75"
       },
       "jumbo": {
         "tienda": "Jumbo",

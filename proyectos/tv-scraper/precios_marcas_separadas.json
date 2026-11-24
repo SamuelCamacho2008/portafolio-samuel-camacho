@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "23 de noviembre de 2026, 10:26 PM",
-  "timestamp_iso": "2026-11-23T22:26:13.173535",
+  "fecha_verificacion": "24 de noviembre de 2026, 09:01 PM",
+  "timestamp_iso": "2026-11-24T21:01:40.883486",
   "marcas": {
     "Samsung": {
       "43": {
@@ -31,8 +31,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "4K UHD, Smart TV",
-        "precio_final": 1589900,
-        "precio_formateado": "$1.589.900",
+        "precio_final": 1588900,
+        "precio_formateado": "$1.588.900",
         "titulo": "Televisor 55 Pulgadas Smarttv 4k Uhd Un55cu7000kxzl Negro",
         "enlace": "https://www.falabella.com.co/falabella-co/product/133952284/televisor-samsung-55-pulgadas-smarttv-4k-uhd-un55cu7000kxzl-negro"
       },
@@ -111,11 +111,11 @@
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 2299900,
-        "precio_formateado": "$2.299.900",
-        "titulo": "Televisor 65 Pulgadas Nano 4K – UHD LED Smart TV 65NU855BPSA",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/157344353/televisor-lg-65-pulgadas-nano-4k-uhd-led-smart-tv-65nu855bpsa"
+        "tecnologia": "4K UHD, webOS",
+        "precio_final": 2278900,
+        "precio_formateado": "$2.278.900",
+        "titulo": "Televisor 65 Pulgadas UHD 4K Smart TV WebOS",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/151672951/televisor-lg-65-pulgadas-uhd-4k-smart-tv-webos"
       }
     },
     "Hisense": {
@@ -146,11 +146,11 @@
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1484900,
-        "precio_formateado": "$1.484.900",
-        "titulo": "Televisor 55\" Pulgadas 55qd5sv QLed UHD 4K Smart TV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
+        "tecnologia": "QLED, 4K UHD",
+        "precio_final": 1592900,
+        "precio_formateado": "$1.592.900",
+        "titulo": "Televisor 55 Pulgadas QLED 4K QD5SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/153415660/televisor-hisense-55-pulgadas-qled-4k-qd5sv"
       },
       "58": null,
       "60": null,
@@ -258,10 +258,10 @@
       "pulgadas": "55\"",
       "pulgadas_num": 55,
       "ganador": {
-        "marca": "Hisense",
-        "precio_formateado": "$1.484.900",
+        "marca": "LG",
+        "precio_formateado": "$1.579.900",
         "tienda": "Falabella",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
+        "enlace": "https://www.falabella.com.co/falabella-co/product/147213154/Televisor-LG-55-Pulgadas-4K-UHD-Smart-TV-UA75"
       },
       "samsung": {
         "tienda": "Falabella",
@@ -269,8 +269,8 @@
         "pulgadas": "55\"",
         "pulgadas_num": 55,
         "tecnologia": "4K UHD, Smart TV",
-        "precio_final": 1589900,
-        "precio_formateado": "$1.589.900",
+        "precio_final": 1588900,
+        "precio_formateado": "$1.588.900",
         "titulo": "Televisor 55 Pulgadas Smarttv 4k Uhd Un55cu7000kxzl Negro",
         "enlace": "https://www.falabella.com.co/falabella-co/product/133952284/televisor-samsung-55-pulgadas-smarttv-4k-uhd-un55cu7000kxzl-negro"
       },
@@ -290,11 +290,11 @@
         "marca": "Hisense",
         "pulgadas": "55\"",
         "pulgadas_num": 55,
-        "tecnologia": "QLED, 4K UHD, Smart TV",
-        "precio_final": 1484900,
-        "precio_formateado": "$1.484.900",
-        "titulo": "Televisor 55\" Pulgadas 55qd5sv QLed UHD 4K Smart TV",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/159021292/televisor-hisense-55-pulgadas-55qd5sv-qled-uhd-4k-smart-tv"
+        "tecnologia": "QLED, 4K UHD",
+        "precio_final": 1592900,
+        "precio_formateado": "$1.592.900",
+        "titulo": "Televisor 55 Pulgadas QLED 4K QD5SV",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/153415660/televisor-hisense-55-pulgadas-qled-4k-qd5sv"
       }
     },
     {
@@ -368,11 +368,11 @@
         "marca": "LG",
         "pulgadas": "65\"",
         "pulgadas_num": 65,
-        "tecnologia": "NanoCell, 4K UHD, Smart TV",
-        "precio_final": 2299900,
-        "precio_formateado": "$2.299.900",
-        "titulo": "Televisor 65 Pulgadas Nano 4K – UHD LED Smart TV 65NU855BPSA",
-        "enlace": "https://www.falabella.com.co/falabella-co/product/157344353/televisor-lg-65-pulgadas-nano-4k-uhd-led-smart-tv-65nu855bpsa"
+        "tecnologia": "4K UHD, webOS",
+        "precio_final": 2278900,
+        "precio_formateado": "$2.278.900",
+        "titulo": "Televisor 65 Pulgadas UHD 4K Smart TV WebOS",
+        "enlace": "https://www.falabella.com.co/falabella-co/product/151672951/televisor-lg-65-pulgadas-uhd-4k-smart-tv-webos"
       },
       "hisense": {
         "tienda": "Falabella",
